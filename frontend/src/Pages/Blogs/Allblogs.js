@@ -53,7 +53,7 @@ const Allblogs = () => {
             <div className='container'>
                 <div className='row'>
                     {loading && <p>Loading...</p>}
-                    {error && <p className="text-danger">{error}</p>}
+                    {error && <p className="text-danger text-center">{error}</p>}
                     {!loading && !error && currentBlogs.map((blog) => (
                         <div className='col-lg-4 col-md-6 mb-5 ' key={blog._id}>
                             <div className='single-blog h-100'>

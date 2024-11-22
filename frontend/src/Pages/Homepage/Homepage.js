@@ -61,7 +61,7 @@ const Homepage = () => {
           <div className='container'>
                 <div className='row mt-5'>
                     {loading && <p>Loading...</p>}
-                    {error && <p className="text-danger">{error}</p>}
+                    {error && <p className="text-danger text-center">{error}</p>}
                     {!loading && !error && blogs.slice(0, 3).map((blog) => (
                         <div className='col-lg-4 col-md-6 mb-5' key={blog._id}>
                             <div className='single-blog'>

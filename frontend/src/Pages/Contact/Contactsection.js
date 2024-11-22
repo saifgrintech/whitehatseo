@@ -33,7 +33,7 @@ const Contactsection = () => {
   };
 
   const handleCaptchaChange = (value) => {
-    setCaptchaValue(value); // Store the reCAPTCHA value
+    setCaptchaValue(value); 
   };
 
   const handleSubmit = async (e) => {

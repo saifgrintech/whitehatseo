@@ -93,7 +93,7 @@ const Aboutsection = () => {
           <div className="container">
             <div className="">
               {/* {loading && <p>Loading...</p>} */}
-              {error && <p className="text-danger">{error}</p>}
+              {error && <p className="text-danger text-center">{error}</p>}
               {
                 !loading && about.map((about, index) => {
                   return (

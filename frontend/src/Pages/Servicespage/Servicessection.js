@@ -98,7 +98,7 @@ const Servicessection = () => {
                         <h2 className='text-center mb-5'>We provide the necessary services to you</h2>
                         <div className='row'>
                             {loading && <p>Loading...</p>}
-                            {error && <p className="text-danger">{error}</p>}
+                            {error && <p className="text-danger text-center w-100" style={{maxWidth:"100%"}}>{error}</p>}
                             {!loading && services.map((service) => (
                                 <div className='col-lg-4 col-sm-6 mb-4' key={service._id}>
                                     <div className='box h-100'>

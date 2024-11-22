@@ -77,25 +77,25 @@ const getContactById = async (req, res) => {
 };
 
 // Update a contact by ID
-// const updateContact = async (req, res) => {
-//   try {
-//     const { firstName, lastName, phone, email, subject, message } = req.body;
+const updateContact = async (req, res) => {
+  try {
+    const { firstName, lastName, phone, email, subject, message } = req.body;
 
-//     const updatedContact = await Contact.findByIdAndUpdate(
-//       req.params.id,
-//       { firstName, lastName, phone, email, subject, message },
-//       { new: true }
-//     );
+    const updatedContact = await Contact.findByIdAndUpdate(
+      req.params.id,
+      { firstName, lastName, phone, email, subject, message },
+      { new: true }
+    );
 
-//     if (!updatedContact) {
-//       return res.status(404).json({ success: false, error: 'Contact not found' });
-//     }
+    if (!updatedContact) {
+      return res.status(404).json({ success: false, error: 'Contact not found' });
+    }
 
-//     res.status(200).json({ success: true, data: updatedContact });
-//   } catch (error) {
-//     res.status(400).json({ success: false, error: error.message });
-//   }
-// };
+    res.status(200).json({ success: true, data: updatedContact });
+  } catch (error) {
+    res.status(400).json({ success: false, error: error.message });
+  }
+};
 
 // Delete a contact by ID
 const deleteContact = async (req, res) => {

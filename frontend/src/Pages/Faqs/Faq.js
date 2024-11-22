@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Navbar from '../../Components/Navbar';
 import axios from "axios";
 import Footer from "../../Components/Footer";
+import ReCAPTCHA from 'react-google-recaptcha';
 
 const BASE_URL = process.env.REACT_APP_URL;
 const WEBSITE_URL = process.env.REACT_APP_FRONTEND;
@@ -19,12 +20,15 @@ const Faq = () => {
   const [formData, setFormData] = useState(initialFormData);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
+  const [FormError, setFormError] = useState(null);
   const [success, setSuccess] = useState(false);
+  const [captchaValue, setCaptchaValue] = useState(null);
 
   const [faqs, setFaqs] = useState([]); // Store all fetched FAQs
   const [selectedTab, setSelectedTab] = useState("SEO Questions"); // Default tab
 
   // Fetch FAQs when the component mounts
+
   useEffect(() => {
     const fetchFaqs = async () => {
       try {
@@ -58,15 +62,27 @@ const Faq = () => {
   };
 
 
+  const handleCaptchaChange = (value) => {
+    setCaptchaValue(value); 
+  };
+
 
   const handleSubmit = async (e) => {
+    if (!captchaValue) {
+      alert('Please complete the reCAPTCHA');
+      return;
+    }
+
     e.preventDefault();
     setLoading(true);
-    setError(null);
+    setFormError(null);
 
     try {
       // Send POST request to the server
-      await axios.post(`${BASE_URL}/contact`, formData);
+      await axios.post(`${BASE_URL}/contact`, {
+      ...formData,
+      captcha: captchaValue, // Send the reCAPTCHA value
+    });
 
       // If successful, set success state and optionally reset form data
       setSuccess(true);
@@ -76,9 +92,9 @@ const Faq = () => {
       }, 5000);
 
     } catch (error) {
-      setError("Failed to send message");
+      setFormError("Failed to send message");
       setTimeout(() => {
-        setError("");
+        setFormError("");
       }, 5000);
       console.error("Error sending message:", error);
     } finally {
@@ -191,9 +207,11 @@ const Faq = () => {
             <div className="row mt-5">
               <div className="col-lg-9 order-2 order-lg-1">
                 <div className="tab-content" id="myTabContent">
+               
                 {/* SEO Tab Content */}
                 <div className="tab-pane fade show active" id="seo-tab-pane" role="tabpanel" aria-labelledby="seo-tab" tabIndex="0">
                   <div className="accordion" id="accordionExample">
+                    {<p className="text-danger">{error}</p>}
                     {filteredFaqs.map((faq) => (
                       <div key={faq._id} className="accordion-item">
                         <h2 className="accordion-header">
@@ -225,6 +243,8 @@ const Faq = () => {
                 {/* SMM Tab Content */}
                 <div className="tab-pane fade" id="smm-tab-pane" role="tabpanel" aria-labelledby="smm-tab" tabIndex="0">
                   <div className="accordion" id="accordionExampleSMM">
+                  {<p className="text-danger">{error}</p>}
+
                     {filteredFaqs.map((faq) => (
                       <div key={faq._id} className="accordion-item">
                         <h2 className="accordion-header">
@@ -255,7 +275,8 @@ const Faq = () => {
 
                 {/* Digital Marketing Tab Content */}
                 <div className="tab-pane fade" id="digital-tab-pane" role="tabpanel" aria-labelledby="digital-tab" tabIndex="0">
-                  <div className="accordion" id="accordionExampleDM">
+                    <div className="accordion" id="accordionExampleDM">
+                    {<p className="text-danger">{error}</p>}
                     {filteredFaqs.map((faq) => (
                       <div key={faq._id} className="accordion-item">
                         <h2 className="accordion-header">
@@ -505,7 +526,6 @@ const Faq = () => {
                     </div>
                   </div>
 
-
                   <div className="col-lg-6 mb-4">
                     <div className="form-details">
                       <input
@@ -565,7 +585,13 @@ const Faq = () => {
                     </div>
                   </div>
 
-                  <div className="col-lg-12 col-md-12 mb-3 text-centre">
+                  <div className="col-lg-12 ">
+                    <ReCAPTCHA sitekey="6LcWqYUqAAAAAGwQ1O-ZBoVlQOM5XPgpYJJ4TcE4" 
+                    onChange={handleCaptchaChange}
+                    />
+                  </div>
+                  
+                  <div className="col-lg-12 col-md-12 mb-3 text-center">
                     <button
                       className="btn-purple1"
                       type="submit"
@@ -582,9 +608,9 @@ const Faq = () => {
                       </div>
                     )}
 
-                    {error && (
+                    {FormError && (
                       <div className="col-lg-12 py-3 ">
-                        <h6 className="text-danger">{error}</h6>
+                        <h6 className="text-danger">{FormError}</h6>
                       </div>
                     )}
                   </div>

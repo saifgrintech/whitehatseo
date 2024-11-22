@@ -18,33 +18,33 @@ const sendEmail = (formData) => {
     from: process.env.EMAIL_USER,
     to: 'ankush.grintech@gmail.com', // Your email for notifications
     subject: 'New Contact Form Submission on Whitehatseo',
-  //   html: `
-  //   <html>
-  //     <body style="font-family: Arial, sans-serif; background-color: #f8f8f8; color: #333; padding:50px 20px ;">
-  //       <div style="max-width: 500px; margin: 30px auto; background-color: #fff; padding: 20px; border-radius: 8px;">
-  //        <div style="text-align: center; margin-bottom: 20px;">
-  //       <img src="https://whitehatseo.in/wp-content/uploads/2022/12/Whitehatseo-1.png" alt="Logo" style="max-width: 130px;" />
-  //      </div>
-  //         <h2 style="text-align: center; color: #4CAF50;">You have a new contact form submission!</h2>
-  //         <p style="font-size: 16px; margin-botom:5px; "><b>Name</b>: ${formData.name}</p>
-  //         <p style="font-size: 16px; margin-botom:5px; "><b>Email</b>: ${formData.email}</p>
-  //         <p style="font-size: 16px; margin-botom:5px; "><b>Phone Number</b>: ${formData.phone}</p>
-  //         <p style="font-size: 16px; margin-botom:5px; "><b>Subject</b>: ${formData.subject}</p>
-  //         <p style="font-size: 16px; margin-botom:5px; "><b>Message</b>: ${formData.message}</p>
+    html: `
+    <html>
+      <body style="font-family: Arial, sans-serif; background-color: #f8f8f8; color: #333; padding:50px 20px ;">
+        <div style="max-width: 500px; margin: 30px auto; background-color: #fff; padding: 20px; border-radius: 8px;">
+         <div style="text-align: center; margin-bottom: 20px;">
+        <img src="https://whitehatseo.in/wp-content/uploads/2022/12/Whitehatseo-1.png" alt="Logo" style="max-width: 130px;" />
+       </div>
+          <h2 style="text-align: center; color: #4CAF50;">You have a new contact form submission!</h2>
+          <p style="font-size: 16px; margin-botom:5px; "><b>Name</b>: ${formData.name}</p>
+          <p style="font-size: 16px; margin-botom:5px; "><b>Email</b>: ${formData.email}</p>
+          <p style="font-size: 16px; margin-botom:5px; "><b>Phone Number</b>: ${formData.phone}</p>
+          <p style="font-size: 16px; margin-botom:5px; "><b>Subject</b>: ${formData.subject}</p>
+          <p style="font-size: 16px; margin-botom:5px; "><b>Message</b>: ${formData.message}</p>
          
          
-  //       </div>
-  //     </body>
-  //   </html>
-  // `,
+        </div>
+      </body>
+    </html>
+  `,
 
-    text: `You have a new contact form submission:
+    // text: `You have a new contact form submission:
   
-    Name: ${formData.name}
-    Email: ${formData.email}
-    Contact Number: ${formData.phone}
-    Subject: ${formData.subject}
-    Message: ${formData.message}`
+    // Name: ${formData.name}
+    // Email: ${formData.email}
+    // Contact Number: ${formData.phone}
+    // Subject: ${formData.subject}
+    // Message: ${formData.message}`
 
   };
 
@@ -53,28 +53,28 @@ const sendEmail = (formData) => {
     from: process.env.EMAIL_USER,
     to: formData.email, // User's email
     subject: 'Thank You for Contacting Whitehatseo',
-    // html: `
-    //   <html>
-    //     <body style="font-family: Arial, sans-serif; background-color: #f8f8f8; color: #333; padding: 50px 20px;">
-    //       <div style="max-width: 500px; margin: 30px auto; background-color: #fff; padding: 20px; border-radius: 8px;">
-    //         <div style="text-align: center; margin-bottom: 20px;">
-    //           <img src="https://whitehatseo.in/wp-content/uploads/2022/12/Whitehatseo-1.png" alt="Logo" style="max-width: 130px;" />
-    //         </div>
-    //         <h2 style="text-align: center; color: #4CAF50;">Thank You for Contacting Us!</h2>
-    //         <p style="font-size: 16px;">Dear ${formData.name},</p>
-    //         <p style="font-size: 16px;">Thank you for reaching out to Whitehatseo. We have received your message and will get back to you as soon as possible.</p>
-    //         <p style="font-size: 16px;">Best regards,<br>The Whitehatseo Team</p>
-    //       </div>
-    //     </body>
-    //   </html>
-    // `
+    html: `
+      <html>
+        <body style="font-family: Arial, sans-serif; background-color: #f8f8f8; color: #333; padding: 50px 20px;">
+          <div style="max-width: 500px; margin: 30px auto; background-color: #fff; padding: 20px; border-radius: 8px;">
+            <div style="text-align: center; margin-bottom: 20px;">
+              <img src="https://whitehatseo.in/wp-content/uploads/2022/12/Whitehatseo-1.png" alt="Logo" style="max-width: 130px;" />
+            </div>
+            <h2 style="text-align: center; color: #4CAF50;">Thank You for Contacting Us!</h2>
+            <p style="font-size: 16px;">Dear ${formData.name},</p>
+            <p style="font-size: 16px;">Thank you for reaching out to Whitehatseo. We have received your message and will get back to you as soon as possible.</p>
+            <p style="font-size: 16px;">Best regards,<br>The Whitehatseo Team</p>
+          </div>
+        </body>
+      </html>
+    `
 
-    text: `Dear ${formData.name},
+    // text: `Dear ${formData.name},
 
-    Thank you for reaching out to Whitehatseo. We have received your message and will get back to you as soon as possible.
+    // Thank you for reaching out to Whitehatseo. We have received your message and will get back to you as soon as possible.
     
-    Best regards,
-    The Whitehatseo Team`
+    // Best regards,
+    // The Whitehatseo Team`
 
   };
 
