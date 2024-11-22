@@ -23,7 +23,7 @@ const sendEmail = (formData) => {
       <body style="font-family: Arial, sans-serif; background-color: #f8f8f8; color: #333; padding:50px 20px ;">
         <div style="max-width: 500px; margin: 30px auto; background-color: #fff; padding: 20px; border-radius: 8px;">
          <div style="text-align: center; margin-bottom: 20px;">
-        <img src="https://whitehatseo.in/wp-content/uploads/2022/12/Whitehatseo-1.png" alt="Logo" style="max-width: 130px;" />
+        <img src="https://whitehatseo.in/images/white_logo.png" alt="Logo" style="max-width: 130px;" />
        </div>
           <h2 style="text-align: center; color: #4CAF50;">You have a new contact form submission!</h2>
           <p style="font-size: 16px; margin-botom:5px; "><b>Name</b>: ${formData.name}</p>
@@ -58,7 +58,7 @@ const sendEmail = (formData) => {
         <body style="font-family: Arial, sans-serif; background-color: #f8f8f8; color: #333; padding: 50px 20px;">
           <div style="max-width: 500px; margin: 30px auto; background-color: #fff; padding: 20px; border-radius: 8px;">
             <div style="text-align: center; margin-bottom: 20px;">
-              <img src="https://whitehatseo.in/wp-content/uploads/2022/12/Whitehatseo-1.png" alt="Logo" style="max-width: 130px;" />
+              <img src="https://whitehatseo.in/images/white_logo.png" alt="Logo" style="max-width: 130px;" />
             </div>
             <h2 style="text-align: center; color: #4CAF50;">Thank You for Contacting Us!</h2>
             <p style="font-size: 16px;">Dear ${formData.name},</p>
