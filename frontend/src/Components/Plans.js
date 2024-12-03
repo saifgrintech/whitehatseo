@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 const BASE_URL = process.env.REACT_APP_URL;
 
@@ -169,14 +170,18 @@ const Plans = () => {
                   </ul>
                  
                   <div className="btn-hover text-center">
-                    <button 
+                 { /*  <button 
                       className="btn-purple1" 
                       type="button" 
                         onClick={() => buyFunction(150, "Basic Plan")}
                         disabled={loading && currentPlan === "Basic Plan"} 
                     >
                       {loading && currentPlan === "Basic Plan" ? 'Redirecting...' : 'BUY PLAN'}
-                    </button>
+                    </button> */}
+
+                    <Link to='/contact'>
+                     <button className="btn-purple1"  type="button" >Get in touch</button>
+                      </Link>
                   </div>
                 </div>
               </div>
@@ -255,14 +260,18 @@ const Plans = () => {
                   </ul>
                  
                   <div className="btn-hover text-center">
-                    <button 
+                    {/* <button 
                       className="btn-purple1" 
                       type="button" 
                         onClick={() => buyFunction(250, "Standard Plan")}
                         disabled={loading && currentPlan === "Standard Plan"} 
                     >
                       {loading && currentPlan === "Standard Plan" ? 'Redirecting...' : 'BUY PLAN'}
-                    </button>
+                    </button> */}
+
+                      <Link to='/contact'>
+                     <button className="btn-purple1"  type="button" >Get in touch</button>
+                      </Link>
                   </div>
                 </div>
               </div>
@@ -341,7 +350,7 @@ const Plans = () => {
                   </ul>
                  
                   <div className="btn-hover text-center">
-                    <button 
+                    {/* <button 
                       className="btn-purple1" 
                       type="button" 
                         onClick={() => buyFunction(350, "Professional Plan")}
@@ -349,7 +358,11 @@ const Plans = () => {
                     >
                       {loading && currentPlan === "Professional Plan" ? 'Redirecting...' : 'BUY PLAN'}
 
-                    </button>
+                    </button> */}
+                      <Link to='/contact'>
+                     <button className="btn-purple1"  type="button" >Get in touch</button>
+                      </Link>
+                      
                   </div>
                 </div>
               </div>

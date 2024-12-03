@@ -16,7 +16,8 @@ const sendEmail = (formData) => {
   // Email notification to you
   const mailOptions = {
     from: process.env.EMAIL_USER,
-    to: 'ankush.grintech@gmail.com', // Your email for notifications
+    // to: 'ankush.grintech@gmail.com', // Your email for notifications
+    to: 'info@whitehatseo.in', 
     subject: 'New Contact Form Submission on Whitehatseo',
     html: `
     <html>

@@ -100,7 +100,7 @@
             [{ size: [] }],
             ['bold', 'italic', 'underline', 'strike', 'blockquote'],
             [{'list': 'ordered'}, {'list': 'bullet'}, {'indent': '-1'}, {'indent': '+1'}],
-            ['link', 'image'],
+            ['link', 'image','video', 'audio'],
             ['clean']
             ],
         };
@@ -109,7 +109,7 @@
             'header', 'font', 'size',
             'bold', 'italic', 'underline', 'strike', 'blockquote',
             'list', 'bullet', 'indent',
-            'link', 'image'
+            'link', 'image','video','audio'
         ];
 
         return (

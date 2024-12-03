@@ -14,30 +14,32 @@ const createContact = async (req, res) => {
     // Destructure data from the request body
     const { firstName, lastName, phone, email, subject, message, captcha } = req.body;
 
-    // Verify the reCAPTCHA response with Google
-    const recaptchaResponse = await axios.post(
-      `https://www.google.com/recaptcha/api/siteverify`,
-      null,
-      {
-        params: {
-          secret: RECAPTCHA_SECRET_KEY,
-          response: captcha, // The reCAPTCHA response token sent from the frontend
-        },
-      }
-    );
+    // If captcha is provided, verify it with Google reCAPTCHA
+    if (captcha) {
+      const recaptchaResponse = await axios.post(
+        `https://www.google.com/recaptcha/api/siteverify`,
+        null,
+        {
+          params: {
+            secret: RECAPTCHA_SECRET_KEY,
+            response: captcha, // The reCAPTCHA response token sent from the frontend
+          },
+        }
+      );
 
-    // If reCAPTCHA validation fails, return an error
-    if (!recaptchaResponse.data.success) {
-      return res.status(400).json({ success: false, error: 'reCAPTCHA verification failed' });
+      // If reCAPTCHA validation fails, return an error
+      if (!recaptchaResponse.data.success) {
+        return res.status(400).json({ success: false, error: 'reCAPTCHA verification failed' });
+      }
     }
 
-    // Proceed with saving the contact if reCAPTCHA is valid
+    // Proceed with saving the contact regardless of reCAPTCHA
     const newContact = new Contact({ firstName, lastName, phone, email, subject, message });
     await newContact.save();
 
     // Construct the name dynamically
     const fullName = lastName ? `${firstName} ${lastName}` : firstName;
-      
+    
     // Send the email notification
     sendEmail({
       name: fullName,
