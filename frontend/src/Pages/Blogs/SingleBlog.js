@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import Navbar from "../../Components/Navbar";
 
-import Lightbox from 'react-awesome-lightbox';
-import 'react-awesome-lightbox/build/style.css';
+// import Lightbox from 'react-awesome-lightbox';
+// import 'react-awesome-lightbox/build/style.css';
 import Footer from "../../Components/Footer";
 import { Helmet } from "react-helmet-async";
 
@@ -178,8 +178,8 @@ const SingleBlog = () => {
           <div className="row ">
             <div className="col-xl-8 col-lg-7 d-flex flex-column justify-content-center align-items-center  mb-5 mb-lg-0 ">
               {loading ?
-                (<div class="spinner-grow text-primary" role="status">
-                  <span class="visually-hidden">Loading...</span>
+                (<div className="spinner-grow text-primary" role="status">
+                  <span className="visually-hidden">Loading...</span>
                 </div>) : error ? (<p>Error: {error}</p>) : (
                   <>
                     <h1>{data.heading}</h1>

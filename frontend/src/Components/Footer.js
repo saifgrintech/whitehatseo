@@ -48,7 +48,6 @@ const Footer = () => {
                                         <li><Link to='/blog'>Latest News</Link></li>
                                     </ul>
                                 </div>
-
                             </div>
                         </div>
 
@@ -60,7 +59,7 @@ const Footer = () => {
                                         <li><Link to='/faqs' >FAQs</Link></li>
                                         <li><Link to='/privacy-policy' >Privacy Policy</Link></li>
                                         <li><Link to='/terms-conditions' >Terms & Conditions</Link></li>
-                                        <li><Link to='contact' >Contact Us</Link></li>
+                                        <li><Link to='/contact' >Contact Us</Link></li>
                                     </ul>
                                 </div>
                             </div>
@@ -93,9 +92,9 @@ const Footer = () => {
                     </div>
                     <div className='footer-copyright border-top'>
                         <div className='container'>
-                          <div className='content py-3'>
-                            <p className='m-0'>© Copyright 2024 Whitehatseo | All Rights Reserved. </p>
-                         </div>
+                            <div className='content py-3'>
+                                <p className='m-0'>© Copyright 2024 Whitehatseo | All Rights Reserved. </p>
+                            </div>
                         </div>
                     </div>
                 </div>

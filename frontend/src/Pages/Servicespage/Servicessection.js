@@ -98,8 +98,8 @@ const Servicessection = () => {
                         <h2 className='text-center mb-5'>We provide the necessary services to you</h2>
                         <div className='row align-items-center justify-content-center'>
                             {loading && (
-                                <div class="spinner-grow text-primary" role="status">
-                                <span class="visually-hidden">Loading...</span>
+                                <div className="spinner-grow text-primary" role="status">
+                                <span className="visually-hidden">Loading...</span>
                             </div>
                             )}
 

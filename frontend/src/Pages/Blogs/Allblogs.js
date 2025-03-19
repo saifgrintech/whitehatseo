@@ -53,8 +53,8 @@ const Allblogs = () => {
             <div className='container'>
                 <div className='row justify-content-center align-items-center'>
                     {loading && (
-                    <div class="spinner-grow text-primary" role="status">
-                    <span class="visually-hidden">Loading...</span>
+                    <div className="spinner-grow text-primary" role="status">
+                    <span className="visually-hidden">Loading...</span>
                   </div>
                     )}
                     {error && <p className="text-danger text-center">{error}</p>}
