@@ -119,7 +119,7 @@ const Banner = () => {
         <form onSubmit={handleSubmit} >
             <div className="card border-0">
                 <div className="card-body">
-                  <h3 className='mb-3 text-center text-white'>Let's discuss your <span style={{color:"#0d96de"}}>project</span></h3>
+                  <h2 className='mb-3 text-center text-white'>Let's discuss your <span style={{color:"#0d96de"}}>project</span></h2>
                   <div className="row">
                     <div className="col-12 mb-3">
                     <input name="firstName" className='form-control' type="text"

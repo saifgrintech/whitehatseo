@@ -15,7 +15,7 @@ const Blogsection = () => {
         <div className='container3'>
           <div className='header'>
             <div className='box'>
-              <h2>Blog Grid</h2>
+              <h1>Our Blogs</h1>
 
               <div className="all-animation">
 

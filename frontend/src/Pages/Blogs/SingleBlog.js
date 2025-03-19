@@ -5,6 +5,7 @@ import Navbar from "../../Components/Navbar";
 import Lightbox from 'react-awesome-lightbox';
 import 'react-awesome-lightbox/build/style.css';
 import Footer from "../../Components/Footer";
+import { Helmet } from "react-helmet-async";
 
 
 const BASE_URL = process.env.REACT_APP_URL;
@@ -12,7 +13,7 @@ const WEBSITE_URL = process.env.REACT_APP_FRONTEND;
 
 const SingleBlog = () => {
   const { slug } = useParams(); // Get slug from the URL
-  const [data, setData] =useState('');
+  const [data, setData] = useState('');
   const [images, setImages] = useState([]);
   const [blogContent, setBlogContent] = useState("");
   const [loading, setLoading] = useState(true);
@@ -35,7 +36,7 @@ const SingleBlog = () => {
         setData(data);
         setBlogContent(data.description);
 
-          // Assuming 'images' is an array in the API response
+        // Assuming 'images' is an array in the API response
         if (data.images && data.images.length > 0) {
           setImages(data.images); // Set all images
         }
@@ -48,7 +49,7 @@ const SingleBlog = () => {
     };
 
     fetchBlogContent();
-  }, [slug]); 
+  }, [slug]);
 
   useEffect(() => {
     const fetchNewsData = async () => {
@@ -74,26 +75,35 @@ const SingleBlog = () => {
   useEffect(() => {
     // Set image styles after content is rendered
     const adjustImageStyles = () => {
-        const images = document.querySelectorAll('.blog_content img');
-        if (images.length > 0) {
-            images[0].style.width = '100%'; // Set first image to full width
-            for (let i = 1; i < images.length; i++) {
-                images[i].style.width = '50%'; // Set other images to 50%
-            }
+      const images = document.querySelectorAll('.blog_content img');
+      if (images.length > 0) {
+        images[0].style.width = '100%'; // Set first image to full width
+        for (let i = 1; i < images.length; i++) {
+          images[i].style.width = '50%'; // Set other images to 50%
         }
+      }
     };
 
     adjustImageStyles();
-}, [blogContent]);
+  }, [blogContent]);
 
   return (
     <>
+      <Helmet>
+        <title>{`${data.heading} | WhiteHatSEO`}</title>
+        <meta name="description" content={`Explore ${data.heading} to learn about the latest insights and strategies in digital marketing. Stay updated with expert tips to enhance your online presence.`} />
+        <meta name="keywords" content={`${data.heading}, SEO Blog, Digital Marketing Tips`} />
+        <meta property="og:title" content={`${data.heading} | WhiteHatSEO`} />
+        <meta name="description" content={`Explore ${data.heading} to learn about the latest insights and strategies in digital marketing. Stay updated with expert tips to enhance your online presence.`} />
+        <link rel="canonical" href={`https://whitehatseo.in/blog/${slug}`} />
+      </Helmet>
+
       <Navbar />
 
       <div className="container3">
         <div className="header">
           <div className="box">
-            <h2>Blog Details</h2>
+            <h2 className="fw-bold">Blog Details</h2>
             <div className="all-animation">
               <div className="all-animation1">
                 <img
@@ -165,19 +175,20 @@ const SingleBlog = () => {
 
       <div className="blog_details py-5">
         <div className="container">
-          <div className="row">
-            <div className="col-lg-8 ">
-
-
-              {loading ? ( <p>Loading...</p>) : error ? (  <p>Error: {error}</p>  ) : (
-              <>
-                 <h1>{data.heading}</h1>
-                <div className="blog_content" dangerouslySetInnerHTML={{ __html: blogContent }}></div>
-              </>
-              )}
+          <div className="row ">
+            <div className="col-xl-8 col-lg-7 d-flex flex-column justify-content-center align-items-center  mb-5 mb-lg-0 ">
+              {loading ?
+                (<div class="spinner-grow text-primary" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>) : error ? (<p>Error: {error}</p>) : (
+                  <>
+                    <h1>{data.heading}</h1>
+                    <div className="blog_content" dangerouslySetInnerHTML={{ __html: blogContent }}></div>
+                  </>
+                )}
             </div>
-            <div className="col-lg-4  px-md-5">
-              <div className="gallery_view mb-5">
+            <div className="col-xl-4 col-lg-5 px-lg-5">
+              {/* <div className="gallery_view mb-5">
                 <h4>Gallery</h4>
                 <div className="d-flex flex-wrap">
                 {images.map((image, index) => (
@@ -203,21 +214,32 @@ const SingleBlog = () => {
       )}
 
                 </div>
-              </div>
+              </div> */}
 
               <div className="latest-news">
                 <h4 className="mb-4">Latest News</h4>
                 <div className="news-list">
                   {newsData.slice(0, 3).map((newsItem, index) => (
-                    <Link to={`/single-blog/${newsItem.slug}`}
-                     key={index} 
-                     className="news-item d-flex align-items-center  mb-4">
+                    <Link to={`/blog/${newsItem.slug}`}
+                      key={index}
+                      className="news-item d-flex align-items-center  mb-4">
 
-                     <img className="me-2 border rounded-2" src={`/blogimg/${newsItem.image}`} style={{height:"60px",width:"60px",objectFit:"contain"}} alt="" />
-                     <h6>{newsItem.heading}</h6>
-                    
+                      <img className="me-2 border rounded-2" src={`/blogimg/${newsItem.image}`} style={{ height: "60px", width: "60px", objectFit: "contain" }} alt="" />
+                      <h6>{newsItem.heading}</h6>
+
                     </Link>
                   ))}
+                </div>
+              </div>
+
+
+              <div className="book_consultation mt-5">
+                <div className="card rounded-0">
+                  <div className="card-title m-0">Ready to boost your website ranking</div>
+                  <div className="card-body text-center">
+                    <p>We have the most experienced teams who can help you boost your online presence.</p>
+                    <Link to='/contact'><button className="book_btn" type="button">GET A FREE CONSULTATION</button></Link>
+                  </div>
                 </div>
               </div>
 

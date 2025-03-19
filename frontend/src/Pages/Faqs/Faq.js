@@ -3,6 +3,7 @@ import Navbar from '../../Components/Navbar';
 import axios from "axios";
 import Footer from "../../Components/Footer";
 import ReCAPTCHA from 'react-google-recaptcha';
+import { Helmet } from "react-helmet-async";
 
 const BASE_URL = process.env.REACT_APP_URL;
 const WEBSITE_URL = process.env.REACT_APP_FRONTEND;
@@ -121,12 +122,21 @@ const Faq = () => {
 
   return (
     <>
+      <Helmet>
+      <title>FAQs - WhiteHatSEO</title>
+      <meta name="description" content="Find answers to the most frequently asked questions about our SEO and digital marketing services." />
+      <meta name="keywords" content="SEO FAQs, Digital Marketing FAQs, WhiteHatSEO Help" />
+      <meta property="og:title" content="FAQs - WhiteHatSEO" />
+      <meta property="og:description" content="Explore our FAQ section to find answers to common questions about SEO and digital marketing." />
+      <link rel="canonical" href="https://whitehatseo.in/faqs" />
+    </Helmet>
+
       <div className='faq_page'>
         <Navbar />
 
         <div className='container3'>
           <div className='box'>
-            <h2>FAQ</h2>
+            <h1>FAQs</h1>
 
             <div className="all-animation">
               <div className="all-animation1">

@@ -51,8 +51,12 @@ const Allblogs = () => {
     return (
         <div className='blogs'>
             <div className='container'>
-                <div className='row'>
-                    {loading && <p>Loading...</p>}
+                <div className='row justify-content-center align-items-center'>
+                    {loading && (
+                    <div class="spinner-grow text-primary" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                    )}
                     {error && <p className="text-danger text-center">{error}</p>}
                     {!loading && !error && currentBlogs.map((blog) => (
                         <div className='col-lg-4 col-md-6 mb-5 ' key={blog._id}>
@@ -63,10 +67,10 @@ const Allblogs = () => {
                                         <i className="fa-solid fa-calendar-days"></i>
                                         {new Date(blog.createdAt).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: '2-digit' })}
                                     </div>
-                                   <Link to={`/single-blog/${blog.slug}`}> <h3>{blog.heading}</h3></Link>
+                                   <Link to={`/blog/${blog.slug}`}> <h3>{blog.heading}</h3></Link>
                                     <p>By Admin</p>
                                     <p dangerouslySetInnerHTML={{ __html: stripHtmlTags( blog.description) }} />
-                                    <Link to={`/single-blog/${blog.slug}`}>Read more <i className='fa-solid fa-arrow-right'></i></Link>
+                                    <Link to={`/blog/${blog.slug}`}>Read more <i className='fa-solid fa-arrow-right'></i></Link>
                                 </div>
                             </div>
                         </div>
@@ -74,7 +78,7 @@ const Allblogs = () => {
                 </div>
             </div>
 
-           
+           {blogs.length > blogsPerPage && (
             <nav aria-label="Page navigation example">
                 <ul className="pagination justify-content-center">
                     <li className={`page-item ${currentPage === 1 ? 'disabled' : ''}`}>
@@ -90,6 +94,8 @@ const Allblogs = () => {
                     </li>
                 </ul>
             </nav>
+
+           )}
         </div>
     );
 };

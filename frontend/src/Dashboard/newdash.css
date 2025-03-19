@@ -185,10 +185,10 @@ footer.fixed-bottom{
 /*-----------------*/
 .side_list p{
     font-size: 14px;
-    color: rgba(255, 255, 255, .7);
+    color: rgba(255, 255, 255, .7) !important;
 }
 .side_list p:hover{
-    color: white;
+    color: white !important;
 }
 .side_list .list_item{
     font-size: 14px;

@@ -1,3 +1,4 @@
+// Single Blog.js
 const express = require('express');
 const router = express.Router();
 const { createBlog, getAllBlogs, getBlogById, getBlogBySlug, updateBlogById, deleteBlogById, upload} = require('../controllers/singleblogController');

@@ -41,7 +41,7 @@ const Aboutsection = () => {
         <div className="container3">
           <div className="header">
             <div className="box">
-              <h2>About Us</h2>
+              <h1>About Us</h1>
               <div className="all-animation">
 
                 <div className="all-animation1">

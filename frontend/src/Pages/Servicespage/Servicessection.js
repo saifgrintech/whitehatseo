@@ -42,7 +42,7 @@ const Servicessection = () => {
                 <div className='container3'>
                     <div className='header'>
                         <div className='box'>
-                            <h2>Services</h2>
+                            <h1>Services</h1>
 
                             <div className="all-animation">
 
@@ -96,14 +96,19 @@ const Servicessection = () => {
                 <div className='services-section py-5'>
                     <div className='container'>
                         <h2 className='text-center mb-5'>We provide the necessary services to you</h2>
-                        <div className='row'>
-                            {loading && <p>Loading...</p>}
+                        <div className='row align-items-center justify-content-center'>
+                            {loading && (
+                                <div class="spinner-grow text-primary" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                            )}
+
                             {error && <p className="text-danger text-center w-100" style={{maxWidth:"100%"}}>{error}</p>}
                             {!loading && services.map((service) => (
                                 <div className='col-lg-4 col-sm-6 mb-4' key={service._id}>
                                     <div className='box h-100'>
                                         <img src={`/serviceimg/${service.image}`} className='img1' alt={service.title} />
-                                        <h3><Link to={`/single-service/${service.slug}`}>{service.title}</Link></h3>
+                                        <h3><Link to={`/services/${service.slug}`}>{service.title}</Link></h3>
                                         {/* <p dangerouslySetInnerHTML={{ __html : service.description}}/> */}
                                         <p>{stripHtmlTags(service.description)}</p>
                                     </div>
@@ -120,3 +125,4 @@ const Servicessection = () => {
 };
 
 export default Servicessection;
+

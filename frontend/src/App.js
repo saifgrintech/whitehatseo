@@ -79,12 +79,12 @@ function App() {
     <Route path="/about" element={<Aboutpage />} />
     <Route path="/contact" element={<Contactpage />} />
     <Route path="/blog" element={<Blogpage />} />
-    <Route path="/single-blog/:slug" element={<SingleBlog />} />
+    <Route path="/blog/:slug" element={<SingleBlog />} />
     <Route path="/faqs" element={<Faq />} />
     <Route path="/terms-conditions" element={<TermsAndConditions />} />
     <Route path="/privacy-policy" element={<Policy />} />
     <Route path="/services" element={<Servicespage />} />
-    <Route path="/single-service/:slug" element={<ServiceSingle />} />
+    <Route path="/services/:slug" element={<ServiceSingle />} />
     <Route path="/login" element={<Login />} />
     <Route path="/signup" element={<Signup />} />
     <Route path="/forgotpassword" element={<Forgotpassword />} />

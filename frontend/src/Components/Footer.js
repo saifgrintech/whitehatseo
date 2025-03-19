@@ -30,7 +30,7 @@ const Footer = () => {
                         <div className='col-lg-3 col-sm-6 mb-4'>
                             <div className='d-flex'>
                                 <div className='footer-section'>
-                                <img src={`${WEBSITE_URL}/images/white_logo.png`} style={{width:"130px"}} alt='logo'></img>
+                                    <img src={`${WEBSITE_URL}/images/white_logo.png`} style={{ width: "130px" }} alt='logo'></img>
                                     <p className='mt-3 px-3'> We work with a passion of taking challenges and creating new ones in advertising sector.</p>
                                 </div>
 
@@ -42,11 +42,10 @@ const Footer = () => {
                                 <div className='footer-section text-align-center'>
                                     <h3>Company</h3>
                                     <ul className='p-0'>
+                                        <li><Link to='/'>Home</Link></li>
                                         <li><Link to='/about'>About Us</Link></li>
                                         <li><Link to='/services'>Services</Link></li>
                                         <li><Link to='/blog'>Latest News</Link></li>
-                                        <li><Link >Features</Link></li>
-                                      
                                     </ul>
                                 </div>
 
@@ -58,13 +57,12 @@ const Footer = () => {
                                 <div className='footer-section'>
                                     <h3>Support</h3>
                                     <ul className='p-0'>
-                                        <li><Link to='/faqs' >FAQ's</Link></li>
+                                        <li><Link to='/faqs' >FAQs</Link></li>
                                         <li><Link to='/privacy-policy' >Privacy Policy</Link></li>
                                         <li><Link to='/terms-conditions' >Terms & Conditions</Link></li>
                                         <li><Link to='contact' >Contact Us</Link></li>
                                     </ul>
                                 </div>
-
                             </div>
                         </div>
 
@@ -74,7 +72,7 @@ const Footer = () => {
                                     <h3>Address</h3>
                                     <ul className='p-0'>
                                         <li>9th Floor, Bestech Business Tower,
-                                        B-905/1</li>
+                                            B-905/1</li>
                                         <li>Email: info@whitehatseo.in</li>
                                         <li>Phone: +91-9418960274</li>
                                     </ul>
@@ -95,10 +93,9 @@ const Footer = () => {
                     </div>
                     <div className='footer-copyright border-top'>
                         <div className='container'>
-                            <div className='content py-3'>
-                                <p className='m-0'>© Copyright 2024 Whitehatseo | All Rights Reserved. </p>
-                            </div>
-
+                          <div className='content py-3'>
+                            <p className='m-0'>© Copyright 2024 Whitehatseo | All Rights Reserved. </p>
+                         </div>
                         </div>
                     </div>
                 </div>

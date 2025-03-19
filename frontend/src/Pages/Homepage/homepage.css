@@ -155,7 +155,7 @@
 .main-banner select{ height: 50px; font-size: 14px;}
 .main-banner .submit_btn{ height: 60px; background: #0d96de; width: 100%; outline: 0; color: #fff; border: 0; border-radius: 8px;}
 
-
+.main-banner form h2{font-size: 26px;}
 /* @media only screen and (max-width: 1440) {
     
 }
@@ -719,6 +719,7 @@
     text-align: center;  
     margin: 20px;
 }
+.team-section .team-info .member1-text{color: #fff !important;}
 
 .team-section .content i{
     padding: 5px 5px;
@@ -843,7 +844,8 @@
 }
 
 .section3 .facts p{
-    color: #6084a4;
+    /* color: #6084a4; */
+    color: #000 !important;
     font-size: 14px;
     
 }
@@ -889,6 +891,7 @@
   line-clamp: 5;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  color: #fff !important;
 }
 
 .works .work:hover .works-content{
@@ -944,6 +947,11 @@
     font-weight: 600;
     font-size: 30px;
     color: #0e314c;
+}
+.plans .price h2{
+    color: #0d96de;
+    font-size: 2.5rem;
+    font-weight: 500;
 }
 
 .plans .box4 p{
@@ -1192,7 +1200,7 @@
 
 .footer .footer-section p{
     /* color: #6084a4; */
-    color: white;
+    color: white !important;
     padding-top: 20px;
 
 }

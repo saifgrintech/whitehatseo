@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { useAuth } from '../store/auth';
+// import { useAuth } from '../store/auth';
 
 
 
@@ -8,7 +8,7 @@ const WEBSITE_URL = process.env.REACT_APP_FRONTEND;
 
 const Navbar = () => {
 
-  const { logout, isAuthenticated } = useAuth();
+  // const { logout, isAuthenticated } = useAuth();
 
   return (
     <section id='wrapper'>
@@ -16,19 +16,17 @@ const Navbar = () => {
       <div className="container">
         <a className="navbar-brand" href="/"><img src={`${WEBSITE_URL}/images/white_logo.png`} style={{width:"130px"}} alt='logo'></img></a>
 
-        <div className='other-option2 d-block d-lg-none ms-auto '>
-          {/* <Link className="fa-solid fa-cart-shopping" to='cart'>
-            <span>0</span>
-          </Link> */}
+         <div className='other-option2 d-block d-lg-none ms-auto '>
             <Link to='/contact'>
             <button className="btn-purple1 btn-hover" type="">Support</button>
             </Link>
-            { !isAuthenticated() ? (<Link to='/login'>
+            {/* { !isAuthenticated() ? (<Link to='/login'>
             <button className="btn-purple2" type="">login</button>
-            </Link>) : null }
+            </Link>) : null } */}
           </div>
+          
 
-         <div className='d-block d-lg-none me-3'>
+         {/* <div className='d-block d-lg-none me-3'>
          {isAuthenticated() && (
                     <div className="dropdown user_dropdown">
                         <button className="btn btn-secondary dropdown-toggle rounded-circle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -40,7 +38,7 @@ const Navbar = () => {
                         </ul>
                     </div>
                 )}
-         </div>
+         </div> */}
         
       
           <button className="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -68,7 +66,7 @@ const Navbar = () => {
               <Link className="nav-link " aria-current="page" to="/blog">Blog</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link " aria-current="page" to="/faqs">FAQ's</Link>
+              <Link className="nav-link " aria-current="page" to="/faqs">FAQs</Link>
             </li>
               <li className="nav-item">
                 <Link className="nav-link " aria-current="page" to="/contact">Contact</Link>
@@ -85,17 +83,17 @@ const Navbar = () => {
               <button className="btn-purple1 btn-hover" type="">Support</button>
               </Link>
 
-              {!isAuthenticated() ? (
+              {/* {!isAuthenticated() ? (
                         <Link  to='/login'>
                             <button className="btn-purple2" type="">Login</button>
                         </Link>
-                    ) : null}
+                    ) : null} */}
 
             
           
           </div>
           
-          <div className='d-none d-lg-block'>
+          {/* <div className='d-none d-lg-block'>
           {isAuthenticated() && (
                     <div className="dropdown user_dropdown">
                         <button className="btn btn-secondary dropdown-toggle rounded-circle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -107,7 +105,7 @@ const Navbar = () => {
                         </ul>
                     </div>
                 )}
-          </div>
+          </div> */}
          
 
 
