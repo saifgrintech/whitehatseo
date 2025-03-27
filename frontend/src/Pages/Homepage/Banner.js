@@ -1,5 +1,6 @@
 import {React,useState,useEffect} from 'react'
 import { Link } from 'react-router-dom'
+import ReCAPTCHA from 'react-google-recaptcha';
 
 import axios from "axios";
 
@@ -16,10 +17,15 @@ const Banner = () => {
     message: "",
   };
 
-  const [formError, setFormError] = useState(null);
   const [formData, setFormData] = useState(initialFormData);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
   const [success, setSuccess] = useState(false);
+  const [captchaValue, setCaptchaValue] = useState(null);
 
+  const handleCaptchaChange = (value) => {
+    setCaptchaValue(value); 
+  };
 
   // const handleChange = (e) => {
   //   setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -40,29 +46,29 @@ const Banner = () => {
 
 
 
-  const handleSubmit = async (e) => {
+ const handleSubmit = async (e) => {
     e.preventDefault();
-    // setLoading(true);
-    setFormError(null);
+    if (!captchaValue) {
+      alert('Please complete the reCAPTCHA');
+      return;
+    }
+    setLoading(true);
+    setError(null);
 
     try {
-      // Send POST request to the server
-      await axios.post(`${BASE_URL}/contact`, formData);
-
-      // If successful, set success state and optionally reset form data
+       await axios.post(`${BASE_URL}/contact`, { 
+        ...formData,
+        captcha: captchaValue // Send captcha value to the backend
+      });
       setSuccess(true);
-      setFormData(initialFormData); // Reset form data if needed
-      setTimeout(() => {
-        setSuccess("");
-      }, 5000);
+      setFormData(initialFormData);
+      setTimeout(() => setSuccess(false), 5000);
     } catch (error) {
-      setFormError("Failed to send message");
-      setTimeout(() => {
-        setFormError("");
-      }, 5000);
+      setError("Failed to send message");
+      setTimeout(() => setError(null), 5000);
       console.error("Error sending message:", error);
     } finally {
-      // setLoading(false);
+      setLoading(false);
     }
   };
 
@@ -170,24 +176,38 @@ const Banner = () => {
                       />
                     </div>
 
+                  
+                   <div className="col-lg-12 mb-4">
+                    <ReCAPTCHA
+                      sitekey="6LcWqYUqAAAAAGwQ1O-ZBoVlQOM5XPgpYJJ4TcE4"  
+                      onChange={handleCaptchaChange}
+                    />
+                  </div>
+
+                    <div className="col-12">
+                    <button className='submit_btn'      type='submit' disabled={loading}
+                    >
+                    {loading ? "Submitting..." : " Get A Quote"}
+                    </button>
+                    </div>    
+
                     {success && (
-                    <div className="col-lg-12 py-3 ">
-                      <h6 className="text-success">
+                    <div className="col-lg-12 pt-3 ">
+                      <h6 className="text-success text-center">
                         Message sent successfully. We will contact you soon!!
                       </h6>
                     </div>
+                    
                   )}
-                    {formError && (
-                    <div className="col-lg-12 py-3 ">
-                      <h6 className="text-danger">
-                        {formError}
+                  
+                    {error && (
+                    <div className="col-lg-12 pt-3 ">
+                      <h6 className="text-danger text-center">
+                        {error}
                       </h6>
                     </div>
                   )}
 
-                    <div className="col-12">
-                    <button className='submit_btn' type='submit'>Get A Quote</button>
-                    </div>                                 
                   </div>
                 </div>
             </div>

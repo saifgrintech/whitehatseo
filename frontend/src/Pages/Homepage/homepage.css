@@ -1,7 +1,8 @@
           /* CSS OF HOMEPAGE BANNER   */
  
 .main-banner {
-    background: transparent url(../../../public/homeimages/banner-bg.jpg) 100% 0 no-repeat;
+    /* background: transparent url(../../../public/homeimages/banner-bg.jpg) 100% 0 no-repeat; */
+    background: transparent url(/public/homeimages/banner-bg.jpg) 100% 0 no-repeat;
     position: relative;
     z-index: 1;
     position: relative;
@@ -10,7 +11,7 @@
     /* padding: 270px 0; */
     padding: 150px 0;
     z-index: 1;
-    height: 990px;
+    height: 1100px;
 }
 .main-banner h1{
     font-size: 55px;
@@ -881,7 +882,9 @@
 .works .work img{
     width: 100%;
     height: 300px;
-    object-fit: cover;
+    /* object-fit: cover; */
+    object-fit: contain;
+    background-color: #fff;
     border: 1px solid #ccc;
 }
 .works .works-content p{
@@ -1219,7 +1222,6 @@ color: #0d96de;
 .footer .footer-section h3{
     font-size: 18px;
     margin-bottom: 30px;
-   
     color: #0d96de;
     font-weight: 500;
 }
@@ -1307,7 +1309,7 @@ padding: 8px 8px;
 
 .footer-copyright p{
     text-align: center;
-    color: #0d96de;
+    color: #0d96de !important;
     line-height: 1.8;
 }
 
@@ -1403,8 +1405,8 @@ padding: 8px 8px;
     color: #fff;
     text-align: center;
     position: relative;
-    padding-top: 80px;
-    padding-bottom: 86px;
+    padding-top: 60px;
+    padding-bottom: 100px;
     /* background: linear-gradient(135deg, #23bdb8, #43e794); */
     background: linear-gradient(90deg, #0F99E2 -11%, #04547f 0%, #0F99E2) !important;
 }
@@ -1630,12 +1632,13 @@ width: 100%;
         height: 220px;
     }
 }
+
 @media (min-width: 992px) and (max-width: 1024px) {
 .all-cards{
        margin-top: 25px;
        margin-bottom: 30px;
     }
- 
+    .main-banner{height: 830px;}
     
 .main-banner .full-bannerimg1{
     display: block;
@@ -1673,6 +1676,9 @@ width: 100%;
 
 @media (max-width: 991px) {
     .faq_tabs li i{display: none !important;}
+    .footer .footer-section h3{
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1721,10 +1727,15 @@ width: 100%;
             }
 }
 
+@media (max-width:767px) {
+    .footer .footer-section h3{
+        margin-bottom: 15px;
+    }
+}
 
 
 @media (max-width:425px) {
- 
+    .ready-to-talk img{width: 100px;}
 
    .section-bar2 .section-fullimg2{
     margin-left: -108px;

@@ -46,7 +46,7 @@ const Contactsection = () => {
     setError(null);
 
     try {
-      const response = await axios.post(`${BASE_URL}/contact`, { 
+      await axios.post(`${BASE_URL}/contact`, { 
         ...formData,
         captcha: captchaValue // Send captcha value to the backend
       });
@@ -184,15 +184,15 @@ const Contactsection = () => {
 
                     {success && (
                       <div className="col-lg-12 py-3 ">
-                        <h6 className="text-success">
+                        <h5 className="text-success text-center">
                           Message sent successfully. We will contact you soon!!
-                        </h6>
+                        </h5>
                       </div>
                     )}
-
+                  
                     {error && (
                       <div className="col-lg-12 py-3 ">
-                        <h6 className="text-danger">{error}</h6>
+                        <h5 className="text-danger text-center">{error}</h5>
                       </div>
                     )}
                   </div>

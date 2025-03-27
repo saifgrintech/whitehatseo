@@ -172,7 +172,7 @@ const Homesection = () => {
                         <div className='col-lg-6 col-md-12'>
                             <h2>Why Choose WHITEHATSEO</h2>
                             <div className='bar'></div>
-                            <p>WHITEHATSEO can provide numerous benefits for your business, especially if you want to improve your online visibility and drive targeted traffic to your website.  ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p>WHITEHATSEO can provide numerous benefits for your business, especially if you want to improve your online visibility and drive targeted traffic to your website.</p>
 
                             <div className='row'>
                                 <div className='col-lg-6 col-md-6 mb-4'>

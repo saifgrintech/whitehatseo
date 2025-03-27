@@ -32,7 +32,17 @@ const Footer = () => {
                                 <div className='footer-section'>
                                     <img src={`${WEBSITE_URL}/images/white_logo.png`} style={{ width: "130px" }} alt='logo'></img>
                                     <p className='mt-3 px-3'> We work with a passion of taking challenges and creating new ones in advertising sector.</p>
+                                    <div className='footer-social   m-0'>
+                                        <div className='d-flex justify-content-start ms-xl-2'>
+                                            <Link to="https://www.facebook.com/people/WhitehatSeo/100094138745677/" target="_blank" ><i className='fa-brands fa-facebook me-2'></i></Link>
+                                            <Link to="https://twitter.com/WhitehatSeo_" target="_blank" ><i className='fa-brands fa-twitter me-2'></i></Link>
+                                            <Link to="https://www.instagram.com/whitehatseo_/" target="_blank" ><i className='fa-brands fa-instagram me-2'></i></Link>
+                                            <Link to="https://www.linkedin.com/company/www.whitehatseo.in/" target="_blank" ><i className='fa-brands fa-linkedin me-2'></i></Link>
+
+                                        </div>
+                                    </div>
                                 </div>
+                                
 
                             </div>
                         </div>
@@ -40,7 +50,7 @@ const Footer = () => {
                         <div className='col-lg-3 col-sm-6 mb-4'>
                             <div className='d-flex justify-content-lg-center'>
                                 <div className='footer-section text-align-center'>
-                                    <h3>Company</h3>
+                                    <h3>Quick Links</h3>
                                     <ul className='p-0'>
                                         <li><Link to='/'>Home</Link></li>
                                         <li><Link to='/about'>About Us</Link></li>
@@ -60,7 +70,7 @@ const Footer = () => {
                                         <li><Link to='/privacy-policy' >Privacy Policy</Link></li>
                                         <li><Link to='/terms-conditions' >Terms & Conditions</Link></li>
                                         <li><Link to='/contact' >Contact Us</Link></li>
-                                    </ul>
+                                    </ul> 
                                 </div>
                             </div>
                         </div>
@@ -76,15 +86,7 @@ const Footer = () => {
                                         <li>Phone: +91-9418960274</li>
                                     </ul>
 
-                                    <div className='footer-social  m-0'>
-                                        <div className='d-flex justify-content-start'>
-                                            <Link><i className='fa-brands fa-facebook me-2'></i></Link>
-                                            <Link><i className='fa-brands fa-twitter me-2'></i></Link>
-                                            <Link><i className='fa-brands fa-instagram me-2'></i></Link>
-                                            <Link><i className='fa-brands fa-linkedin me-2'></i></Link>
-
-                                        </div>
-                                    </div>
+                                   
                                 </div>
 
                             </div>
@@ -93,7 +95,7 @@ const Footer = () => {
                     <div className='footer-copyright border-top'>
                         <div className='container'>
                             <div className='content py-3'>
-                                <p className='m-0'>© Copyright 2024 Whitehatseo | All Rights Reserved. </p>
+                                <p className='m-0'>© Copyright 2025 Whitehatseo | All Rights Reserved. </p>
                             </div>
                         </div>
                     </div>

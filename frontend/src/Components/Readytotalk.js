@@ -8,27 +8,22 @@ const Readytotalk = () => {
             <div className='ready-to-talk position-relative'>
 
                 <div className='box'>
+                    <div className='col-lg-7 col-md-9 mx-auto'>
                     <h3>Ready To Talk?</h3>
-                    <p>Our team is here to answer your all the questions. </p>
+                    <p className='text-white'>Have questions or need assistance? We’re here to help! Whether you're looking for more information about our services or need support, we’d love to hear from you.</p>
+                    </div>
 
                     <div className=" btn-hover">
                         <Link to='/contact'>
                         <button className="btn-purple1 my-3" type="">Contact Us</button>
                         </Link>
-                        {/* <span>
-                            <a href=''> Or, get started now with a free trial</a>
-                        </span> */}
-
                     </div>
 
-                    <div className='container'>
-                        {/* <h5>More that 1.5 million businesses and organizations use StartP</h5> */}
-
-                    </div>
+                    
 
                 </div>
 
-                <div className='container mx-auto container-inner'>
+                <div className='container col-11 mx-auto container-inner'>
 
                     <div className='row'>
 

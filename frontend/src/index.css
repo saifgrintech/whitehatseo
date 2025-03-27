@@ -1391,7 +1391,7 @@ body, html {
     .users .feedback .input2 {text-align: center!important;margin-top: 20px!important;margin-left:0!important; padding: 0 20px;}
     .users .feedback p{text-align: center!important;}
     .ready-to-talk .btn-purple1{margin-bottom: 20px;}
-    .ready-to-talk .box{padding: 70px 20px!important;}
+    /* .ready-to-talk .box{padding: 70px 20px!important;} */
     .blogs{padding: 20px!important;}
     .blogs .content h3{font-size: 17px!important;}
     .blogs p, .blogs .content p{font-size: 14px;}
@@ -1501,6 +1501,16 @@ body, html {
     }
     .whatsapp-icon {height: 47px !important; width:47px !important; bottom: 110px !important;}
     .whatsapp-icon a{font-size: 25px !important;}
+  }
+
+  @media only screen and (max-width:425px){
+    .newPlan .card-body {
+      padding: 30px 30px;}
+    .newPlan .card-body h2{text-align: start;font-size: 25px !important;}
+    .newPlan h3{font-size: 30px !important;}
+    .newPlan li {font-size: 15px;}
+    .newPlan .btn-purple {height: 55px;}
+    .newPlan .popular-tag {font-size: 12px;}
   }
   
 
