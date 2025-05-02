@@ -1,5 +1,4 @@
 const express = require("express");
-const path = require('path');
 const app = express();
 const dotenv = require('dotenv');
 dotenv.config(); // Load environment variables from .env file
@@ -18,8 +17,7 @@ const corsOptions = {
 app.use(cors(corsOptions));
 app.use(express.json({ extended: false }));
 
-// ✅ Serve static files like sitemap.xml and robots.txt from backend/public
-app.use(express.static(path.join(__dirname, 'public')));
+
 
 const newsRouter = require("./routes/news");
 const blogRouter = require("./routes/blog");
