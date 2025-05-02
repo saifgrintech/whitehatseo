@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import Navbar from '../../Components/Navbar'
 import Workslider from '../../Components/Workslider';
 import Footer from '../../Components/Footer';
@@ -22,7 +22,7 @@ const ServiceSingle = () => {
     subject: "",
     message: "",
   };
-
+  const navigate = useNavigate();
   const { slug } = useParams(); // Get slug from the URL
   const [data, setData] = useState('');
   const [images, setImages] = useState([]);
@@ -92,13 +92,13 @@ const ServiceSingle = () => {
     try {
 
       await axios.post(`${BASE_URL}/contact`, formData);
-
-
       setSuccess(true);
+      navigate("/thank-you");
       setFormData(initialFormData); // Reset form data if needed
-      setTimeout(() => {
-        setSuccess("");
-      }, 5000);
+
+      // setTimeout(() => {
+      //   setSuccess("");
+      // }, 5000);
     } catch (error) {
       setFormError("Failed to send message");
       setTimeout(() => {

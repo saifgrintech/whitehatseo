@@ -4,6 +4,7 @@ import axios from "axios";
 import Footer from "../../Components/Footer";
 import ReCAPTCHA from 'react-google-recaptcha';
 import { Helmet } from "react-helmet-async";
+import { useNavigate } from "react-router-dom";
 
 const BASE_URL = process.env.REACT_APP_URL;
 const WEBSITE_URL = process.env.REACT_APP_FRONTEND;
@@ -18,6 +19,8 @@ const Faq = () => {
     message: "",
   };
 
+  const navigate = useNavigate();
+  
   const [formData, setFormData] = useState(initialFormData);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -87,10 +90,11 @@ const Faq = () => {
 
       // If successful, set success state and optionally reset form data
       setSuccess(true);
+      navigate("/thank-you");
       setFormData(initialFormData); // Reset form data if needed
-      setTimeout(() => {
-        setSuccess("");
-      }, 5000);
+      // setTimeout(() => {
+      //   setSuccess("");
+      // }, 5000);
 
     } catch (error) {
       setFormError("Failed to send message");

@@ -1,5 +1,5 @@
 import {React,useState,useEffect} from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import ReCAPTCHA from 'react-google-recaptcha';
 
 import axios from "axios";
@@ -22,6 +22,8 @@ const Banner = () => {
   const [error, setError] = useState(null);
   const [success, setSuccess] = useState(false);
   const [captchaValue, setCaptchaValue] = useState(null);
+
+  const navigate = useNavigate();
 
   const handleCaptchaChange = (value) => {
     setCaptchaValue(value); 
@@ -61,8 +63,10 @@ const Banner = () => {
         captcha: captchaValue // Send captcha value to the backend
       });
       setSuccess(true);
+      navigate("/thank-you");
       setFormData(initialFormData);
-      setTimeout(() => setSuccess(false), 5000);
+      
+      // setTimeout(() => setSuccess(false), 5000);
     } catch (error) {
       setError("Failed to send message");
       setTimeout(() => setError(null), 5000);

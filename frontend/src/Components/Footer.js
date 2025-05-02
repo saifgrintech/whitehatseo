@@ -30,7 +30,9 @@ const Footer = () => {
                         <div className='col-lg-3 col-sm-6 mb-4'>
                             <div className='d-flex'>
                                 <div className='footer-section'>
+                                    <Link to='/'>
                                     <img src={`${WEBSITE_URL}/images/white_logo.png`} style={{ width: "130px" }} alt='logo'></img>
+                                    </Link>
                                     <p className='mt-3 px-3'> We work with a passion of taking challenges and creating new ones in advertising sector.</p>
                                     <div className='footer-social   m-0'>
                                         <div className='d-flex justify-content-start ms-xl-2'>
@@ -80,10 +82,9 @@ const Footer = () => {
                                 <div className='footer-section'>
                                     <h3>Address</h3>
                                     <ul className='p-0'>
-                                        <li>9th Floor, Bestech Business Tower,
-                                            B-905/1</li>
-                                        <li>Email: info@whitehatseo.in</li>
-                                        <li>Phone: +91-9418960274</li>
+                                        <li>905/B1, 9th Floor, Bestech Business Tower Sector-66</li>
+                                        <li>Email : <Link to="mailto:info@whitehatseo.in"> info@whitehatseo.in</Link></li>
+                                        <li>Phone : <Link to="tel:+919418960274" >+91-9418960274</Link></li>
                                     </ul>
 
                                    

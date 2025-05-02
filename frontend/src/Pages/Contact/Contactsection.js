@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import ReCAPTCHA from 'react-google-recaptcha';
+import { useNavigate } from "react-router-dom";
 
 const BASE_URL = process.env.REACT_APP_URL;
 
@@ -14,6 +15,8 @@ const Contactsection = () => {
     subject: "",
     message: "",
   };
+
+  const navigate = useNavigate();
 
   const [formData, setFormData] = useState(initialFormData);
   const [loading, setLoading] = useState(false);
@@ -51,8 +54,9 @@ const Contactsection = () => {
         captcha: captchaValue // Send captcha value to the backend
       });
       setSuccess(true);
+      navigate("/thank-you");
       setFormData(initialFormData);
-      setTimeout(() => setSuccess(false), 5000);
+      // setTimeout(() => setSuccess(false), 5000);
     } catch (error) {
       setError("Failed to send message");
       setTimeout(() => setError(null), 5000);

@@ -162,9 +162,9 @@ const Homesection = () => {
 
                             </div>
 
-                            <div className='section-fullimg2'>
+                            {/* <div className='section-fullimg2'>
                             <img src='homeimages/section-fullimg2.png' className='img1' alt='full-img'></img>
-                            </div>
+                            </div> */}
                         </div>
 
 
