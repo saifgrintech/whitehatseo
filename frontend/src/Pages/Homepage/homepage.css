@@ -701,6 +701,10 @@
    
 }
 
+.team-section .team-member .img-large{
+    width: 160px;
+    height: 160px;
+}
 
 .team-section .team-info{
     background: linear-gradient(135deg, #23bdb8, #43e794);
@@ -1406,9 +1410,16 @@ padding: 8px 8px;
     text-align: center;
     position: relative;
     padding-top: 60px;
-    padding-bottom: 100px;
+    padding-bottom: 60px;
     /* background: linear-gradient(135deg, #23bdb8, #43e794); */
     background: linear-gradient(90deg, #0F99E2 -11%, #04547f 0%, #0F99E2) !important;
+   
+}
+
+.ready-to-talk .box .inside_box{
+     gap: 25px;
+    display: flex;
+    flex-direction:column ;
 }
 
 .ready-to-talk .box p{

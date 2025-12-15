@@ -27,7 +27,7 @@ const DashNav = () => {
                     </div>
                 </form>
                 <ul className="navbar-nav   mb-lg-0">
-                    <li className="nav-item dropdown message_icon">
+                    <li className="nav-item dropdown message_icon d-none">
                     <Link className="text-center dropdown-toggle" href="#" role="button"     data-bs-toggle="dropdown" aria-expanded="false">
                         <div className='position-relative'>
                             <i className="fa-solid fa-envelope"></i>
@@ -53,7 +53,7 @@ const DashNav = () => {
                         <li><Link className="dropdown-item small text-gray-500 " href="#">Show All Alerts</Link></li>
                     </ul>
                     </li>
-                    <li className="nav-item dropdown user_item  border-start">
+                    <li className="nav-item dropdown user_item  ">
                         {/* <Link className="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <img style={{width:"35px",height:"35px", borderRadius:"50%"}}
                             src={`${WEBSITE_URL}/user.png`} alt="user" />

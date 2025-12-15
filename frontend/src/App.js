@@ -63,6 +63,7 @@ import EditFaq from './Dashboard/DashPages/Faqs/EditFaq';
 import AllContacts from './Dashboard/DashPages/Contact/AllContacts';
 import WhatsappIcon from './Components/WhatsappIcon';
 import ThankYou from './Pages/ThankYou/ThankYou';
+import PageNotFound from './Pages/404/PageNotFound';
 
 function App() {
 
@@ -93,6 +94,7 @@ function App() {
     <Route path="/success" element={<StripeSuccess />} />
     <Route path="/cancel" element={<StripeFailed />} />
     <Route path="/thank-you" element={<ThankYou />} />
+    <Route path="*" element={<PageNotFound />} />
     
     
     {/* Protected Dashboard Pages */}

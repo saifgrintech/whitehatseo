@@ -27,7 +27,8 @@ const upload = multer({ storage: storage });
 // Create a new team member
 const createTeam = async (req, res) => {
     try {
-        const { title, description, role, link1, link2, link3, link4 } = req.body;
+        const { title, role, link1, link2, link3, link4 } = req.body;
+         const description = req.body.description || ''; 
         const image = req.file.filename; // Get the filename of the uploaded image
 
         const TeamMember = new Team({

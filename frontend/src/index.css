@@ -8,6 +8,11 @@
 body, html {
   overflow-x: hidden !important;
 }
+.min_height{
+  min-height: 80vh;
+}
+
+.page_not_found {padding-top: 100px;}
 
 #website-navbar1{ .navbar-toggler{background:#fff} }
 #website-navbar {
