@@ -82,7 +82,7 @@ const Footer = () => {
                                 <div className='footer-section'>
                                     <h3>Address</h3>
                                     <ul className='p-0'>
-                                        <li>905/B1, 9th Floor, Bestech Business Tower Sector-66</li>
+                                        <li>A-818, 8th Floor, Bestech Business Tower, Mohali, Punjab 160062</li>
                                         <li>Email : <Link to="mailto:info@whitehatseo.in"> info@whitehatseo.in</Link></li>
                                         <li>Phone : <Link to="tel:+919418960274" >+91-9418960274</Link></li>
                                     </ul>

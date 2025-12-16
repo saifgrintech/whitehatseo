@@ -132,7 +132,7 @@ const Policy = () => {
             [WHITEHATSEO] <br />
             [<Link>info@whitehatseo.in</Link>]  <br />
             [<Link>+91-9418960274</Link>]  <br />
-            [905/B, 9th Floor, Bestech Business Tower Mohali (Punjab) Sector-66]
+            [A-818, 8th Floor, Bestech Business Tower, Mohali, Punjab 160062]
           </p>
           <p>Feel free to customize this sample privacy policy to fit your specific needs and legal requirements.</p>
 

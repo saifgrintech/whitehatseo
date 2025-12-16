@@ -102,7 +102,7 @@ const Contactpage = () => {
                   <div className='contact-info'>
                     <i className="fa-solid fa-location-dot mb-2"></i>
                     <h3 className='py-2'>Visit Here</h3>
-                    <p>9th Floor, Bestech Business Tower, B-905/1</p>
+                    <p>A-818, 8th Floor, Bestech Business Tower, Mohali, Punjab 160062</p>
                   </div>
                 </div>
               </div>

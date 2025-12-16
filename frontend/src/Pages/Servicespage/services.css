@@ -28,7 +28,7 @@
     padding: 20px 15px;
 
 }
-
+/* .services-section img.img1{height: 220px; width: 220px; object-fit: cover;} */
 .services-section .box:before{
     content: "";
     position: absolute;

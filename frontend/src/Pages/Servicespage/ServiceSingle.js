@@ -181,6 +181,9 @@ const ServiceSingle = () => {
                                 <option value="Seo Audit">Seo Audit</option>
                                 <option value="Paid Ads">Paid Ads</option>
                                 <option value="Email Marketing">Email Marketing</option>
+                                <option value="GA4 Analytics">GA4 Analytics</option>
+                                <option value="GMB">GMB (Google My Business)</option>
+                                <option value="GTM">GTM (Google Tag Manager)</option>
                               </select>
                             </div>
                             <div className="col-12 mb-3">
