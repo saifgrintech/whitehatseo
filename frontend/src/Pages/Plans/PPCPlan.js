@@ -57,7 +57,7 @@ const PPCPlan = () => {
                   </ul>
 
                   <div className="d-flex gap-3 mt-4">
-                    <Link to="/contact" className="btn btn-dark p-3">
+                    <Link to="/contact" className="gradient-button">
                       Get Free PPC Audit
                     </Link>
                   </div>
@@ -198,14 +198,14 @@ const PPCPlan = () => {
       </section>
 
       {/* PORTFOLIO */}
-      <div className="py-5">
+      {/* <div className="py-5">
         <div className="container py-4">
           <h2 className="fw-bold text-center mb-4">
             PPC Results That <span className="text-theme">Speak for Themselves</span>
           </h2>
           <PortfolioSlider />
         </div>
-      </div>
+      </div> */}
 
       {/* STATS */}
       <section className="py-5 stats-section">
@@ -214,7 +214,7 @@ const PPCPlan = () => {
             <div className="col-md-4">
               <div className="stat-box">
                 <i className="fa-solid fa-calendar-check"></i>
-                <h2>8+</h2>
+                <h2>5+</h2>
                 <p>Years PPC Experience</p>
               </div>
             </div>
@@ -222,7 +222,7 @@ const PPCPlan = () => {
             <div className="col-md-4">
               <div className="stat-box">
                 <i className="fa-solid fa-face-smile"></i>
-                <h2>95%</h2>
+                <h2>98%</h2>
                 <p>Client Retention</p>
               </div>
             </div>
@@ -230,7 +230,7 @@ const PPCPlan = () => {
             <div className="col-md-4">
               <div className="stat-box">
                 <i className="fa-solid fa-briefcase"></i>
-                <h2>120+</h2>
+                <h2>100+</h2>
                 <p>Successful Campaigns</p>
               </div>
             </div>

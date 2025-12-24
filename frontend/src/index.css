@@ -288,7 +288,9 @@ body, html {
 }
 
 .blogs .single-blog {
-  padding-top: 25px;
+  /* padding-top: 25px; */
+  background: #f7fafd;
+  height: 100%;
 }
 
 .navbar-nav .nav-item .nav-link {
@@ -378,7 +380,7 @@ body, html {
   width: 100%;
   z-index: -1;
   transition: 0.5s ease-in-out;
-  display: block;
+  display: none;
 }
 
 .team-member:hover.team-member::before {
@@ -777,8 +779,9 @@ body, html {
 
 .section-bar .rotating-img {
   position: absolute;
-  left: 54%;
-  margin-top: -19px;
+  left: 0;
+  margin-top: 0;
+  top: -20%;
   animation: rotateme 20s linear infinite;
 }
 
@@ -1110,7 +1113,9 @@ body, html {
 .accordion-button:not(.collapsed) {
     background: #fff;
     border: none;
+    box-shadow: none !important;
 }
+
 
 .accordion-button{
     text-align: left;
@@ -1363,6 +1368,8 @@ body, html {
   .navbar .btn-purple1{border: 0!important;}
   .navbar .btn-purple2:hover{transform: translateY(0px)!important;}
   .section3 .row{margin: 30px 0!important;}
+
+  .gradient-button{display: inline-block; text-decoration: none; background: linear-gradient(90deg, rgb(15, 153, 226) -11%, rgb(4, 84, 127)  0px, rgb(15, 153, 226)); color: rgb(255, 255, 255); border:1px solid #0d96de; padding: 14px 25px; border-radius: 6px; transition: 0.3s; text-transform: uppercase; width: fit-content;}
 
 
   @media only screen and (max-width:767px){

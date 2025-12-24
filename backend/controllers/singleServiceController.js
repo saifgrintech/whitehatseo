@@ -20,13 +20,25 @@ const upload = multer({ storage: storage });
 // Create a new service item
 const createService = async (req, res) => {
   try {
-    const { heading, description, features } = req.body;
+    const { heading, description, features , faqs} = req.body;
     const images = req.files ? req.files.map(file => file.filename) : [];
 
     // Parse the features array if it comes as a string
     const parsedFeatures = typeof features === 'string' ? JSON.parse(features) : features;
 
     // console.log(parsedFeatures);
+
+     //  Parse FAQs
+    let parsedFaqs = [];
+
+    if (req.body.faqs) {
+      parsedFaqs =
+        typeof req.body.faqs === "string"
+          ? JSON.parse(req.body.faqs)
+          : req.body.faqs;
+    }
+
+
 
     // Generate slug from heading
     const slug = slugify(heading, { lower: true, strict: true });
@@ -42,6 +54,7 @@ const createService = async (req, res) => {
       description,
       images,
       features: parsedFeatures, // Include features with featureIcon
+      faqs: parsedFaqs,
       slug,
     });
 
@@ -97,7 +110,7 @@ const getServiceBySlug = async (req, res) => {
 // Update service by ID
 const updateServiceById = async (req, res) => {
   const { id } = req.params;
-  const { heading, description, features, removedImages } = req.body;
+  const { heading, description, features, faqs, removedImages } = req.body;
 
   try {
     const serviceDetails = await Service.findById(id);
@@ -123,6 +136,18 @@ const updateServiceById = async (req, res) => {
      // Parse the features array if it comes as a string
      const updatedFeatures = typeof features === 'string' ? JSON.parse(features) : features || serviceDetails.features;
 
+     let updatedFaqs = serviceDetails.faqs || [];
+
+      if (req.body.faqs) {
+        updatedFaqs =
+          typeof req.body.faqs === "string"
+            ? JSON.parse(req.body.faqs)
+            : req.body.faqs;
+      }
+
+
+
+
     // Generate a new slug based on the updated heading
     const newSlug = slugify(heading, { lower: true, strict: true });
 
@@ -140,6 +165,7 @@ const updateServiceById = async (req, res) => {
         description,
         images: updatedImages,
         features: updatedFeatures,
+        faqs: updatedFaqs,
         slug: newSlug,
       },
       { new: true }

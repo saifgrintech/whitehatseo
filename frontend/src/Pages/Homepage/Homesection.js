@@ -5,7 +5,7 @@ const Homesection = () => {
     <>
       <div className="section-bar">
         <div className="container">
-          <div className="row">
+          <div className="row align-items-center">
             <div className="col-lg-6 col-md-12">
               <h2>What Makes WhiteHatSEO Unique?</h2>
               <div className="bar"></div>
@@ -100,8 +100,8 @@ const Homesection = () => {
               </div>
             </div>
 
-            <div className="col-lg-5">
-              <div className="section-img position-relative">
+            <div className="col-lg-5 offset-xl-1 text-center position-relative">
+              {/* <div className="section-img position-relative">
                 <img
                   src="homeimages/table.section-bar.png"
                   className="img1"
@@ -167,7 +167,8 @@ const Homesection = () => {
                   className="img13"
                   alt="headphone"
                 />
-              </div>
+              </div> */}
+              <img className="" src="/homeimages/seo-graph.png" alt="" />
 
               <div className="rotating-img">
                 <img
@@ -177,13 +178,13 @@ const Homesection = () => {
                 />
               </div>
 
-              <div className="section-fullimg1">
+              {/* <div className="section-fullimg1">
                 <img
                   src="frontendImg/section-fullimg1.png"
                   className="img1 w-100"
                   alt="full"
                 />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

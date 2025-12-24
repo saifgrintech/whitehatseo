@@ -44,7 +44,7 @@ const Section3 = () => {
             <div className="col-lg-3 col-md-3 col-6">
               <div className="d-flex justify-content-center">
                 <div className="facts ">
-                  <h3>500+</h3>
+                  <h3>100+</h3>
                   <p>SATISFIED CLIENTS</p>
                 </div>
               </div>
@@ -60,7 +60,8 @@ const Section3 = () => {
             </div>
             <div className=" btn-hover d-flex justify-content-center py-3 py-lg-0">
               <Link to='/contact' style={{textDecoration:"none"}}>
-              <button className="btn-purple1" type=""> Contact Us </button>
+              {/* <button className="btn-purple1" type=""> Contact Us </button> */}
+              <button className="gradient-button" style={{width:"160px"}}>Contact Us</button>
               </Link>
             </div>
           </div>

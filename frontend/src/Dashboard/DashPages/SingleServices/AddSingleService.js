@@ -23,6 +23,11 @@ const AddSingleService = () => {
     { featureIcon: "", featureTitle: "", featureDesc: "" },
   ]);
 
+  const [faqs, setFaqs] = useState([
+  { faqTitle: "", faqDesc: "" }
+]);
+
+
   // Function to handle image uploads
   const handleImageUpload = (e) => {
     const files = Array.from(e.target.files);
@@ -55,6 +60,25 @@ const AddSingleService = () => {
   };
 
 
+  // Handle FAQ change
+  const handleFaqChange = (index, field, value) => {
+    const updatedFaqs = [...faqs];
+    updatedFaqs[index][field] = value;
+    setFaqs(updatedFaqs);
+  };
+
+  // Add FAQ
+  const handleAddFaq = () => {
+    setFaqs([...faqs, { faqTitle: "", faqDesc: "" }]);
+  };
+
+  // Remove FAQ
+  const handleRemoveFaq = (index) => {
+    setFaqs(faqs.filter((_, i) => i !== index));
+  };
+
+
+
   //handleSubmit
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -70,6 +94,8 @@ const AddSingleService = () => {
       formData.append("heading", heading);
       formData.append("description", description);
       formData.append("features", JSON.stringify(features));
+      formData.append("faqs", JSON.stringify(faqs));
+
 
       const response = await axios.post(`${BASE_URL}/single-service`, formData, {
         headers: {
@@ -87,6 +113,8 @@ const AddSingleService = () => {
       setHeading("");
       setDescription("");
       setFeatures([{ featureIcon: "", featureTitle: "", featureDesc: "" }]);
+      setFaqs([{ faqTitle: "", faqDesc: "" }]);
+
       // e.target.reset();
 
       // Hide success message after 5 seconds
@@ -251,6 +279,58 @@ const AddSingleService = () => {
                          
                         </div>
                       ))}
+
+
+                      <h5 className="mt-4">FAQs</h5>
+
+                      {faqs.map((faq, index) => (
+                        <div className="row mb-3 pb-2 border-bottom" key={index}>
+                          <div className="col-12 py-2 d-flex align-items-center justify-content-between">
+                            <span>({index + 1})</span>
+                            <div>
+                              <button
+                                type="button"
+                                className="rounded-0 btn btn-danger btn-sm me-2"
+                                onClick={() => handleRemoveFaq(index)}
+                                disabled={faqs.length === 1}
+                              >
+                                -
+                              </button>
+                              <button
+                                type="button"
+                                className="rounded-0 btn btn-primary btn-sm"
+                                onClick={handleAddFaq}
+                              >
+                                +
+                              </button>
+                            </div>
+                          </div>
+
+                          <div className="col-12 mb-3">
+                            <input
+                              className="form-control"
+                              type="text"
+                              placeholder="FAQ Title"
+                              value={faq.faqTitle}
+                              onChange={(e) =>
+                                handleFaqChange(index, "faqTitle", e.target.value)
+                              }
+                            />
+                          </div>
+
+                          <div className="col-12 mb-3">
+                            <textarea
+                              className="form-control"
+                              placeholder="FAQ Description"
+                              value={faq.faqDesc}
+                              onChange={(e) =>
+                                handleFaqChange(index, "faqDesc", e.target.value)
+                              }
+                            />
+                          </div>
+                        </div>
+                      ))}
+
 
 
                     </div>

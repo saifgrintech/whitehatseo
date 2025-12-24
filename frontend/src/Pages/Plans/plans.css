@@ -89,10 +89,9 @@
 }
 
  .performance-section .btn-purple1{
-    background: #c679e3;
-    box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
+    background: #fff;
     border: none;
-    color: #fff;
+    color: #0d96de;
     text-decoration: none;
     width: fit-content;
  }

@@ -153,40 +153,40 @@ const Features = () => {
         <div className="box2  d-flex flex-column align-items-center justify-content-center">
           <h2>Meet Our Dedicated Team</h2>
           <div className='bar'></div>
-          <p>
-            Take a peek at Whitehatseo's dedicated team, then contact us to see how our strategy may assist with your SEO campaign.
-
-          </p>
+          <p> Take a peek at Whitehatseo's dedicated team, then contact us to see how our strategy may assist with your SEO campaign. </p>
         </div>
-
-        <div className="row justify-content-center mt-5">
-            <div className="col-sm-6 col-lg-4 col-xl-3 mb-4 mb-sm-0">
-              <div className="card border-0">
-              <div className="team-member">
-               <img src="/images/rohit.jpg" className="img img-large"  />
-                <div className="team-info">
-                  <h5 className="member1-title m-0">Rohit Sharma</h5>
-                  <p className="member1-text m-0">Senior Project Manager</p>
-                  <p className="member1-text m-0 mt-1"><b>Expertise: </b>Branding/PPC</p>
+        <div className="container">
+          <div className="row justify-content-center mt-5">
+              <div className="col-sm-6 col-lg-4 col-xl-3 mb-4 mb-sm-0">
+                <div className="card border-0">
+                <div className="team-member">
+                <img src="/images/rohit.jpg" className="img img-large"  />
+                  <div className="team-info">
+                    <h5 className="member1-title m-0">Rohit Sharma</h5>
+                    <p className="member1-text m-0">Senior Project Manager</p>
+                    <p className="member1-text m-0 mt-1"><b>Expertise: </b>Branding/PPC</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            </div>
-            <div className="col-sm-6 col-lg-4 col-xl-3 ">
-              <div className="card border-0">
-              <div className="team-member">
-               <img src="/images/arti.jpg" className="img img-large"  />
-                <div className="team-info">
-                  <h5 className="member1-title m-0">Arti Mehta</h5>
-                  <p className="member1-text m-0"> Project Manager</p>
-                   <p className="member1-text m-0 mt-1"><b>Expertise: </b>SEO/SMM/PPC</p>
+              </div>
+              <div className="col-sm-6 col-lg-4 col-xl-3 ">
+                <div className="card border-0">
+                <div className="team-member">
+                <img src="/images/arti.jpg" className="img img-large"  />
+                  <div className="team-info">
+                    <h5 className="member1-title m-0">Arti Mehta</h5>
+                    <p className="member1-text m-0"> Project Manager</p>
+                    <p className="member1-text m-0 mt-1"><b>Expertise: </b>SEO/SMM/PPC</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            </div>
+              </div>
 
-          <Teamslider />
+            <Teamslider />
+          </div>
+
         </div>
+
       </div>
 
 

@@ -54,7 +54,7 @@ const ServiceSingle = () => {
           throw new Error("Network response was not ok");
         }
         const data = await response.json();
-        // console.log(data);
+        console.log(data);
         setData(data);
         setServiceContent(data.description);
 
@@ -558,6 +558,43 @@ const ServiceSingle = () => {
 
 
         <Testimonials />
+
+        {data.faqs && data.faqs.length > 0 && (
+          <div className="faq-section py-5" >
+            <div className="container">
+              <h2 className="text-center mb-4">Frequently Asked Questions</h2>
+              <div className="accordion" id="faqAccordion">
+                {data.faqs.map((faq, index) => (
+                  <div className="accordion-item mb-3" key={index}>
+                    <h2 className="accordion-header" id={`heading${index}`}>
+                      <button
+                        className={`accordion-button ${index !== 0 ? "collapsed" : ""}`}
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target={`#collapse${index}`}
+                        aria-expanded={index === 0 ? "true" : "false"}
+                        aria-controls={`collapse${index}`}
+                      >
+                        {faq.faqTitle}
+                      </button>
+                    </h2>
+                    <div
+                      id={`collapse${index}`}
+                      className={`accordion-collapse collapse ${index === 0 ? "show" : ""}`}
+                      aria-labelledby={`heading${index}`}
+                      data-bs-parent="#faqAccordion"
+                    >
+                      <div className="accordion-body pt-0 ">
+                        {faq.faqDesc}
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
+
 
         <Footer />
 

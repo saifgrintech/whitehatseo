@@ -111,9 +111,8 @@ const Contactpage = () => {
                   <div className='contact-info'>
                     <i className="fa-solid fa-phone mb-2"></i>
                     <h3 className='py-2 fw-bold'>Call Here</h3>
-                    <a target='_blank' href='tel:+91-9418960274'>
-                      <p>+91-9418960274</p>
-                    </a>
+                    <a href="tel:+917018168269"> +91-7018168269 </a>
+
                   </div>
                 </div>
               </div>

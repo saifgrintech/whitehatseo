@@ -120,7 +120,7 @@ const Banner = () => {
             </p>
             <div className="d-flex btn-hover">             
            <Link to='/contact'>
-             <button className="banner-btn">Book Now</button>
+             <button className="gradient-button" >Book Now</button>
            </Link>
             </div>
           </div>
@@ -159,7 +159,7 @@ const Banner = () => {
                     </div>
                     <div className="col-12 mb-3">
                     <select
-                    name="subject"
+                      name="subject"
                       value={formData.subject}
                       onChange={handleChange}
                       className="form-select" aria-label="Default select example">
@@ -170,7 +170,7 @@ const Banner = () => {
                         <option value="GA4 Analytics">GA4 Analytics</option>
                         <option value="GMB">GMB (Google My Business)</option>
                         <option value="GTM">GTM (Google Tag Manager)</option>
-                        </select>
+                      </select>
                     </div>
                     <div className="col-12 mb-3">
                       <textarea 

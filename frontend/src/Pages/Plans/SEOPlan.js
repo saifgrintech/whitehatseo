@@ -6,6 +6,7 @@ import Testimonials from "../Testimonials/Testimonials";
 
 import './plans.css'
 import PortfolioSlider from "../Portfolio/PortfolioSlider";
+import CaseStudySlider from "../Homepage/CaseStudySlider";
 const WEBSITE_URL = process.env.REACT_APP_FRONTEND;
 
 const SEOPlan = () => {
@@ -39,7 +40,7 @@ const SEOPlan = () => {
                   </ul>
 
                   <div className="d-flex gap-3 mt-4 ">
-                    <Link to="/contact" className="btn btn-dark p-3">
+                    <Link to="/contact" className="gradient-button">
                       Get Free Consultation
                     </Link>
                   </div>
@@ -176,14 +177,15 @@ const SEOPlan = () => {
         </div>
         </section>
 
-        <div className="py-5">
-            <div className="container py-4">
+        {/* <div className="">
+            <div className="container ">
+              <CaseStudySlider />
                   <h2 className=" fw-bold text-center mb-4">
                     How We <span className="text-theme">Deliver Results</span>, Hear From Our Clients
                   </h2>
               <PortfolioSlider />
             </div>
-        </div>
+        </div> */}
 
      {/* STATS SECTION */}
         <section className="py-5 stats-section">
@@ -234,7 +236,7 @@ const SEOPlan = () => {
                 <div className="col-md-4">
                     <div className="stat-box">
                     <i className="fa-solid fa-calendar-check"></i>
-                    <h2>10+</h2>
+                    <h2>5+</h2>
                     <p>Years of Experience</p>
                     </div>
                 </div>
@@ -250,7 +252,7 @@ const SEOPlan = () => {
                 <div className="col-md-4">
                     <div className="stat-box">
                     <i className="fa-solid fa-briefcase"></i>
-                    <h2>50+</h2>
+                    <h2>100+</h2>
                     <p>Projects Completed</p>
                     </div>
                 </div>

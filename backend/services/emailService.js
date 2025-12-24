@@ -22,22 +22,21 @@ const sendEmail = (formData) => {
     subject: 'New Contact Form Submission on Whitehatseo',
     html: `
     <html>
-      <body style="font-family: Arial, sans-serif; background-color: #f8f8f8; color: #333; padding:50px 20px ;">
-        <div style="max-width: 500px; margin: 30px auto; background-color: #fff; padding: 20px; border-radius: 8px;">
-         <div style="text-align: center; margin-bottom: 20px;">
-        <img src="https://whitehatseo.in/images/white_logo.png" alt="Logo" style="max-width: 130px;" />
-       </div>
-          <h2 style="text-align: center; color: #4CAF50;">You have a new contact form submission!</h2>
-          <p style="font-size: 16px; margin-botom:5px; "><b>Name</b>: ${formData.name}</p>
-          <p style="font-size: 16px; margin-botom:5px; "><b>Email</b>: ${formData.email}</p>
-          <p style="font-size: 16px; margin-botom:5px; "><b>Phone Number</b>: ${formData.phone}</p>
-          <p style="font-size: 16px; margin-botom:5px; "><b>Subject</b>: ${formData.subject}</p>
-          <p style="font-size: 16px; margin-botom:5px; "><b>Message</b>: ${formData.message}</p>
-         
-         
+      <body style="font-family: Arial, sans-serif; background-color: #f8f8f8; color: #333; padding: 50px 20px; margin:0;">
+        <div style="max-width: 500px; margin: 30px auto; background-color: #000; padding: 20px; border-radius: 8px; color: #fff;">
+          <div style="text-align: center; margin-bottom: 20px;">
+            <img src="https://whitehatseo.in/images/white_logo.png" alt="Logo" style="max-width: 130px;" />
+          </div>
+          <h2 style="text-align: center; color: #0d96de;">You have a new contact form submission!</h2>
+          <p style="font-size: 16px; margin-bottom: 8px;"><b>Name:</b> ${formData.name}</p>
+          <p style="font-size: 16px; margin-bottom: 8px;"><b>Email:</b> ${formData.email}</p>
+          <p style="font-size: 16px; margin-bottom: 8px;"><b>Phone Number:</b> ${formData.phone}</p>
+          <p style="font-size: 16px; margin-bottom: 8px;"><b>Subject:</b> ${formData.subject}</p>
+          <p style="font-size: 16px; margin-bottom: 8px;"><b>Message:</b> ${formData.message}</p>
         </div>
       </body>
     </html>
+
   `,
 
     // text: `You have a new contact form submission:
@@ -56,19 +55,24 @@ const sendEmail = (formData) => {
     to: formData.email, // User's email
     subject: 'Thank You for Contacting Whitehatseo',
     html: `
-      <html>
-        <body style="font-family: Arial, sans-serif; background-color: #f8f8f8; color: #333; padding: 50px 20px;">
-          <div style="max-width: 500px; margin: 30px auto; background-color: #fff; padding: 20px; border-radius: 8px;">
-            <div style="text-align: center; margin-bottom: 20px;">
-              <img src="https://whitehatseo.in/images/white_logo.png" alt="Logo" style="max-width: 130px;" />
-            </div>
-            <h2 style="text-align: center; color: #4CAF50;">Thank You for Contacting Us!</h2>
-            <p style="font-size: 16px;">Dear ${formData.name},</p>
-            <p style="font-size: 16px;">Thank you for reaching out to Whitehatseo. We have received your message and will get back to you as soon as possible.</p>
-            <p style="font-size: 16px;">Best regards,<br>The Whitehatseo Team</p>
+     <html>
+      <body style="font-family: Arial, sans-serif; background-color: #f8f8f8; color: #fff; padding: 50px 20px; margin:0;">
+        <div style="max-width: 500px; margin: 30px auto; background-color: #000; padding: 20px; border-radius: 8px; color: #fff;">
+          <div style="text-align: center; margin-bottom: 20px;">
+            <img src="https://whitehatseo.in/images/white_logo.png" alt="Logo" style="max-width: 130px;" />
           </div>
-        </body>
-      </html>
+          <h2 style="text-align: center; color: #0d96de;">Thank You for Contacting Us!</h2>
+          <p style="font-size: 16px; margin-bottom: 10px;">Dear ${formData.name},</p>
+          <p style="font-size: 16px; margin-bottom: 10px;">
+            Thank you for reaching out to WhitehatSEO. We have received your message and will get back to you as soon as possible.
+          </p>
+          <p style="font-size: 16px; margin-bottom: 0;">
+            Best regards,<br>
+            <span style="color: #0d96de;">The WhitehatSEO Team</span>
+          </p>
+        </div>
+      </body>
+    </html>
     `
 
     // text: `Dear ${formData.name},

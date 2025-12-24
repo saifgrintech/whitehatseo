@@ -82,7 +82,7 @@ const CaseStudySlider = () => {
             <div className="case-header w-100 mb-5">
             <div className="d-flex flex-column justify-content-center align-items-center">
                 <h2 className="mb-0">Proven SEO Results</h2>
-                <div class="bar"></div>
+                <div className="bar"></div>
 
             </div>
           <p className="text-center">
@@ -115,9 +115,9 @@ const CaseStudySlider = () => {
                     </div>
                     <div>
                         <img src={item.image_graph} alt="SEO Growth Chart" />
-                        <div className="d-flex justify-content-center">
+                        {/* <div className="d-flex justify-content-center">
                         <a href="#" className="view-link"> View Full Case Study </a>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
 

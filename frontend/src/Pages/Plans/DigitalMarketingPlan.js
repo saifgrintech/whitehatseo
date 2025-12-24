@@ -57,7 +57,7 @@ const DigitalMarketingPlan = () => {
                   </ul>
 
                   <div className="d-flex gap-3 mt-4">
-                    <Link to="/contact" className="btn btn-dark p-3">
+                    <Link to="/contact" className="gradient-button">
                       Get Free Marketing Audit
                     </Link>
                   </div>
@@ -198,7 +198,7 @@ const DigitalMarketingPlan = () => {
       </section>
 
       {/* PORTFOLIO */}
-      <div className="py-5">
+      {/* <div className="py-5">
         <div className="container py-4">
           <h2 className="fw-bold text-center mb-4">
             Digital Marketing Results That{" "}
@@ -206,7 +206,7 @@ const DigitalMarketingPlan = () => {
           </h2>
           <PortfolioSlider />
         </div>
-      </div>
+      </div> */}
 
       {/* STATS */}
       <section className="py-5 stats-section">

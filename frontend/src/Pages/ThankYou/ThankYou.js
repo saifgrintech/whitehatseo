@@ -1,11 +1,22 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import Navbar from "../../Components/Navbar";
 import Footer from "../../Components/Footer";
 
 const WEBSITE_URL = process.env.REACT_APP_FRONTEND;
 
 const ThankYou = () => {
+
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      navigate(-1); // Go back to the previous page after 5 seconds
+    }, 4000);
+
+    return () => clearTimeout(timer); // Cleanup on unmount
+  }, [navigate]);
+
   return (
     <>
     <Navbar />

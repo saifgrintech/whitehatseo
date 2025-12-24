@@ -124,14 +124,14 @@ const Plans = () => {
                         {/* Buttons */}
                         <Link
                           to={`/${plan.slug}`}
-                          className="btn btn-dark mb-2 fw-bold"
+                          className="btn btn-dark mb-2 fw-bold py-2"
                         >
                           Explore
                           <i className="fa-solid fa-arrow-right ms-2"></i>
                         </Link>
 
 
-                        <Link to="/contact" className="btn plan_button fw-bold text-white ">
+                        <Link to="/contact" className="btn plan_button fw-bold text-white py-2 ">
                           Contact Us
                         </Link>
                       </div>

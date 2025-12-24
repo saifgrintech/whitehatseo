@@ -102,7 +102,9 @@ const Homepage = () => {
                     </div>
 
                 </div>
-                <ClientVideo />
+
+                {/* <ClientVideo /> */}
+                
                 <Footer />
 
 

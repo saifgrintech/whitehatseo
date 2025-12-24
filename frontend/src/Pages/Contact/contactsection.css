@@ -76,10 +76,10 @@
     width: 65px;
     height: 65px;
     line-height: 62px;
-    background: #c679e3;
+    background: #fff;
     border-radius: 50%;
     font-size: 30px;
-    color: #fff;
+    color: #0d96de;
     transition: .4s;
   }
 
@@ -180,6 +180,13 @@
 .contact-form-card .form-control {
   height: 48px;
   border-radius: 6px;
+  background-color: #f9f9f9;
+}
+.contact-form-card .form-select {
+  height: 48px;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  font-size: 15px;
 }
 
 .contact-form-card textarea.form-control {
@@ -231,4 +238,4 @@
 
 .contact-form-card .btn-purple1{background-color: #c679e3; color: #fff;}
 .contact-info-card a{color: #0d96de;}
-.contact-info-card a:hover{color: #c679e3;}
+.contact-info-card a:hover{color: #000;}

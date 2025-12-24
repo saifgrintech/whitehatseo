@@ -155,6 +155,7 @@ const Contactsection = () => {
                         required
                       />
                     </div>
+                     
                   </div>
 
                   <div className="col-lg-12 mb-4">
@@ -313,15 +314,28 @@ const Contactsection = () => {
                           </div>
 
                           <div className="col-md-12 mb-3">
-                            <label>Subject </label>
-                            <input
+                            <label>Choose Subject </label>
+                            {/* <input
                               type="text"
                               name="subject"
                               className="form-control"
                               value={formData.subject}
                               onChange={handleChange}
                               required
-                            />
+                            /> */}
+                             <select
+                              name="subject"
+                              value={formData.subject}
+                              onChange={handleChange}
+                              className="form-select" aria-label="Default select example">
+                                <option >Select Option</option>
+                                <option value="Seo Audit">Seo Audit</option>
+                                <option value="Paid Ads">Paid Ads</option>
+                                <option value="Email Marketing">Email Marketing</option>
+                                <option value="GA4 Analytics">GA4 Analytics</option>
+                                <option value="GMB">GMB (Google My Business)</option>
+                                <option value="GTM">GTM (Google Tag Manager)</option>
+                              </select>
                           </div>
 
                           <div className="col-md-12 mb-3">
@@ -344,13 +358,19 @@ const Contactsection = () => {
                           </div>
 
                           <div className="col-md-12">
-                            <button
+                            {/* <button
                             className="btn-purple1"
                             type="submit"
                             disabled={loading}
                           >
                             {loading ? "Sending..." : "SEND MESSAGE"}
-                          </button>
+                          </button> */}
+                          <button
+                           type="submit"
+                           className="gradient-button"
+                           disabled={loading}
+                           >{loading ? "Sending..." : "SEND MESSAGE"}
+                           </button>
                           </div>
 
                           {error && (
@@ -372,15 +392,15 @@ const Contactsection = () => {
 
 
                       <h6>Call</h6>
-                      <Link target="_blank" to="tel:+91-9418960274"> +91-9418960274</Link>
+                      <a href="tel:+917018168269"> +91-7018168269 </a>
 
                       <h6>Whatsapp</h6>
                         <a
-                          href="https://wa.me/919418960274"
+                          href="https://wa.me/917018168269"
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          +91-9418960274
+                          +91-7018168269
                         </a>
 
                     </div>

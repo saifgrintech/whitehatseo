@@ -26,6 +26,23 @@ const serviceSchema = new mongoose.Schema(
         featureDesc: String,
     }
 ],
+  //  FAQ Section
+   faqs: [
+  {
+    faqTitle: {
+      type: String,
+      default: "",
+      trim: true,
+    },
+    faqDesc: {
+      type: String,
+      default: "",
+      trim: true,
+    },
+  },
+],
+
+
   status: {
     type: String,
     enum: ['draft', 'published', 'archived'], 

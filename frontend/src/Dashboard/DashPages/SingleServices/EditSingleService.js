@@ -19,6 +19,10 @@ const EditSingleService = () => {
   const [heading, setHeading] = useState("");
   const [description, setDescription] = useState("");
   const [features, setFeatures] = useState([{ featureIcon: "", featureTitle: "", featureDesc: "" }]);
+  const [faqs, setFaqs] = useState([
+  { faqTitle: "", faqDesc: "" }
+]);
+
   const [successMessage, setSuccessMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
 
@@ -26,7 +30,8 @@ const EditSingleService = () => {
     const fetchServiceData = async () => {
       try {
         const response = await axios.get(`${BASE_URL}/single-service/${id}`);
-        const { images, heading, description, features } = response.data;
+        const { images, heading, description, features, faqs } = response.data;
+
 
         const imagePaths = images.map((image) => `/singleserviceimg/${image}`);
         setImages(images);
@@ -37,6 +42,9 @@ const EditSingleService = () => {
         // Set the fetched features or default to an empty feature if no features are available
         setFeatures(features.length > 0 ? features : [{ featureIcon: "", featureTitle: "", featureDesc: "" }]);
         // setFeatures( features || [{ featureIcon: "", featureTitle: "", featureDesc: "" }]);
+
+        setFaqs(faqs?.length > 0 ? faqs : [{ faqTitle: "", faqDesc: "" }]);
+
 
       } catch (error) {
         console.error("Error fetching service data:", error);
@@ -82,6 +90,24 @@ const EditSingleService = () => {
     setFeatures(updatedFeatures);
   };
 
+
+  const handleFaqChange = (index, field, value) => {
+  const updatedFaqs = [...faqs];
+  updatedFaqs[index][field] = value;
+  setFaqs(updatedFaqs);
+  };
+
+  const addFaq = () => {
+    setFaqs([...faqs, { faqTitle: "", faqDesc: "" }]);
+  };
+
+  const removeFaq = (index) => {
+    setFaqs(faqs.filter((_, i) => i !== index));
+  };
+
+
+  /*---- Handle Submit ------*/
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -95,6 +121,8 @@ const EditSingleService = () => {
       formData.append("heading", heading);
       formData.append("description", description);
       formData.append("features", JSON.stringify(features));
+      formData.append("faqs", JSON.stringify(faqs));
+
 
       const response = await axios.put(`${BASE_URL}/single-service/${id}`, formData, {
         headers: {
@@ -254,8 +282,61 @@ const EditSingleService = () => {
                         
                         </div>
                       ))}
-                   
                     </div>
+
+                    <div className="mb-3 mt-4">
+                      <label className="form-label">FAQs</label>
+
+                      {faqs.map((faq, index) => (
+                        <div key={index} className="row mb-3 pb-2 border-bottom">
+                          <div className="col-12 d-flex align-items-center justify-content-between mb-2">
+                            <span>({index + 1})</span>
+                            <div>
+                              <button
+                                type="button"
+                                className="rounded-0 btn btn-danger btn-sm me-2"
+                                onClick={() => removeFaq(index)}
+                                disabled={faqs.length === 1}
+                              >
+                                -
+                              </button>
+                              <button
+                                type="button"
+                                className="rounded-0 btn btn-primary btn-sm"
+                                onClick={addFaq}
+                              >
+                                +
+                              </button>
+                            </div>
+                          </div>
+
+                          <div className="col-12 mb-2">
+                            <input
+                              type="text"
+                              className="form-control"
+                              placeholder="FAQ Title"
+                              value={faq.faqTitle}
+                              onChange={(e) =>
+                                handleFaqChange(index, "faqTitle", e.target.value)
+                              }
+                            />
+                          </div>
+
+                          <div className="col-12 mb-2">
+                            <textarea
+                              className="form-control"
+                              placeholder="FAQ Description"
+                              value={faq.faqDesc}
+                              onChange={(e) =>
+                                handleFaqChange(index, "faqDesc", e.target.value)
+                              }
+                            />
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+
+
                   </div>
                 </div>
 

@@ -90,7 +90,7 @@ const Sitemap = () => {
                 <ul>
                   <li><Link to="/search-engine-optimization">SEO Plan</Link></li>
                   <li><Link to="/pay-per-click">PPC Plan</Link></li>
-                  <li><Link to="/digital-marketing">Digital Plan</Link></li>
+                  <li><Link to="/digital-marketing">Digital Marketing Plan</Link></li>
                   <li><Link to="/link-building">Link Building Plan</Link></li>
                 </ul>
               </div>

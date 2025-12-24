@@ -153,13 +153,16 @@ const Aboutsection = () => {
 
         <div className="team-section">
           <div className="container">
-            <div className="box2 d-flex flex-column align-items-center justify-contnt-center py-5">
+            <div className="col-lg-6 mx-auto">
+              <div className="box2 d-flex flex-column align-items-center justify-contnt-center py-5">
               <h2>Our Awesome Team</h2>
               <div className="bar"></div>
               <p>
               Take a peek at Whitehatseo's dedicated team, then contact us to see how our strategy may assist with your SEO campaign.
               </p>
             </div>
+            </div>
+
 
            <div className="row justify-content-center mt-5">
             <div className="col-sm-6 col-lg-4 col-xl-3 mb-4 mb-sm-0">

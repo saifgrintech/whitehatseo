@@ -73,7 +73,7 @@ const Footer = () => {
                                         <li><Link to='/privacy-policy' >Privacy Policy</Link></li>
                                         <li><Link to='/terms-conditions' >Terms & Conditions</Link></li>
                                         <li><Link to='/contact' >Contact Us</Link></li>
-                                        <li><Link to='/sitemap' >Sitemap</Link></li>
+                                        {/* <li><Link to='/sitemap' >Sitemap</Link></li> */}
                                     </ul> 
                                 </div>
                             </div>
@@ -85,8 +85,8 @@ const Footer = () => {
                                     <h3>Address</h3>
                                     <ul className='p-0'>
                                         <li>A-818, 8th Floor, Bestech Business Tower, Mohali, Punjab 160062</li>
-                                        <li>Email : <Link to="mailto:info@whitehatseo.in"> info@whitehatseo.in</Link></li>
-                                        <li>Phone : <Link to="tel:+919418960274" >+91-9418960274</Link></li>
+                                        <li>Email : <Link target='_blank' to="mailto:info@whitehatseo.in"> info@whitehatseo.in</Link></li>
+                                        <li>Phone : <Link to="tel:+917018168269" >+91-7018168269</Link></li>
                                     </ul>
 
                                    

@@ -672,8 +672,8 @@
 
 .team-section .team-member {
   background-color: #fff;
-  padding-top: 40px;
-  padding-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 20px;
   transition: 0.5s;
   z-index: 1;
 }
@@ -1376,7 +1376,7 @@ padding: 8px 8px;
 .blogs .content {
   padding: 13px 13px;
   padding-top: 35px;
-  background: #f7fafd;
+  
 }
 .blogs .content:hover {
   color: #0d96de;
@@ -1428,10 +1428,10 @@ padding: 8px 8px;
 
 .ready-to-talk .btn-purple1 {
   position: relative;
-  background: #c679e3;
+  background: #fff;
   box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
   border: none;
-  color: #fff;
+  color: #000;
   transition: 0.5s;
   font-size: 14px;
   font-weight: 600;
@@ -1923,6 +1923,7 @@ padding: 8px 8px;
   .footer .footer-section h3 {
     margin-bottom: 20px;
   }
+   .section-bar img{width: 70% !important;}
 }
 
 @media (max-width: 768px) {
@@ -1979,6 +1980,7 @@ padding: 8px 8px;
 }
 
 @media (max-width: 425px) {
+   .section-bar img{width: 100% !important;}
   .ready-to-talk img {
     width: 100px;
   }
@@ -2007,3 +2009,7 @@ padding: 8px 8px;
     margin-top: 28px;
   }
 }
+@media (max-width:375px){
+  .team-section .team-info{margin: 20px 10px;}
+}
+

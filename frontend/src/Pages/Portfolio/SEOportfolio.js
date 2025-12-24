@@ -19,10 +19,16 @@ const SEOportfolio = () => {
             <div className="box">
               <div className="hero-customer">
                 <div className="col-lg-10 col-xxl-6 mx-auto">
-                  <h1 className="hero-title px-3">
+                  <h1 className="hero-title px-3 mb-4"> Our SEO Case Studies </h1>
+            <p className="mb-0">
+              At WhiteHatSEO, we deliver measurable SEO results — higher
+              rankings, better traffic, and improved organic ROI for real
+              businesses.
+            </p>
+                  {/* <h1 className="hero-title  px-3">
                     How We <span>Deliver Results</span>, Hear From Our Clients
-                  </h1>
-                  <PortfolioSlider />
+                  </h1> */}
+                  {/* <PortfolioSlider /> */}
                 
                 </div>
               </div>
@@ -98,15 +104,15 @@ const SEOportfolio = () => {
         <div className="col-lg-10 col-xxl-6 mx-auto">
         <section className="portfolio-section">
           <div className="portfolio-header">
-            <h2>Our SEO Success Stories</h2>
+            {/* <h2>Our SEO Case Studies</h2>
             <p>
               At WhiteHatSEO, we deliver measurable SEO results — higher
               rankings, better traffic, and improved organic ROI for real
               businesses.
-            </p>
+            </p> */}
           </div>
 
-         <div className=" my-5">
+         <div className="">
             {portfolioData.map((item) => (
                 <div
                 key={item.id}
@@ -158,7 +164,7 @@ const SEOportfolio = () => {
                 {/* Card Footer */}
                 <div className="card-footer d-flex gap-2 justify-content-between align-items-center flex-wrap">
                     <small>
-                    Project URL:{" "}
+                    Website :{" "}
                     <a
                         href={item.website}
                         target="_blank"
@@ -169,7 +175,7 @@ const SEOportfolio = () => {
                     </a>
                     </small>
 
-                    <Link to="#" className="case_study_btn"> View Case Study </Link>
+                    {/* <Link to="#" className="case_study_btn"> View Case Study </Link> */}
                 </div>
                 </div>
             ))}

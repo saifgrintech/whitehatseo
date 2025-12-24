@@ -55,7 +55,7 @@ const LinkBuildingPlan = () => {
                   </ul>
 
                   <div className="d-flex gap-3 mt-4">
-                    <Link to="/contact" className="btn btn-dark p-3">
+                    <Link to="/contact" className="gradient-button">
                       Get Backlink Strategy
                     </Link>
                   </div>
@@ -195,14 +195,14 @@ const LinkBuildingPlan = () => {
       </section>
 
       {/* PORTFOLIO */}
-      <div className="py-5">
+      {/* <div className="py-5">
         <div className="container py-4">
           <h2 className="fw-bold text-center mb-4">
             Proven <span className="text-theme">Link Building</span> Results
           </h2>
           <PortfolioSlider />
         </div>
-      </div>
+      </div> */}
 
       {/* STATS */}
       <section className="py-5 stats-section">
