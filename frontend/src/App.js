@@ -64,6 +64,12 @@ import AllContacts from './Dashboard/DashPages/Contact/AllContacts';
 import WhatsappIcon from './Components/WhatsappIcon';
 import ThankYou from './Pages/ThankYou/ThankYou';
 import PageNotFound from './Pages/404/PageNotFound';
+import SEOportfolio from './Pages/Portfolio/SEOportfolio';
+import SEOPlan from './Pages/Plans/SEOPlan';
+import PPCPlan from './Pages/Plans/PPCPlan';
+import DigitalMarketingPlan from './Pages/Plans/DigitalMarketingPlan';
+import LinkBuildingPlan from './Pages/Plans/LinkBuildingPlan';
+import Sitemap from './Pages/Sitemap/Sitemap';
 
 function App() {
 
@@ -82,6 +88,7 @@ function App() {
     <Route path="/contact" element={<Contactpage />} />
     <Route path="/blog" element={<Blogpage />} />
     <Route path="/blog/:slug" element={<SingleBlog />} />
+    <Route path="/portfolio" element={<SEOportfolio />} />
     <Route path="/faqs" element={<Faq />} />
     <Route path="/terms-conditions" element={<TermsAndConditions />} />
     <Route path="/privacy-policy" element={<Policy />} />
@@ -90,9 +97,9 @@ function App() {
     <Route path="/login" element={<Login />} />
     <Route path="/signup" element={<Signup />} />
     <Route path="/forgotpassword" element={<Forgotpassword />} />
-    <Route path="/shop" element={<Shopsection />} />
-    <Route path="/success" element={<StripeSuccess />} />
-    <Route path="/cancel" element={<StripeFailed />} />
+    {/* <Route path="/shop" element={<Shopsection />} /> */}
+    {/* <Route path="/success" element={<StripeSuccess />} /> */}
+    {/* <Route path="/cancel" element={<StripeFailed />} /> */}
     <Route path="/thank-you" element={<ThankYou />} />
     <Route path="*" element={<PageNotFound />} />
     
@@ -140,7 +147,13 @@ function App() {
     <Route path="/faq-list" element={<ProtectedRoute element={AllFaqs} />} />
     <Route path="/add-faq" element={<ProtectedRoute element={AddFaq} />} />
     <Route path="/edit-faq/:id" element={<ProtectedRoute element={EditFaq} />} />
+
+    <Route path="/search-engine-optimization" element={<SEOPlan />} />
+    <Route path="/pay-per-click" element={<PPCPlan />} />
+    <Route path="/digital-marketing" element={<DigitalMarketingPlan />} />
+    <Route path="/link-building" element={<LinkBuildingPlan />} />
      
+     <Route path="/sitemap" element={<Sitemap />} />
 
   </Routes>
   <ScrollToTop />

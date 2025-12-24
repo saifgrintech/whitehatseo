@@ -57,6 +57,7 @@ const Footer = () => {
                                         <li><Link to='/'>Home</Link></li>
                                         <li><Link to='/about'>About Us</Link></li>
                                         <li><Link to='/services'>Services</Link></li>
+                                        <li><Link to='/portfolio'>Portfolio</Link></li>
                                         <li><Link to='/blog'>Latest News</Link></li>
                                     </ul>
                                 </div>
@@ -66,12 +67,13 @@ const Footer = () => {
                         <div className='col-lg-3 col-sm-6 mb-4'>
                             <div className='d-flex justify-content-lg-center'>
                                 <div className='footer-section'>
-                                    <h3>Support</h3>
+                                    <h3>Other Links</h3>
                                     <ul className='p-0'>
                                         <li><Link to='/faqs' >FAQs</Link></li>
                                         <li><Link to='/privacy-policy' >Privacy Policy</Link></li>
                                         <li><Link to='/terms-conditions' >Terms & Conditions</Link></li>
                                         <li><Link to='/contact' >Contact Us</Link></li>
+                                        <li><Link to='/sitemap' >Sitemap</Link></li>
                                     </ul> 
                                 </div>
                             </div>

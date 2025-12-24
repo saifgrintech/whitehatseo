@@ -59,7 +59,7 @@ const Allblogs = () => {
                     )}
                     {error && <p className="text-danger text-center">{error}</p>}
                     {!loading && !error && currentBlogs.map((blog) => (
-                        <div className='col-lg-4 col-md-6 mb-5 ' key={blog._id}>
+                        <div className='col-lg-4 col-md-6 mb-5' key={blog._id}>
                             <div className='single-blog h-100'>
                                 <img src={`/blogimg/${blog.image}`} className='img1' alt='blog' />
                                 <div className='content position-relative'>

@@ -90,8 +90,8 @@ const Contactpage = () => {
                 <div className='card border-0 h-100'>
                   <div className='contact-info'>
                     <i className="fa-solid fa-envelope mb-2"></i>
-                    <h3 className='py-2'>Mail Here</h3>
-                    <a href=''>
+                    <h3 className='py-2 fw-bold'>Mail Here</h3>
+                    <a target='_blank' href='mailto:info@whitehatseo.in'>
                       <p>info@whitehatseo.in</p>
                     </a>
                   </div>
@@ -101,7 +101,7 @@ const Contactpage = () => {
                 <div className='card border-0 h-100'>
                   <div className='contact-info'>
                     <i className="fa-solid fa-location-dot mb-2"></i>
-                    <h3 className='py-2'>Visit Here</h3>
+                    <h3 className='py-2 fw-bold'>Visit Here</h3>
                     <p>A-818, 8th Floor, Bestech Business Tower, Mohali, Punjab 160062</p>
                   </div>
                 </div>
@@ -110,8 +110,8 @@ const Contactpage = () => {
                 <div className='card border-0 h-100'>
                   <div className='contact-info'>
                     <i className="fa-solid fa-phone mb-2"></i>
-                    <h3 className='py-2'>Call Here</h3>
-                    <a href=''>
+                    <h3 className='py-2 fw-bold'>Call Here</h3>
+                    <a target='_blank' href='tel:+91-9418960274'>
                       <p>+91-9418960274</p>
                     </a>
                   </div>
@@ -123,7 +123,7 @@ const Contactpage = () => {
 
 
 
-        <div className='contact-area'>
+        {/* <div className='contact-area'>
 
           <div className='container'>
 
@@ -133,7 +133,7 @@ const Contactpage = () => {
               <p>Anything On your Mind. We’ll Be Glad To Assist You!</p>
             </div>
           </div>
-        </div>
+        </div> */}
 
 
 

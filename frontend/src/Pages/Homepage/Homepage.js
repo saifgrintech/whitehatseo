@@ -10,6 +10,9 @@ import Navbar from '../../Components/Navbar'
 import Footer from '../../Components/Footer'
 import Readytotalk from '../../Components/Readytotalk'
 import { Helmet } from 'react-helmet-async';
+import ClientVideo from './ClientVideo';
+import CaseStudySlider from './CaseStudySlider';
+import Testimonials from '../Testimonials/Testimonials';
 
 
 const BASE_URL = process.env.REACT_APP_URL;
@@ -61,6 +64,9 @@ const Homepage = () => {
                 <Cards />
                 <Homesection />
                 <Features />
+                <CaseStudySlider />
+                 <Testimonials />
+
                 <Readytotalk />
                 <div className='mt-5 pt-5 blogs'>
                     <div className='col-lg-6 col-md-8 mx-auto d-flex flex-column align-items-center justify-content-center '>
@@ -96,6 +102,7 @@ const Homepage = () => {
                     </div>
 
                 </div>
+                <ClientVideo />
                 <Footer />
 
 

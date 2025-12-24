@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 // import { useAuth } from '../store/auth';
 
 
@@ -52,25 +52,72 @@ const Navbar = () => {
 
         <div className="collapse navbar-collapse me-4" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to="/">Home</Link>
+           <li className="nav-item">
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive ? "nav-link active" : "nav-link"
+                }
+              >
+                Home
+              </NavLink>
             </li>
+
             <li className="nav-item">
-              <Link className="nav-link " aria-current="page" to="/about">About</Link>
+              <NavLink
+                to="/about"
+                className={({ isActive }) =>
+                  isActive ? "nav-link active" : "nav-link"
+                }
+              >
+                About
+              </NavLink>
             </li>
-              <li className="nav-item">
-                <Link className="nav-link " aria-current="page" to="/services">Services</Link>
-              </li>
-                      
+
             <li className="nav-item">
-              <Link className="nav-link " aria-current="page" to="/blog">Blog</Link>
+              <NavLink
+                to="/services"
+                className={({ isActive }) =>
+                  isActive ? "nav-link active" : "nav-link"
+                }
+              >
+                Services
+              </NavLink>
             </li>
+
             <li className="nav-item">
-              <Link className="nav-link " aria-current="page" to="/faqs">FAQs</Link>
+              <NavLink
+                to="/portfolio"
+                className={({ isActive }) =>
+                  isActive ? "nav-link active" : "nav-link"
+                }
+              >
+                Portfolio
+              </NavLink>
             </li>
-              <li className="nav-item">
-                <Link className="nav-link " aria-current="page" to="/contact">Contact</Link>
-              </li>
+
+            <li className="nav-item">
+              <NavLink
+                to="/blog"
+                className={({ isActive }) =>
+                  isActive ? "nav-link active" : "nav-link"
+                }
+              >
+                Blog
+              </NavLink>
+            </li>
+
+            <li className="nav-item">
+              <NavLink
+                to="/contact"
+                className={({ isActive }) =>
+                  isActive ? "nav-link active" : "nav-link"
+                }
+              >
+                Contact
+              </NavLink>
+            </li>
+
           </ul>
         </div>
           <div className='other-option d-none d-lg-block'>

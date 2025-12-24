@@ -6,7 +6,7 @@ import Usersslider from "../../Components/Usersslider";
 import Section3 from "../../Components/Section3";
 
 import Plans from "../../Components/Plans";
-import Testimonials from "../Testimonials/Testimonials";
+// import Testimonials from "../Testimonials/Testimonials";
 
 const Features = () => {
 
@@ -143,6 +143,11 @@ const Features = () => {
         </div>
       </div>
 
+      <Plans />
+
+      <Section3 />
+
+
       <div className="team-section">
 
         <div className="box2  d-flex flex-column align-items-center justify-content-center">
@@ -185,9 +190,8 @@ const Features = () => {
       </div>
 
 
-      <Section3 />
 
-      <div className="works">
+      <div className="works d-none">
         <div className="box d-flex flex-column align-items-center justify-content-center">
           <h2>Our Recent Works</h2>
           <div className='bar'></div>
@@ -223,9 +227,7 @@ const Features = () => {
         </div>
       </div>
 
-      <Plans />
 
-      <Testimonials />
 
     </>
   );

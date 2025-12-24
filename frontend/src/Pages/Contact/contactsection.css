@@ -25,18 +25,26 @@
  .contact-section{
   margin: 54px 0;
  }
+  .contact-section .card {
+    box-shadow: 0 2px 48px 0 rgba(0, 0, 0, .08);
+    background: #fff;
+   background-color: #0d96de;color: #fff;
+  }
+  .contact-section .card:hover{background-color: #fff; color: #000;}
+  .contact-section .card:hover a{color: #000 !important; }
+  .contact-section .card:hover p{color: #000 !important; }
   .contact-section .contact-info {
     text-align: center;
     transition: .4s;
-    box-shadow: 0 2px 48px 0 rgba(0, 0, 0, .08);
-    background: #fff;
+    /* box-shadow: 0 2px 48px 0 rgba(0, 0, 0, .08);
+    background: #fff; */
     padding: 50px 25px;
   }
-.contact-section a{
+.contact-section a, .contact-section p{
     text-decoration: none;
-   
+    color: #fff !important;
 }
-
+.contact-section a:hover{text-decoration: underline;}
 .contact-section .contact-info:hover {
     transform: translateY(-10px);
 }
@@ -68,10 +76,10 @@
     width: 65px;
     height: 65px;
     line-height: 62px;
-    background: #f7fafd;
+    background: #c679e3;
     border-radius: 50%;
     font-size: 30px;
-    color: #0d96de;
+    color: #fff;
     transition: .4s;
   }
 
@@ -97,7 +105,7 @@
   }
 
 
-           /* CONTACT SECTION2 */
+ /* CONTACT SECTION2 */
 
 
   .contact-section2 .contactus-img img{
@@ -141,3 +149,86 @@
   color: #0d96de;
   text-decoration: underline;
 }
+
+
+
+
+/*---------- 23-12-25 -----------*/
+
+
+/* .contact-wrapper {
+  background: #0d96de;
+} */
+
+.contact-box {
+  background: transparent;
+  border-radius: 14px;
+}
+
+.contact-form-card {
+  background: #fff;
+  padding: 40px;
+  border-radius: 14px 0 0 14px;
+}
+
+.contact-form-card label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.contact-form-card .form-control {
+  height: 48px;
+  border-radius: 6px;
+}
+
+.contact-form-card textarea.form-control {
+  height: auto;
+}
+
+.btn-submit {
+  background: #0d96de;
+  color: #fff;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.btn-submit:hover {
+  background: #0d96de;
+}
+
+.contact-info-card {
+  background: #fff;
+  padding: 40px;
+  height: 100%;
+  border-radius: 0 14px 14px 0;
+}
+
+.contact-info-card h4 {
+  font-weight: 700;
+}
+
+.contact-info-card hr {
+  width: 60px;
+  height: 3px;
+  background: #c679e3;
+  border: none;
+  margin: 5px 0 25px;
+  opacity: 1;
+}
+
+.contact-info-card h6 {
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.contact-info-card p {
+  margin-bottom: 0;
+  color: #333;
+}
+
+.contact-form-card .btn-purple1{background-color: #c679e3; color: #fff;}
+.contact-info-card a{color: #0d96de;}
+.contact-info-card a:hover{color: #c679e3;}

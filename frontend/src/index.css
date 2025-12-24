@@ -11,7 +11,8 @@ body, html {
 .min_height{
   min-height: 80vh;
 }
-
+.text-theme{color: #0d96de;}
+.bg-theme{background-color: #0d96de;}
 .page_not_found {padding-top: 100px;}
 
 #website-navbar1{ .navbar-toggler{background:#fff} }
@@ -50,6 +51,11 @@ body, html {
 
 .navbar .nav-link-active {
   color: #4a6f8a;
+}
+
+.nav-link.active {
+  color: #0d96de !important;
+  font-weight: 600;
 }
 
 /* .navbar-expand-lg .collapse {
@@ -1350,6 +1356,9 @@ body, html {
   .features-section .input {padding: 30px 20px!important;}
   /* .pricing-features ul{padding-left: 0;} */
   .plans .pricing-features li {list-style: none;color: #6084a4!important;margin-bottom: 12px;font-weight: 400;font-size: 14px!important;}
+  .plans .plan_button{background-color: #0d96de; border-color:#0d96de;}
+  .plans .plan_button:hover{background-color: #0d96de; border-color:#0d96de;}
+  .plans .plan_button:active{background-color: #0d96de; border-color:#0d96de;}
   .feedback .swiper-slide .card .d-flex{justify-content: center;}
   .navbar .btn-purple1{border: 0!important;}
   .navbar .btn-purple2:hover{transform: translateY(0px)!important;}

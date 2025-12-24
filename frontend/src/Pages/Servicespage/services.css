@@ -68,6 +68,8 @@ visibility: visible;
 }
 
 /*------Service Single------------*/
+.service_single form h2 {  font-size: 26px; font-weight: 600;}
+.service_single form .submit_btn { height: 55px;}
 .service_single form .card-body{ padding: 30px 30px;}
 .service_single form .form-select{font-size: 14px; height: 40px; border-radius: 6px; color: gray;}
 .service_single form textarea{font-size: 14px; height: 80px; background-color: #fff; border-radius: 6px;}

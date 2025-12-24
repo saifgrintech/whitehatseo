@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import axios from "axios";
 import ReCAPTCHA from 'react-google-recaptcha';
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const BASE_URL = process.env.REACT_APP_URL;
+const WEBSITE_URL = process.env.REACT_APP_FRONTEND;
 
 const Contactsection = () => {
 
@@ -68,7 +69,7 @@ const Contactsection = () => {
 
   return (
     <>
-      <div className="contact-section2 contact_us_form pb-5">
+      <div className="contact-section2 contact_us_form pb-5 d-none">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">
@@ -172,7 +173,7 @@ const Contactsection = () => {
 
                   <div className="col-lg-12 mb-4">
                     <ReCAPTCHA
-                      sitekey="6LcWqYUqAAAAAGwQ1O-ZBoVlQOM5XPgpYJJ4TcE4"  // Replace with your site key
+                      sitekey="6LcWqYUqAAAAAGwQ1O-ZBoVlQOM5XPgpYJJ4TcE4"  
                       onChange={handleCaptchaChange}
                     />
                   </div>
@@ -206,6 +207,192 @@ const Contactsection = () => {
           </div>
         </div>
       </div>
+
+      <div className="contact-wrapper ">
+         <div className="users">
+               <div className="users-animation">
+
+            <div className="user-animation1">
+                <img src={`${WEBSITE_URL}/homeimages/user-animation1.png`} className='circle3' alt='moon' />
+
+            </div>
+
+
+            <div className="user-animation2">
+                <img src={`${WEBSITE_URL}/homeimages/user-animation2.svg`} className='circle' alt='circle' />
+
+            </div>
+
+            <div className="user-animation3">
+                <img src={`${WEBSITE_URL}/homeimages/user-animation3.svg`} className='circle' alt='circle' />
+
+            </div>
+
+            <div className="user-animation4">
+                <img src={`${WEBSITE_URL}/homeimages/user-animation4.svg`} className='user-triangle' alt='triangle' />
+
+            </div>
+
+            <div className="user-animation5">
+                <img src={`${WEBSITE_URL}/homeimages/user-animation5.png`} className='user-design' alt='zig-zag' />
+            </div>
+
+            <div className="user-animation6">
+                <img src={`${WEBSITE_URL}/homeimages/user-animation6.svg`} className='user-triangle2' alt='triangle' />
+            </div>
+
+            <div className="user-animation7">
+                <img src={`${WEBSITE_URL}/homeimages/user-animation7.svg`} className='user-triangle3' alt='triangle' />
+            </div>
+
+            <div className="user-animation8">
+                <img src={`${WEBSITE_URL}/homeimages/user-animation8.svg`} className='user-cross' alt='cross' />
+            </div>
+
+              </div>  
+            <div className="container">
+              <div className="contact-box">
+                <div className="row g-0">
+
+                  {/* LEFT FORM */}
+                  <div className="col-lg-8">
+                    <div className="contact-form-card text-start">
+                      <h2 className="mb-4 fw-bold">Let's Discuss Your Project</h2>
+
+                      <form onSubmit={handleSubmit}>
+                        <div className="row">
+
+                          <div className="col-md-6 mb-3">
+                            <label>First name</label>
+                            <input
+                              type="text"
+                              name="firstName"
+                              className="form-control"
+                              value={formData.firstName}
+                              onChange={handleChange}
+                              required
+                              minLength={3}
+                            />
+                          </div>
+
+                          <div className="col-md-6 mb-3">
+                            <label>Last name</label>
+                            <input
+                              type="text"
+                              name="lastName"
+                              className="form-control"
+                              value={formData.lastName}
+                              onChange={handleChange}
+                              required
+                            />
+                          </div>
+
+                          <div className="col-md-6 mb-3">
+                            <label>Email </label>
+                            <input
+                              type="email"
+                              name="email"
+                              className="form-control"
+                              value={formData.email}
+                              onChange={handleChange}
+                              required
+                            />
+                          </div>
+
+                          <div className="col-md-6 mb-3">
+                            <label>Phone number </label>
+                            <input
+                              type="tel"
+                              name="phone"
+                              className="form-control"
+                              value={formData.phone}
+                              onChange={handleChange}
+                              pattern="^\d{0,11}$"
+                              required
+                            />
+                          </div>
+
+                          <div className="col-md-12 mb-3">
+                            <label>Subject </label>
+                            <input
+                              type="text"
+                              name="subject"
+                              className="form-control"
+                              value={formData.subject}
+                              onChange={handleChange}
+                              required
+                            />
+                          </div>
+
+                          <div className="col-md-12 mb-3">
+                            <label>Write your message </label>
+                            <textarea
+                              name="message"
+                              rows="4"
+                              className="form-control"
+                              value={formData.message}
+                              onChange={handleChange}
+                              required
+                            />
+                          </div>
+
+                          <div className="col-md-12 mb-3">
+                            <ReCAPTCHA
+                              sitekey="6LcWqYUqAAAAAGwQ1O-ZBoVlQOM5XPgpYJJ4TcE4"
+                              onChange={handleCaptchaChange}
+                            />
+                          </div>
+
+                          <div className="col-md-12">
+                            <button
+                            className="btn-purple1"
+                            type="submit"
+                            disabled={loading}
+                          >
+                            {loading ? "Sending..." : "SEND MESSAGE"}
+                          </button>
+                          </div>
+
+                          {error && (
+                            <p className="text-danger mt-3">{error}</p>
+                          )}
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+
+                  {/* RIGHT INFO */}
+                  <div className="col-lg-4">
+                    <div className="contact-info-card text-start">
+                      <h4>Hate Filling out Forms?</h4>
+                      <hr />
+
+                      <h6>Request a Quote</h6>
+                      <Link target="_blank" to="mailto:info@whitehatseo.in" >info@whitehatseo.in</Link>
+
+
+                      <h6>Call</h6>
+                      <Link target="_blank" to="tel:+91-9418960274"> +91-9418960274</Link>
+
+                      <h6>Whatsapp</h6>
+                        <a
+                          href="https://wa.me/919418960274"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          +91-9418960274
+                        </a>
+
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+         </div>
+      </div>
+
+
     </>
   );
 };
