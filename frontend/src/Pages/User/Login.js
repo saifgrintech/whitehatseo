@@ -97,13 +97,13 @@ const Login = () => {
               />
             </div>
 
-            <div className='mb-3'>
+            {/* <div className='mb-3'>
               <p>
                 <a href=''>Forgot Password</a>
               </p>
-            </div>
+            </div> */}
 
-            <button type='submit' className='btn btn-primary'>LOGIN</button>
+            <button type='submit' className='btn btn-primary mt-3'>LOGIN</button>
           </form>
 
           <div className='foot'>

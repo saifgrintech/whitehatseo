@@ -96,7 +96,7 @@ const Servicessection = () => {
                 <div className='services-section py-5'>
                     <div className='container'>
                         <h2 className='text-center mb-5'>We provide the necessary services to you</h2>
-                        <div className='row align-items-center justify-content-center'>
+                        <div className='row justify-content-center'>
                             {loading && (
                                 <div className="spinner-grow text-primary" role="status">
                                 <span className="visually-hidden">Loading...</span>
@@ -110,7 +110,7 @@ const Servicessection = () => {
                                         <img src={`/serviceimg/${service.image}`} className='img1' alt={service.title} />
                                         <h3><Link to={`/services/${service.slug}`}>{service.title}</Link></h3>
                                         {/* <p dangerouslySetInnerHTML={{ __html : service.description}}/> */}
-                                        <p>{stripHtmlTags(service.description)}</p>
+                                        <p className='m-0'>{stripHtmlTags(service.description)}</p>
                                     </div>
                                 </div>
                             ))}

@@ -418,130 +418,51 @@ const ServiceSingle = () => {
               <div className="col-lg-6 mx-auto">
                 {images.length > 0 ? <img className="w-100" src={`/singleserviceimg/${images[0]}`} alt="service_img" /> : <img src={`${WEBSITE_URL}/homeimages/service.png`} className='w-100' alt="service_img" />}
               </div>
-              <div className="col-12 mt-5">
-                <div className="row">
-                  <div className="col-lg-6 col-md-6 py-3">
-                    <div className="card position-relative">
-                      <div className="d-flex flex-column ">
-                        <div className="icons">
-                          <i className="fa-solid fa-gear icons-inner"></i>
-                        </div>
 
-                        <div className="input">
-                          <Link className="card-title">
-                            Set Clear Objectives
-                          </Link>
-                          <p className="card-text mt-2">
-                            Define your SMO goals, such as increasing brand awareness, driving website traffic, or improving customer engagement. Establish specific and measurable objectives to guide your SMO efforts.
-                          </p>
+              {/* Features */}
+             <div className="col-12 mt-5">
+              <div className="row">
+                {data?.features &&
+                  data.features
+                    .filter(
+                      (feature) =>
+                        feature.featureIcon?.trim() !== "" &&
+                        feature.featureTitle?.trim() !== "" &&
+                        feature.featureDesc?.trim() !== ""
+                    )
+                    .map((feature, index) => (
+                      <div className="col-lg-6 col-md-6 py-3" key={feature._id || index}>
+                        <div className="card position-relative h-100">
+                          <div className="d-flex flex-column">
+                            
+                            <div className={`icons ${index % 2 !== 0 ? "icons2" : ""}`}>
+                              <i className={`${feature.featureIcon} icons-inner`}></i>
+                            </div>
+
+                            <div className="input">
+                              <Link className="card-title">
+                                {feature.featureTitle}
+                              </Link>
+                              <p className="card-text mt-2">
+                                {feature.featureDesc}
+                              </p>
+                            </div>
+
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </div>
-
-                  <div className="col-lg-6 col-md-6 py-3">
-                    <div className="card position-relative">
-                      <div className="d-flex flex-column">
-                        <div className="icons">
-                          <i className="fa-solid fa-envelope icons-inner"></i>
-                        </div>
-
-                        <div className="input">
-                          <Link className="card-title">
-                            Optimize Profiles
-                          </Link>
-                          <p className="card-text mt-2">
-                            Add relevant keywords, concise descriptions, and consistent branding to your social media profiles to make them more effective. Improving online professionalism and enhancing your professional reputation.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="col-lg-6 col-md-6 py-3">
-                    <div className="card position-relative">
-                      <div className="d-flex flex-column">
-                        <div className="icons2">
-                          <i className="fa-solid fa-border-none icons-inner"></i>
-                        </div>
-
-                        <div className="input">
-                          <Link className="card-title">
-                            Content Strategy
-                          </Link>
-                          <p className="card-text mt-2">
-                            Develop a content strategy that is in line with your goals and appeals to your target audience.Create engaging and shareable content, including articles, videos, infographics, and images.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="col-lg-6 col-md-6 py-3">
-                    <div className="card position-relative">
-                      <div className="d-flex flex-column">
-                        <div className="icons2">
-                          <i className="fa-solid fa-circle-info icons-inner"></i>
-                        </div>
-
-                        <div className="input">
-                          <Link className="card-title">
-                            Hashtags and Keywords
-                          </Link>
-                          <p className="card-text mt-2">
-                            When posting on social media, do your research and include pertinent hashtags and phrases. By doing this, you can reach a larger audience and improve the discoverability of your material.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="col-lg-6 col-md-6 py-3">
-                    <div className="card position-relative">
-                      <div className="d-flex flex-column">
-                        <div className="icons3">
-                          <i className="fa-solid fa-cube icons-inner"></i>
-                        </div>
-
-                        <div className="input">
-                          <Link className="card-title">
-                            Identify Target Audience
-                          </Link>
-                          <p className="card-text mt-2">
-                            Actively interact with your audience by answering their questions, comments, and messages. Four levels of segmentation that can help define your business's primary target audience, Geographic, demographic, psychographic and behavioral.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="col-lg-6 col-md-6 py-3">
-                    <div className="card position-relative">
-                      <div className="d-flex flex-column">
-                        <div className="icons3">
-                          <i className="fa-regular fa-bell icons-inner"></i>
-                        </div>
-
-                        <div className="input">
-                          <Link className="card-title">
-                            Engage with Your Audience
-                          </Link>
-                          <p className="card-text mt-2">
-                            Actively interact with your audience by replying to their comments, mails, and mentions. Promote debate, pose inquiries, and express gratitude for user-generated content that is relevant to your brand.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                    ))}
               </div>
+            </div>
+
+
             </div>
 
           </div>
         </div>
 
         <div className="service_details ">
-          <div className=" works">
+          <div className=" works p-0">
             <div className="container">
               {/* <div className="d-flex flex-column align-items-center justify-content-center mb-4">
                 <h2 className="">Our Works</h2>

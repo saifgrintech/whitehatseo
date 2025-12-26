@@ -708,7 +708,8 @@
   /* width: auto !important; */
   width: 140px;
   height: 140px;
-  object-fit: contain;
+  /* object-fit: contain; */
+  object-fit: cover;
 }
 
 .team-section .team-member .img-large {

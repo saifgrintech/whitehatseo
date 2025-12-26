@@ -153,7 +153,7 @@ function App() {
     <Route path="/digital-marketing" element={<DigitalMarketingPlan />} />
     <Route path="/link-building" element={<LinkBuildingPlan />} />
      
-     {/* <Route path="/sitemap" element={<Sitemap />} /> */}
+     <Route path="/sitemap" element={<Sitemap />} />
 
   </Routes>
   <ScrollToTop />
