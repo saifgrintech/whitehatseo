@@ -3,7 +3,6 @@ import Navbar from "../../Components/Navbar";
 import Footer from "../../Components/Footer";
 import Readytotalk from "../../Components/Readytotalk";
 import Testimonials from "../Testimonials/Testimonials";
-import PortfolioSlider from "../Portfolio/PortfolioSlider";
 
 import "./plans.css";
 
@@ -15,7 +14,7 @@ const PPCPlan = () => {
       <Navbar />
 
       {/* HERO SECTION */}
-      <div className="container3">
+      <section className="container3">
         <div className="header">
           <div className="box">
             <div className="container">
@@ -94,7 +93,86 @@ const PPCPlan = () => {
 
           </div>
         </div>
-      </div>
+      </section>
+
+      <section className="seo-plan-section  inner_padding">
+        <div className="container">
+          <h2 className="fw-bold text-center">Our PPC Packages</h2>
+          <p className="section-subtitle text-center">
+            Management fees only. Ad spend is paid directly to Google, Meta & other platforms.
+          </p>
+
+          <div className="row g-4 mt-4">
+
+            {/* BASIC PPC */}
+            <div className="col-lg-4 col-md-6">
+              <div className="seo-plan-card h-100">
+                <h3 className="plan-title">Basic PPC</h3>
+                <p className="plan-price">$100 /month</p>
+
+                <ul className="plan-features">
+                  <li>Campaign setup & basic optimization</li>
+                  <li>Keyword research</li>
+                  <li>Ad creation (text ads)</li>
+                  <li>1–2 platforms (Google Search)</li>
+                  <li>Monthly performance reporting</li>
+                  <li>Ideal for small budgets & testing</li>
+                </ul>
+
+                <Link to="/contact" className="plan-btn">
+                 Let's connect
+                </Link>
+              </div>
+            </div>
+
+            {/* STANDARD PPC */}
+            <div className="col-lg-4 col-md-6">
+              <div className="seo-plan-card highlight-plan h-100">
+                <div className="popular-plan">Most Popular</div>
+                <h3 className="plan-title">Standard PPC</h3>
+                <p className="plan-price">$150 – $180 /month</p>
+
+                <ul className="plan-features">
+                  <li>All Basic PPC features</li>
+                  <li>Advanced targeting & bidding strategies</li>
+                  <li>A/B testing of ads</li>
+                  <li>Multi-platform ads (Search, Display, Remarketing)</li>
+                  <li>Weekly optimizations</li>
+                  <li>Conversion tracking setup</li>
+                </ul>
+
+                <Link to="/contact" className="plan-btn">
+                  Let's connect
+                </Link>
+              </div>
+            </div>
+
+            {/* PREMIUM PPC */}
+            <div className="col-lg-4 col-md-12">
+              <div className="seo-plan-card h-100">
+                <h3 className="plan-title">Premium PPC</h3>
+                <p className="plan-price">$250 – $300 /month</p>
+
+                <ul className="plan-features">
+                  <li>All Standard PPC features</li>
+                  <li>Full-funnel campaign strategy</li>
+                  <li>Custom creatives & landing pages</li>
+                  <li>Dedicated PPC account manager</li>
+                  <li>Advanced analytics & ROI optimization</li>
+                  <li>Best for high-volume & eCommerce brands</li>
+                </ul>
+
+                <Link to="/contact" className="plan-btn">
+                  Let's connect
+                </Link>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
 
       {/* CTA STRIP */}
       <section className="ready-to-talk position-relative">
@@ -110,7 +188,7 @@ const PPCPlan = () => {
             className="btn-purple1"
             style={{ textDecoration: "none" }}
           >
-            Hire PPC Expert
+            Book a free Consultation
           </Link>
         </div>
       </section>
@@ -171,7 +249,7 @@ const PPCPlan = () => {
               </p>
 
               <Link to="/contact" className="btn-purple1">
-                Let’s Scale Ads
+                Let’s Talk With Expert
               </Link>
             </div>
 
@@ -239,7 +317,7 @@ const PPCPlan = () => {
       </section>
 
       {/* FAQ */}
-      <section className="py-5">
+      <section className="inner_padding">
         <div className="container">
           <h2 className="text-center fw-bold mb-5">
             FAQs For <span className="text-theme">PPC Services</span>
@@ -248,7 +326,7 @@ const PPCPlan = () => {
           <div className="row">
             {[1, 2].map((col) => (
               <div className="col-md-6" key={col}>
-                <div className="accordion bg-transparent">
+                <div className="accordion p-0 bg-transparent">
                   {[
                     "Is PPC suitable for my business?",
                     "How fast can I see results?",

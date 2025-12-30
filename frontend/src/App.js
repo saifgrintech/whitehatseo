@@ -70,6 +70,8 @@ import PPCPlan from './Pages/Plans/PPCPlan';
 import DigitalMarketingPlan from './Pages/Plans/DigitalMarketingPlan';
 import LinkBuildingPlan from './Pages/Plans/LinkBuildingPlan';
 import Sitemap from './Pages/Sitemap/Sitemap';
+import LocalSEO from './Pages/Plans/LocalSEO';
+import OurPlans from './Pages/Plans/OurPlans';
 
 function App() {
 
@@ -88,7 +90,7 @@ function App() {
     <Route path="/contact" element={<Contactpage />} />
     <Route path="/blog" element={<Blogpage />} />
     <Route path="/blog/:slug" element={<SingleBlog />} />
-    <Route path="/portfolio" element={<SEOportfolio />} />
+    <Route path="/case-studies" element={<SEOportfolio />} />
     <Route path="/faqs" element={<Faq />} />
     <Route path="/terms-conditions" element={<TermsAndConditions />} />
     <Route path="/privacy-policy" element={<Policy />} />
@@ -102,6 +104,7 @@ function App() {
     {/* <Route path="/cancel" element={<StripeFailed />} /> */}
     <Route path="/thank-you" element={<ThankYou />} />
     <Route path="*" element={<PageNotFound />} />
+    <Route path="/plans" element={<OurPlans />} />
     
     
     {/* Protected Dashboard Pages */}
@@ -152,6 +155,7 @@ function App() {
     <Route path="/pay-per-click" element={<PPCPlan />} />
     <Route path="/digital-marketing" element={<DigitalMarketingPlan />} />
     <Route path="/link-building" element={<LinkBuildingPlan />} />
+    <Route path="/local-seo" element={<LocalSEO />} />
      
      <Route path="/sitemap" element={<Sitemap />} />
 

@@ -101,73 +101,7 @@ const Homesection = () => {
             </div>
 
             <div className="col-lg-5 offset-xl-1 text-center position-relative">
-              {/* <div className="section-img position-relative">
-                <img
-                  src="homeimages/table.section-bar.png"
-                  className="img1"
-                  alt="cloud"
-                />
-                <img
-                  src="homeimages/cup.section-bar.png"
-                  className="img2"
-                  alt="table"
-                />
-                <img
-                  src="homeimages/box.section-bar.png"
-                  className="img3"
-                  alt="box"
-                />
-                <img
-                  src="homeimages/book-self.png"
-                  className="img4"
-                  alt="book-self"
-                />
-                <img
-                  src="homeimages/wifi.section-bar.png"
-                  className="img5"
-                  alt="wifi"
-                />
-                <img
-                  src="homeimages/tissue.section-bar.png"
-                  className="img6"
-                  alt="tissue"
-                />
-                <img
-                  src="homeimages/cloud.section-bar.png"
-                  className="img7"
-                  alt="cloud"
-                />
-                <img
-                  src="homeimages/monitor.section-bar.png"
-                  className="img8"
-                  alt="monitor"
-                />
-                <img
-                  src="homeimages/flower.section-bar.png"
-                  className="img9"
-                  alt="flower"
-                />
-                <img
-                  src="homeimages/chair.section-bar.png"
-                  className="img10"
-                  alt="chair"
-                />
-                <img
-                  src="homeimages/water.section-bar.png"
-                  className="img11"
-                  alt="waterbottle"
-                />
-                <img
-                  src="homeimages/mug.section-bar.png"
-                  className="img12"
-                  alt="mug"
-                />
-                <img
-                  src="homeimages/headphone.section-bar.png"
-                  className="img13"
-                  alt="headphone"
-                />
-              </div> */}
+              
               <img className="" src="/homeimages/seo-graph.png" alt="" />
 
               <div className="rotating-img">
@@ -178,13 +112,7 @@ const Homesection = () => {
                 />
               </div>
 
-              {/* <div className="section-fullimg1">
-                <img
-                  src="frontendImg/section-fullimg1.png"
-                  className="img1 w-100"
-                  alt="full"
-                />
-              </div> */}
+             
             </div>
           </div>
         </div>

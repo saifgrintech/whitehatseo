@@ -148,7 +148,7 @@ const ServiceSingle = () => {
                     {loading ? (<p>Loading..</p>) : error ? (<p className="text-danger">Error: {error}</p>) : (
                       <>
                         <h1 className="text-start">{data.heading}</h1>
-                        <div className="blog_content text-start" dangerouslySetInnerHTML={{ __html: serviceContent }}></div>
+                        <div className="blog_content text-start" style={{fontSize:"14px"}} dangerouslySetInnerHTML={{ __html: serviceContent }}></div>
 
                       </>
                     )}
@@ -342,13 +342,13 @@ const ServiceSingle = () => {
                   />
                 </div>
 
-                <div className="all-animation2">
+                {/* <div className="all-animation2">
                   <img
                     src={`${WEBSITE_URL}/all-animations/all-animation2.svg`}
                     className="cross-img"
                     alt="cross"
                   />
-                </div>
+                </div> */}
 
                 <div className="all-animation3">
                   <img

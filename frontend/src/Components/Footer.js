@@ -33,16 +33,47 @@ const Footer = () => {
                                     <Link to='/'>
                                     <img src={`${WEBSITE_URL}/images/white_logo.png`} style={{ width: "130px" }} alt='logo'></img>
                                     </Link>
-                                    <p className='mt-3 px-3'> We work with a passion of taking challenges and creating new ones in advertising sector.</p>
-                                    <div className='footer-social   m-0'>
-                                        <div className='d-flex justify-content-start ms-xl-2'>
-                                            <Link to="https://www.facebook.com/people/WhitehatSeo/100094138745677/" target="_blank" ><i className='fa-brands fa-facebook me-2'></i></Link>
-                                            <Link to="https://twitter.com/WhitehatSeo_" target="_blank" ><i className='fa-brands fa-twitter me-2'></i></Link>
-                                            <Link to="https://www.instagram.com/whitehatseo_/" target="_blank" ><i className='fa-brands fa-instagram me-2'></i></Link>
-                                            <Link to="https://www.linkedin.com/company/www.whitehatseo.in/" target="_blank" ><i className='fa-brands fa-linkedin me-2'></i></Link>
+                                    <p className='mt-3 px-3'> We help brands grow through smart strategies, data-driven decisions, and measurable results.</p>
+                                    <div className="footer-social m-0">
+                                    <div className="d-flex justify-content-start ms-xl-2">
+                                        <a
+                                        href="https://www.facebook.com/people/WhitehatSeo/100094138745677/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        aria-label="WhiteHatSEO Facebook"
+                                        >
+                                        <i className="fa-brands fa-facebook me-2"></i>
+                                        </a>
 
-                                        </div>
+                                        <a
+                                        href="https://twitter.com/WhitehatSeo_"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        aria-label="WhiteHatSEO Twitter"
+                                        >
+                                        <i className="fa-brands fa-twitter me-2"></i>
+                                        </a>
+
+                                        <a
+                                        href="https://www.instagram.com/whitehatseo_/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        aria-label="WhiteHatSEO Instagram"
+                                        >
+                                        <i className="fa-brands fa-instagram me-2"></i>
+                                        </a>
+
+                                        <a
+                                        href="https://www.linkedin.com/company/www.whitehatseo.in/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        aria-label="WhiteHatSEO LinkedIn"
+                                        >
+                                        <i className="fa-brands fa-linkedin me-2"></i>
+                                        </a>
                                     </div>
+                                    </div>
+
                                 </div>
                                 
 
@@ -52,13 +83,16 @@ const Footer = () => {
                         <div className='col-lg-3 col-sm-6 mb-4'>
                             <div className='d-flex justify-content-lg-center'>
                                 <div className='footer-section text-align-center'>
-                                    <h3>Quick Links</h3>
+                                    <h4>Quick Links</h4>
                                     <ul className='p-0'>
-                                        <li><Link to='/'>Home</Link></li>
                                         <li><Link to='/about'>About Us</Link></li>
-                                        <li><Link to='/services'>Services</Link></li>
-                                        <li><Link to='/portfolio'>Portfolio</Link></li>
+                                        <li><Link to='/case-studies'>Case Studies</Link></li>
+                                        <li><Link to='/contact' >Contact Us</Link></li>
                                         <li><Link to='/blog'>Latest News</Link></li>
+                                        <li><Link to='/plans'>Plans</Link></li>
+                                         <li><Link to='/faqs' >FAQs</Link></li>
+                                        <li><Link to='/sitemap' >Sitemap</Link></li>
+
                                     </ul>
                                 </div>
                             </div>
@@ -67,13 +101,16 @@ const Footer = () => {
                         <div className='col-lg-3 col-sm-6 mb-4'>
                             <div className='d-flex justify-content-lg-center'>
                                 <div className='footer-section'>
-                                    <h3>Other Links</h3>
+                                    <h4>Services</h4>
                                     <ul className='p-0'>
-                                        <li><Link to='/faqs' >FAQs</Link></li>
-                                        <li><Link to='/privacy-policy' >Privacy Policy</Link></li>
-                                        <li><Link to='/terms-conditions' >Terms & Conditions</Link></li>
-                                        <li><Link to='/contact' >Contact Us</Link></li>
-                                        <li><Link to='/sitemap' >Sitemap</Link></li>
+                                       
+                                        <li><Link to='/search-engine-optimization' >SEO </Link></li>
+                                        <li><Link to='/local-seo' >Local SEO </Link></li>
+                                        <li><Link to='/digital-marketing' >Digital Marketing </Link></li>
+                                        <li><Link to='/pay-per-click' >PPC </Link></li>
+                                        <li><Link to='/services/google-analytics-4-ga4' >GA4 </Link></li>
+                                        <li><Link to='/services/google-tag-manager-gtm' >GTM </Link></li>
+                                        <li><Link to='/services/google-my-business-gmb' >GMB </Link></li>
                                     </ul> 
                                 </div>
                             </div>
@@ -82,10 +119,10 @@ const Footer = () => {
                         <div className='col-lg-3 col-sm-6 mb-4'>
                             <div className='d-flex justify-content-lg-center'>
                                 <div className='footer-section'>
-                                    <h3>Address</h3>
+                                    <h4>Address</h4>
                                     <ul className='p-0'>
                                         <li>A-818, 8th Floor, Bestech Business Tower, Mohali, Punjab 160062</li>
-                                        <li>Email : <Link target='_blank' to="mailto:info@whitehatseo.in"> info@whitehatseo.in</Link></li>
+                                        <li>Email : <a href="mailto:info@whitehatseo.in" target="_blank" rel="noopener noreferrer" > info@whitehatseo.in </a></li>
                                         <li>Phone : <Link to="tel:+917018168269" >+91-7018168269</Link></li>
                                     </ul>
 
@@ -98,7 +135,15 @@ const Footer = () => {
                     <div className='footer-copyright border-top'>
                         <div className='container'>
                             <div className='content py-3'>
-                                <p className="m-0"> © Copyright {new Date().getFullYear()} Whitehatseo | All Rights Reserved. </p>
+                                <div className="d-flex justify-content-between flex-wrap ">
+                                  <p className="m-0"> © Copyright {new Date().getFullYear()} Whitehatseo | All Rights Reserved. </p>
+                                    <div className="d-flex gap-3">
+                                         <li><Link to='/privacy-policy' >Privacy Policy</Link></li>
+                                        <li><Link to='/terms-conditions' >Terms & Conditions</Link></li>
+                                    </div>
+                                </div>
+
+
 
                             </div>
                         </div>

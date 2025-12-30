@@ -48,74 +48,68 @@ const Login = () => {
       <div className='login_page'>
         <Navbar />
 
-        <div className='container3'>
-          <div className='header'>
-            <div className='box'>
-              <h2>Login</h2>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className='container6'>
-        <div className='single-form'>
-          <div className='form-details'>
-            <img src="images/white_logo.png" style={{width:"100px"}} alt="logo" />
-            <p>
-              Don't have an account yet?
-              <a href='/signup' className='m-2'>Sign Up</a>
-            </p>
-          </div>
-
-          {alert.show && (
-            <div className={`alert alert-${alert.type} alert-dismissible fade show`} role="alert">
-              {alert.message}
-              <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>
-          )}
-
-          <form onSubmit={handleSubmit}>
-            <div className='headings mb-3'>
-              <label className='form-label'>Email</label>
-              <input
-                type='email'
-                className='form-control'
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-              />
-            </div>
-
-            <div className='headings mb-3'>
-              <label className='form-label'>Password</label>
-              <input
-                type='password'
-                className='form-control'
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                required
-              />
-            </div>
-
-            {/* <div className='mb-3'>
+        <div className='container6 pt-5'>
+          <div className='single-form mt-4'>
+            <div className='form-details'>
+              <img src="images/white_logo.png" style={{width:"100px"}} alt="logo" />
               <p>
-                <a href=''>Forgot Password</a>
+                Don't have an account yet?
+                <a href='/signup' className='m-2'>Sign Up</a>
               </p>
-            </div> */}
+            </div>
 
-            <button type='submit' className='btn btn-primary mt-3'>LOGIN</button>
-          </form>
+            {alert.show && (
+              <div className={`alert alert-${alert.type} alert-dismissible fade show`} role="alert">
+                {alert.message}
+                <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+            )}
 
-          <div className='foot'>
-            <p>Or connect with</p>
-            <ul className='social-items2'>
-              <a href='https://www.gmail.com/'><i className="fa-regular fa-envelope me-3"></i></a>
-              <a href='https://www.facebook.com/'><i className="fa-brands fa-facebook-f me-3"></i></a>
-              <a href='https://www.twitter.com/'><i className="fa-brands fa-twitter me-3"></i></a>
-            </ul>
+            <form onSubmit={handleSubmit}>
+              <div className='headings mb-3'>
+                <label className='form-label'>Email</label>
+                <input
+                  type='email'
+                  className='form-control'
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                />
+              </div>
+
+              <div className='headings mb-3'>
+                <label className='form-label'>Password</label>
+                <input
+                  type='password'
+                  className='form-control'
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  required
+                />
+              </div>
+
+              {/* <div className='mb-3'>
+                <p>
+                  <a href=''>Forgot Password</a>
+                </p>
+              </div> */}
+
+              <button type='submit' className='btn btn-primary mt-3'>LOGIN</button>
+            </form>
+
+            <div className='foot'>
+              <p>Or connect with</p>
+              <ul className='social-items2'>
+                <a href='https://www.gmail.com/'><i className="fa-regular fa-envelope me-3"></i></a>
+                <a href='https://www.facebook.com/'><i className="fa-brands fa-facebook-f me-3"></i></a>
+                <a href='https://www.twitter.com/'><i className="fa-brands fa-twitter me-3"></i></a>
+              </ul>
+            </div>
           </div>
         </div>
+       
       </div>
+
 
       <Footer />
     </>

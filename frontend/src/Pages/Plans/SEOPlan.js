@@ -5,7 +5,6 @@ import Readytotalk from "../../Components/Readytotalk";
 import Testimonials from "../Testimonials/Testimonials";
 
 import './plans.css'
-import PortfolioSlider from "../Portfolio/PortfolioSlider";
 import CaseStudySlider from "../Homepage/CaseStudySlider";
 const WEBSITE_URL = process.env.REACT_APP_FRONTEND;
 
@@ -15,7 +14,7 @@ const SEOPlan = () => {
       <Navbar />
 
       {/* HERO SECTION */}
-      <div className="container3">
+      <section className="container3">
         <div className="header">
           <div className="box">
             <div className="container">
@@ -75,7 +74,87 @@ const SEOPlan = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
+
+       <section className="seo-plan-section inner_padding">
+        <div className="container">
+          <h2 className="fw-bold text-center">Our SEO Packages</h2>
+          <p className="section-subtitle text-center">
+            Flexible SEO plans designed for startups, growing businesses & enterprises
+          </p>
+
+          <div className="row g-4 mt-4">
+            
+            {/* BASIC PLAN */}
+            <div className="col-lg-4 col-md-6">
+              <div className="seo-plan-card h-100">
+                <h3 className="plan-title">Basic SEO</h3>
+                <p className="plan-price">$100 – $120 /month</p>
+
+                <ul className="plan-features">
+                  <li>Keyword research (up to 15 terms)</li>
+                  <li>On-page optimization (10–15 pages)</li>
+                  <li>Basic technical SEO audit</li>
+                  <li>2–4 content pieces per month</li>
+                  <li>Monthly / Quarterly reporting</li>
+                  <li>Ideal for small businesses starting out</li>
+                </ul>
+
+                <Link to="/contact" className="plan-btn">
+                  Let's connect
+                </Link>
+              </div>
+            </div>
+
+            {/* STANDARD PLAN */}
+            <div className="col-lg-4 col-md-6">
+              <div className="seo-plan-card highlight-plan h-100">
+                <div className="popular-plan">Most Popular</div>
+                <h3 className="plan-title">Standard SEO</h3>
+                <p className="plan-price">$150 – $180 /month</p>
+
+                <ul className="plan-features">
+                  <li>Advanced keyword research (up to 30 terms)</li>
+                  <li>On-page & technical optimization</li>
+                  <li>4–8 content pieces per month</li>
+                  <li>Basic link building</li>
+                  <li>Competitor analysis</li>
+                  <li>Bi-weekly performance reporting</li>
+                  <li>Best for growing businesses</li>
+                </ul>
+
+                <Link to="/contact" className="plan-btn">
+                  Let's connect
+                </Link>
+              </div>
+            </div>
+
+            {/* PREMIUM PLAN */}
+            <div className="col-lg-4 col-md-12">
+              <div className="seo-plan-card h-100">
+                <h3 className="plan-title">Premium SEO</h3>
+                <p className="plan-price">$250 – $300 /month</p>
+
+                <ul className="plan-features">
+                  <li>Comprehensive SEO strategy (100+ keywords)</li>
+                  <li>Full technical audits & fixes</li>
+                  <li>8+ high-quality content pieces monthly</li>
+                  <li>Aggressive link building campaigns</li>
+                  <li>Dedicated account manager</li>
+                  <li>Advanced analytics & quarterly strategy reviews</li>
+                  <li>Ideal for competitive & enterprise markets</li>
+                </ul>
+
+                <Link to="/contact" className="plan-btn">
+                  Let's connect
+                </Link>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
 
       {/* CTA STRIP */}
       <section className="ready-to-talk position-relative">
@@ -85,7 +164,7 @@ const SEOPlan = () => {
             <span className="">SEO Strategies</span> <br/> Deliver Measurable Growth!
           </h2>
           <Link to="/contact" className="btn-purple1 " style={{textDecoration:"none"}}>
-            Hire Our SEO Specialist
+            Book a free Consultation
           </Link>
         </div>
       </section>
@@ -150,7 +229,7 @@ const SEOPlan = () => {
                 </p>
 
                 <Link to="/contact" className="btn-purple1 ">
-                Let’s Talk SEO
+                Let’s Talk With Expert
                 </Link>
             </div>
 
@@ -264,7 +343,7 @@ const SEOPlan = () => {
 
 
       {/* FAQ */}
-      <section className="py-5 ">
+      <section className="inner_padding ">
         <div className="container">
           <h2 className="text-center fw-bold mb-5">
             FAQs For <span className="text-theme">SEO Services</span>

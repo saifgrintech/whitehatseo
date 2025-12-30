@@ -17,7 +17,7 @@ const NewDashboard = () => {
           <div className="container-fluid">
             <h2 className="text-center py-4 mt-4">Dashboard </h2>
            <div className="mt-5 col-lg-4 col-11 mx-auto">
-           <img className="w-100" src={`${WEBSITE_URL}/welcome.png`} />
+           <img className="w-100" src={`${WEBSITE_URL}/welcome.png`} alt="welcome-image" />
            </div>
           </div>
         </div>

@@ -12,7 +12,7 @@ const Sitemap = () => {
       <div className="container3">
           <div className="header">
             <div className="box">
-              <h1>Sitemap</h1>
+              <h1 className='mb-0'>Sitemap</h1>
               <div className="all-animation">
 
                 <div className="all-animation1">
@@ -75,7 +75,7 @@ const Sitemap = () => {
                   <li><Link to="/">Home</Link></li>
                   <li><Link to="/about">About Us</Link></li>
                   <li><Link to="/services">Services</Link></li>
-                  <li><Link to="/portfolio">Portfolio</Link></li>
+                  <li><Link to="/case-studies">Case Studies</Link></li>
                   <li><Link to="/contact">Contact</Link></li>
                 </ul>
               </div>
@@ -91,7 +91,7 @@ const Sitemap = () => {
                   <li><Link to="/search-engine-optimization">SEO Plan</Link></li>
                   <li><Link to="/pay-per-click">PPC Plan</Link></li>
                   <li><Link to="/digital-marketing">Digital Marketing Plan</Link></li>
-                  <li><Link to="/link-building">Link Building Plan</Link></li>
+                  <li><Link to="/local-seo">Local SEO Plan</Link></li>
                 </ul>
               </div>
             </div>

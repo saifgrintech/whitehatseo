@@ -45,30 +45,30 @@ const Plans = () => {
     {
       id: 1,
       title: "SEO",
-      price: 200,
+      price: "150-300",
       icon: "fa-solid fa-magnifying-glass",
       slug: "search-engine-optimization",
     },
     {
       id: 2,
       title: "PPC",
-      price: 200,
+      price: "100-300",
       icon: "fa-solid fa-hand-pointer",
       slug: "pay-per-click",
     },
     {
       id: 3,
       title: "Digital Marketing",
-      price: 200,
+      price: "150-300",
       icon: "fa-solid fa-bullhorn",
       slug: "digital-marketing",
     },
     {
       id: 4,
-      title: "Link Building",
-      price: 200,
-      icon: "fa-solid fa-link",
-      slug: "link-building",
+      title: "Local SEO",
+      price: "120-250",
+      icon: "fa-solid fa-location-dot",
+      slug: "local-seo",
     },
   ];
 
@@ -103,7 +103,7 @@ const Plans = () => {
         
               <div className="row g-4 justify-content-center">
                 {plansData.map((plan) => (
-                  <div className="col-lg-3 col-md-4 col-sm-6" key={plan.id}>
+                  <div className="col-xl-3 col-md-6 col-lg-4 col-sm-6" key={plan.id}>
                     <div className="card text-center h-100 border-0 shadow-sm rounded-4 plan-card">
                       <div className="card-body d-flex flex-column" style={{boxShadow:"none"}}>
                         {/* Icon */}

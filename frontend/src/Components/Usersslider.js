@@ -67,7 +67,7 @@ export default () => {
             <div className='card position-relative border-0 '>
               <div className='d-flex align-items-center card-body'>
                 <div className='img'>
-                  <img src={`${WEBSITE_URL}/testimg/${item.image}`} className='img1' alt='member' />
+                  <img src={`${WEBSITE_URL}/testimg/${item.image}`} className='img1' alt={item.title} />
                 </div>
 
                 <div className='input2'>

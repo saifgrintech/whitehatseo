@@ -8,7 +8,7 @@ const Banner = () => {
       <div className='container'>
         <div className='row'>
           <div className='col-lg-5' >
-            <h1>Secure IT Solutions for a more secure environment</h1>
+            <h1 className='mb-0'>Secure IT Solutions for a more secure environment</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida</p>
             <div className="d-flex btn-hover" >
               <button className="banner-btn">Get Started</button>

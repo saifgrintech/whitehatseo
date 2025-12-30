@@ -14,23 +14,68 @@ const stripHtmlTags = (str) => {
 };
 
 
+const PRIORITY_ORDER = [
+  "search-engine-optimization",
+  "local-seo",
+  "social-media-marketing",
+  "pay-per-click-ppc",
+  "digital-marketing",
+  "google-tag-manager-gtm",
+  "google-analytics-4-ga4",
+  "google-my-business-gmb"
+];
+
+
+
 const Servicessection = () => {
     const [services, setServices] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
     useEffect(() => {
+        // const fetchServices = async () => {
+        //     try {
+        //         const response = await axios.get(`${BASE_URL}/services`);
+        //         setServices(response.data);
+        //     } catch (error) {
+        //         setError('Failed to fetch services');
+        //         console.error('Error fetching services:', error);
+        //     } finally {
+        //         setLoading(false);
+        //     }
+        // };
+
         const fetchServices = async () => {
             try {
                 const response = await axios.get(`${BASE_URL}/services`);
-                setServices(response.data);
+
+                const sortedServices = [...response.data].sort((a, b) => {
+                const indexA = PRIORITY_ORDER.indexOf(a.slug);
+                const indexB = PRIORITY_ORDER.indexOf(b.slug);
+
+                // both not in priority → keep original order
+                if (indexA === -1 && indexB === -1) return 0;
+
+                // only A is priority
+                if (indexA !== -1 && indexB === -1) return -1;
+
+                // only B is priority
+                if (indexA === -1 && indexB !== -1) return 1;
+
+                // both are priority → compare order
+                return indexA - indexB;
+                });
+
+                setServices(sortedServices);
             } catch (error) {
                 setError('Failed to fetch services');
                 console.error('Error fetching services:', error);
             } finally {
                 setLoading(false);
             }
-        };
+         };
+
+
 
         fetchServices();
     }, []);
@@ -42,7 +87,7 @@ const Servicessection = () => {
                 <div className='container3'>
                     <div className='header'>
                         <div className='box'>
-                            <h1>Services</h1>
+                            <h1 className='mb-0'>Services</h1>
 
                             <div className="all-animation">
 

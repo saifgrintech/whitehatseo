@@ -60,7 +60,7 @@ const ClientVideo = () => {
                   <img src={item.thumbnail} alt={item.name} />
                   <button
                     className="play-btn"
-                    onClick={() => window.open(item.videoUrl, "_blank")}
+                    onClick={() => window.open(item.videoUrl, "_blank", "noopener,noreferrer")}
                   >
                     <i className="fa-solid fa-play"></i>
                   </button>

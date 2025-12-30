@@ -70,7 +70,7 @@ const Homepage = () => {
                 <Readytotalk />
                 <div className='mt-5 pt-5 blogs'>
                     <div className='col-lg-6 col-md-8 mx-auto d-flex flex-column align-items-center justify-content-center '>
-                        <h2>The News From Our Blog</h2>
+                        <h2 >The News From Our Blog</h2>
                         <div className='bar'></div>
                         <p className='text-center'>Explore Whitehatseo's latest blog posts for insights, strategies, and expert tips to enhance your SEO and digital marketing efforts.</p>
                     </div>
@@ -88,11 +88,10 @@ const Homepage = () => {
                                                 <i className="fa-solid fa-calendar-days"></i>
                                                 {new Date(blog.createdAt).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: '2-digit' })}
                                             </div>
-                                            <Link target="_blank" to={`single-blog/${blog.slug}`}> <h3>{blog.heading}</h3></Link>
+                                            <Link to={`blog/${blog.slug}`}> <h3 className='text-truncate' >{blog.heading}</h3></Link>
                                             <p>By Admin</p>
                                             <p dangerouslySetInnerHTML={{ __html: blog.description }} />
-                                            <Link
-                                                target="_blank" to={`single-blog/${blog.slug}`}
+                                            <Link to={`single-blog/${blog.slug}`}
                                             >Read more <i className='fa-solid fa-arrow-right'></i></Link>
                                         </div>
                                     </div>

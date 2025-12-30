@@ -168,7 +168,7 @@ const SEOportfolio = () => {
                     <a
                         href={item.website}
                         target="_blank"
-                        rel="noreferrer"
+                        rel="noopener noreferrer"
                         className="fw-semibold text-decoration-none"
                     >
                         {item.website}

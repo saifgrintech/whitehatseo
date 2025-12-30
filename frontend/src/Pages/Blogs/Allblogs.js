@@ -67,7 +67,7 @@ const Allblogs = () => {
                                         <i className="fa-solid fa-calendar-days"></i>
                                         {new Date(blog.createdAt).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: '2-digit' })}
                                     </div>
-                                   <Link to={`/blog/${blog.slug}`}> <h3>{blog.heading}</h3></Link>
+                                   <Link to={`/blog/${blog.slug}`}> <h3  className='text-truncate' >{blog.heading}</h3></Link>
                                     <p>By Admin</p>
                                     <p dangerouslySetInnerHTML={{ __html: stripHtmlTags( blog.description) }} />
                                     <Link to={`/blog/${blog.slug}`}>Read more <i className='fa-solid fa-arrow-right'></i></Link>

@@ -15,7 +15,7 @@ const DigitalMarketingPlan = () => {
       <Navbar />
 
       {/* HERO SECTION */}
-      <div className="container3">
+      <section className="container3">
         <div className="header">
           <div className="box">
             <div className="container">
@@ -94,7 +94,87 @@ const DigitalMarketingPlan = () => {
 
           </div>
         </div>
-      </div>
+      </section>
+
+      <section className="seo-plan-section inner_padding">
+        <div className="container">
+          <h2 className="fw-bold text-center">Digital Media Promotion Packages</h2>
+          <p className="section-subtitle text-center">
+            Build brand awareness, engagement & growth across social media platforms
+          </p>
+
+          <div className="row g-4 mt-4">
+
+            {/* BASIC DIGITAL MARKETING */}
+            <div className="col-lg-4 col-md-6">
+              <div className="seo-plan-card h-100">
+                <h3 className="plan-title">Basic Digital Media</h3>
+                <p className="plan-price">$150 /month</p>
+
+                <ul className="plan-features">
+                  <li>8–12 posts per month</li>
+                  <li>2–3 platforms (Meta, LinkedIn)</li>
+                  <li>Basic content creation</li>
+                  <li>Post scheduling & publishing</li>
+                  <li>Limited community engagement</li>
+                  <li>Monthly performance reports</li>
+                  <li>Organic focus with light ad support</li>
+                </ul>
+
+                <Link to="/contact" className="plan-btn">
+                  Let's connect
+                </Link>
+              </div>
+            </div>
+
+            {/* STANDARD DIGITAL MARKETING */}
+            <div className="col-lg-4 col-md-6">
+              <div className="seo-plan-card highlight-plan h-100">
+                <div className="popular-plan">Most Popular</div>
+                <h3 className="plan-title">Standard Digital Media</h3>
+                <p className="plan-price">$180 – $220 /month</p>
+
+                <ul className="plan-features">
+                  <li>15–25 posts per month</li>
+                  <li>3–4 platforms (Meta, LinkedIn, TikTok)</li>
+                  <li>Custom graphics & video content</li>
+                  <li>Paid ads management</li>
+                  <li>Audience targeting & A/B testing</li>
+                  <li>Engagement & growth strategy</li>
+                  <li>Bi-weekly performance reports</li>
+                </ul>
+
+                <Link to="/contact" className="plan-btn">
+                  Let's connect
+                </Link>
+              </div>
+            </div>
+
+            {/* PREMIUM DIGITAL MARKETING */}
+            <div className="col-lg-4 col-md-12">
+              <div className="seo-plan-card h-100">
+                <h3 className="plan-title">Premium Digital Media</h3>
+                <p className="plan-price">$250 – $300 /month</p>
+
+                <ul className="plan-features">
+                  <li>25+ posts/month (all major platforms Meta, Linkedin, Tiktok etc. )</li>
+                  <li>Advanced content (Reels, Stories, Videos)</li>
+                  <li>Full paid ad campaigns & retargeting</li>
+                  <li>Influencer outreach (optional)</li>
+                  <li>Dedicated account manager</li>
+                  <li>Detailed analytics & insights</li>
+                </ul>
+
+                <Link to="/contact" className="plan-btn">
+                  Let's connect
+                </Link>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
 
       {/* CTA STRIP */}
       <section className="ready-to-talk position-relative">
@@ -110,7 +190,7 @@ const DigitalMarketingPlan = () => {
             className="btn-purple1"
             style={{ textDecoration: "none" }}
           >
-            Hire Digital Marketing Expert
+            Book a free Consultation
           </Link>
         </div>
       </section>
@@ -171,7 +251,7 @@ const DigitalMarketingPlan = () => {
               </p>
 
               <Link to="/contact" className="btn-purple1">
-                Let’s Grow Your Brand
+               Let’s Talk With Expert
               </Link>
             </div>
 
@@ -209,40 +289,83 @@ const DigitalMarketingPlan = () => {
       </div> */}
 
       {/* STATS */}
-      <section className="py-5 stats-section">
-        <div className="container">
-          <div className="row text-center g-4">
+       <section className="py-5 stats-section">
+            <div className="users">
+               <div className="users-animation">
 
-            <div className="col-md-4">
-              <div className="stat-box">
-                <i className="fa-solid fa-calendar-check"></i>
-                <h2>9+</h2>
-                <p>Years of Expertise</p>
-              </div>
+            <div className="user-animation1">
+                <img src={`${WEBSITE_URL}/homeimages/user-animation1.png`} className='circle3' alt='moon' />
+
             </div>
 
-            <div className="col-md-4">
-              <div className="stat-box">
-                <i className="fa-solid fa-face-smile"></i>
-                <h2>96%</h2>
-                <p>Client Satisfaction</p>
-              </div>
+
+            <div className="user-animation2">
+                <img src={`${WEBSITE_URL}/homeimages/user-animation2.svg`} className='circle' alt='circle' />
+
             </div>
 
-            <div className="col-md-4">
-              <div className="stat-box">
-                <i className="fa-solid fa-briefcase"></i>
-                <h2>150+</h2>
-                <p>Successful Campaigns</p>
-              </div>
+            <div className="user-animation3">
+                <img src={`${WEBSITE_URL}/homeimages/user-animation3.svg`} className='circle' alt='circle' />
+
             </div>
 
-          </div>
-        </div>
-      </section>
+            <div className="user-animation4">
+                <img src={`${WEBSITE_URL}/homeimages/user-animation4.svg`} className='user-triangle' alt='triangle' />
+
+            </div>
+
+            <div className="user-animation5">
+                <img src={`${WEBSITE_URL}/homeimages/user-animation5.png`} className='user-design' alt='zig-zag' />
+            </div>
+
+            <div className="user-animation6">
+                <img src={`${WEBSITE_URL}/homeimages/user-animation6.svg`} className='user-triangle2' alt='triangle' />
+            </div>
+
+            <div className="user-animation7">
+                <img src={`${WEBSITE_URL}/homeimages/user-animation7.svg`} className='user-triangle3' alt='triangle' />
+            </div>
+
+            <div className="user-animation8">
+                <img src={`${WEBSITE_URL}/homeimages/user-animation8.svg`} className='user-cross' alt='cross' />
+            </div>
+
+              </div>     
+            <div className="container">
+                <div className="row text-center g-4">
+
+                <div className="col-md-4">
+                    <div className="stat-box">
+                    <i className="fa-solid fa-calendar-check"></i>
+                    <h2>5+</h2>
+                    <p>Years of Experience</p>
+                    </div>
+                </div>
+
+                <div className="col-md-4">
+                    <div className="stat-box">
+                    <i className="fa-solid fa-face-smile"></i>
+                    <h2>98%</h2>
+                    <p>Client Satisfaction</p>
+                    </div>
+                </div>
+
+                <div className="col-md-4">
+                    <div className="stat-box">
+                    <i className="fa-solid fa-briefcase"></i>
+                    <h2>100+</h2>
+                    <p>Projects Completed</p>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+            </div>
+        </section>
+
 
       {/* FAQ */}
-      <section className="py-5">
+      <section className="inner_padding">
         <div className="container">
           <h2 className="text-center fw-bold mb-5">
             FAQs For <span className="text-theme">Digital Marketing</span>
@@ -251,7 +374,7 @@ const DigitalMarketingPlan = () => {
           <div className="row">
             {[1, 2].map((col) => (
               <div className="col-md-6" key={col}>
-                <div className="accordion bg-transparent">
+                <div className="accordion p-0 bg-transparent">
                   {[
                     "What channels do you cover in digital marketing?",
                     "How soon can I see results?",

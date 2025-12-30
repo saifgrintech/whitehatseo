@@ -63,16 +63,10 @@ const Signup = () => {
       <div className='signup_page'>
         <Navbar />
 
-        <div className='container3'>
-          <div className='header'>
-            <div className='box'>
-              <h2>Sign Up</h2>
-            </div>
-          </div>
-        </div>
+   
 
-        <div className='container6'>
-          <div className='single-form'>
+        <div className='container6 pt-5'>
+          <div className='single-form mt-4'>
             <div className='form-details'>
               <img src="images/white_logo.png" style={{width:"100px"}} alt="logo" />
               <p>Create a new account</p>

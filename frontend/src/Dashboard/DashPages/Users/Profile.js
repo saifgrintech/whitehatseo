@@ -22,7 +22,7 @@ const Profile = () => {
                              <Link className='btn btn-warning btn-sm '>Edit<i className="fa-solid fa-pencil ms-2"></i></Link>
                              </div>
                                <div className='position-relative'>
-                               <img src="/image.png" className='w-100' style={{height:"350px", objectFit:"cover", borderRadius:"10px"}} alt="img" />
+                               <img src="/image.png" className='w-100' style={{height:"350px", objectFit:"cover", borderRadius:"10px"}} alt="profile-image" />
                               <img src="/team1.jpg"  className=' profile_img shadow'  alt="img" />
                                </div>
 

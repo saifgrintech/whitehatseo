@@ -27,7 +27,7 @@ const Contactpage = () => {
           <div className='container3'>
             <div className='header'>
               <div className='box'>
-                <h1>Contact Us</h1>
+                <h1 className='mb-0'>Contact Us</h1>
 
                 <div className="all-animation">
 
@@ -83,7 +83,7 @@ const Contactpage = () => {
 
 
 
-        <div className='container'>
+        {/* <div className='container'>
           <div className='contact-section'>
             <div className='row pb-5'>
               <div className="col-lg-4 col-md-6 col-sm-6 enquiry">
@@ -118,7 +118,7 @@ const Contactpage = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
 
 

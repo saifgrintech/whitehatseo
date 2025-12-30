@@ -41,7 +41,7 @@ const Aboutsection = () => {
         <div className="container3">
           <div className="header">
             <div className="box">
-              <h1>About Us</h1>
+              <h1 className='mb-0'>About Us</h1>
               <div className="all-animation">
 
                 <div className="all-animation1">
@@ -124,22 +124,25 @@ const Aboutsection = () => {
                 <div className="col-lg-4">
                   <div className="inner">
                     <h3>Our Mission</h3>
+                    <p>Our aim is to deliver remarkable digital marketing services, along with exceptional SEO and SMM services for our clients, to maximize brand value worldwide and reduce any signs of stagnant leads or organic traffic issues. Furthermore, our goal is always client satisfaction at heart - which drives everything we do.</p>
 
-                    <p>{about.mission}</p>
+                    {/* <p>{about.mission}</p> */}
                   </div>
                 </div>
 
                 <div className="col-lg-4">
                   <div className="inner">
                     <h3>Our Vision</h3>
-                    <p>{about.vision}</p>
+                    {/* <p>{about.vision}</p> */}
+                    <p>Our vision is to foster collaboration, success, and meaningful branding for businesses of all kinds. The core purpose of the company is providing clients and the business with tangible results; your success is of upmost importance.</p>
                   </div>
                 </div>
 
                 <div className="col-lg-4">
                   <div className="inner">
                     <h3>Our Value</h3>
-                    <p>{about.values}</p>
+                    <p>WhitehatSeo team utilizes cutting-edge strategies to increase website visibility, organic traffic and rank higher on search engines for our clients' benefit. This increases brand prestige, conversion rates and returns while staying ahead in technology advances. Our clients trust in us to exceed their expectations - make the switch today to learn how.</p>
+                    {/* <p>{about.values}</p> */}
                   </div>
                 </div>
               </div>
@@ -168,7 +171,7 @@ const Aboutsection = () => {
             <div className="col-sm-6 col-lg-4 col-xl-3 mb-4 mb-sm-0">
               <div className="card border-0">
               <div className="team-member">
-               <img src="/images/rohit.jpg" className="img img-large"  />
+               <img src="/images/rohit.jpg" alt="rohit" className="img img-large"  />
                 <div className="team-info">
                   <h5 className="member1-title m-0">Rohit Sharma</h5>
                   <p className="member1-text m-0">Senior Project Manager</p>
@@ -180,7 +183,7 @@ const Aboutsection = () => {
             <div className="col-sm-6 col-lg-4 col-xl-3 ">
               <div className="card border-0">
               <div className="team-member">
-               <img src="/images/arti.jpg" className="img img-large"  />
+               <img src="/images/arti.jpg" alt="arti" className="img img-large"  />
                 <div className="team-info">
                   <h5 className="member1-title m-0">Arti Mehta</h5>
                   <p className="member1-text m-0"> Project Manager</p>

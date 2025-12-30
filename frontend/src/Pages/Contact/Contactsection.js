@@ -209,48 +209,8 @@ const Contactsection = () => {
         </div>
       </div>
 
-      <div className="contact-wrapper ">
-         <div className="users">
-               <div className="users-animation">
-
-            <div className="user-animation1">
-                <img src={`${WEBSITE_URL}/homeimages/user-animation1.png`} className='circle3' alt='moon' />
-
-            </div>
-
-
-            <div className="user-animation2">
-                <img src={`${WEBSITE_URL}/homeimages/user-animation2.svg`} className='circle' alt='circle' />
-
-            </div>
-
-            <div className="user-animation3">
-                <img src={`${WEBSITE_URL}/homeimages/user-animation3.svg`} className='circle' alt='circle' />
-
-            </div>
-
-            <div className="user-animation4">
-                <img src={`${WEBSITE_URL}/homeimages/user-animation4.svg`} className='user-triangle' alt='triangle' />
-
-            </div>
-
-            <div className="user-animation5">
-                <img src={`${WEBSITE_URL}/homeimages/user-animation5.png`} className='user-design' alt='zig-zag' />
-            </div>
-
-            <div className="user-animation6">
-                <img src={`${WEBSITE_URL}/homeimages/user-animation6.svg`} className='user-triangle2' alt='triangle' />
-            </div>
-
-            <div className="user-animation7">
-                <img src={`${WEBSITE_URL}/homeimages/user-animation7.svg`} className='user-triangle3' alt='triangle' />
-            </div>
-
-            <div className="user-animation8">
-                <img src={`${WEBSITE_URL}/homeimages/user-animation8.svg`} className='user-cross' alt='cross' />
-            </div>
-
-              </div>  
+      <div className="contact-wrapper py-5">
+        
             <div className="container">
               <div className="contact-box">
                 <div className="row g-0">
@@ -367,7 +327,7 @@ const Contactsection = () => {
                           </button> */}
                           <button
                            type="submit"
-                           className="gradient-button"
+                           className="black-button mt-3"
                            disabled={loading}
                            >{loading ? "Sending..." : "SEND MESSAGE"}
                            </button>
@@ -388,7 +348,7 @@ const Contactsection = () => {
                       <hr />
 
                       <h6>Request a Quote</h6>
-                      <Link target="_blank" to="mailto:info@whitehatseo.in" >info@whitehatseo.in</Link>
+                      <Link target="_blank" rel="noopener noreferrer" to="mailto:info@whitehatseo.in" >info@whitehatseo.in</Link>
 
 
                       <h6>Call</h6>
@@ -403,13 +363,26 @@ const Contactsection = () => {
                           +91-7018168269
                         </a>
 
+                      <h6>Visit Here</h6>
+                      <p className="mb-3 text-white">A-818, 8th Floor, Bestech Business Tower, Mohali, Punjab 160062</p>
+
+                     <Link to="/plans" class="flash-banner">
+                      <div class="flash-banner-bg"></div>
+                      <div class="flash-text">
+                        <span class="sub-text">SEE OUR PLANS</span>
+                      </div>
+                      <div class="flash-lightning"></div>
+                    </Link>
+
+
+
+
                     </div>
                   </div>
 
                 </div>
               </div>
             </div>
-         </div>
       </div>
 
 

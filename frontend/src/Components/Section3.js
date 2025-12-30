@@ -61,7 +61,7 @@ const Section3 = () => {
             <div className=" btn-hover d-flex justify-content-center py-3 py-lg-0">
               <Link to='/contact' style={{textDecoration:"none"}}>
               {/* <button className="btn-purple1" type=""> Contact Us </button> */}
-              <button className="gradient-button" style={{width:"160px"}}>Contact Us</button>
+              <button className="gradient-button" style={{width:"160px"}}>Get Started</button>
               </Link>
             </div>
           </div>

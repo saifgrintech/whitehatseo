@@ -947,7 +947,7 @@
 
 .plans h2 {
   font-weight: 600;
-  font-size: 30px;
+  font-size: 28px;
   color: #0e314c;
 }
 .plans .price h2 {
@@ -1181,7 +1181,7 @@
 .users .feedback p {
   color: #6084a4;
   line-height: 1.8;
-  font-size: 15px;
+  font-size: 14px;
   max-width: 462px;
   text-align: start;
 }
@@ -1217,9 +1217,9 @@
   color: #0d96de;
 }
 
-.footer .footer-section h3 {
+.footer .footer-section h4 {
   font-size: 18px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   color: #0d96de;
   font-weight: 500;
 }
@@ -1305,14 +1305,14 @@ padding: 8px 8px;
 } */
 
 .footer-copyright p {
-  text-align: center;
   color: #0d96de !important;
   line-height: 1.8;
 }
 
 .footer-copyright a {
-  color: black;
+  color: #0d96de;
   text-decoration: none;
+  font-size: 13px;
 }
 
 .footer-copyright a:hover {
@@ -1921,7 +1921,7 @@ padding: 8px 8px;
   .faq_tabs li i {
     display: none !important;
   }
-  .footer .footer-section h3 {
+  .footer .footer-section h4 {
     margin-bottom: 20px;
   }
    .section-bar img{width: 70% !important;}
@@ -1975,7 +1975,7 @@ padding: 8px 8px;
 }
 
 @media (max-width: 767px) {
-  .footer .footer-section h3 {
+  .footer .footer-section h4 {
     margin-bottom: 15px;
   }
 }
@@ -2009,8 +2009,10 @@ padding: 8px 8px;
   .contact-section .enquiry {
     margin-top: 28px;
   }
+  .navbar-brand img{width: 100px !important;}
 }
 @media (max-width:375px){
   .team-section .team-info{margin: 20px 10px;}
+  .navbar-brand img{width: 80px !important;}
 }
 

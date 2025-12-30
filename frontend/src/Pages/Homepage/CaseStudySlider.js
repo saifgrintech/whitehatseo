@@ -131,7 +131,7 @@ const CaseStudySlider = () => {
                   </div>
 
                   <h4 className="project mb-3">
-                    Project : <Link to={item.website} target="_blank">{item.project}</Link>
+                    Project : <Link to={item.website} target="_blank" rel="noopener noreferrer" >{item.project}</Link>
                   </h4>
                  <div className="mb-3 d-flex align-items-baseline">
                      <h4 className="mb-0">Location :{""}</h4> <p className="m-0 ps-1">{item.location}</p>

@@ -140,7 +140,7 @@ const Faq = () => {
 
         <div className='container3'>
           <div className='box'>
-            <h1>FAQs</h1>
+            <h1 className='mb-0'>FAQs</h1>
 
             <div className="all-animation">
               <div className="all-animation1">

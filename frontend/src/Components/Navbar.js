@@ -1,4 +1,3 @@
-import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 // import { useAuth } from '../store/auth';
 
@@ -18,28 +17,11 @@ const Navbar = () => {
 
          <div className='other-option2 d-block d-lg-none ms-auto '>
             <Link to='/contact'>
-            <button className="btn-purple1 btn-hover" type="">Support</button>
+            <button className="btn-purple1 btn-hover" type="">Free consultation</button>
             </Link>
-            {/* { !isAuthenticated() ? (<Link to='/login'>
-            <button className="btn-purple2" type="">login</button>
-            </Link>) : null } */}
+          
           </div>
           
-
-         {/* <div className='d-block d-lg-none me-3'>
-         {isAuthenticated() && (
-                    <div className="dropdown user_dropdown">
-                        <button className="btn btn-secondary dropdown-toggle rounded-circle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i className='fa-regular fa-user'></i>
-                        </button>
-                        <ul className="dropdown-menu">
-                            <li><Link target='_blank' className="dropdown-item" to={`${WEBSITE_URL}/dashboard`}>Dashboard</Link></li>
-                            <li><Link className="dropdown-item" onClick={logout}>Logout</Link></li>
-                        </ul>
-                    </div>
-                )}
-         </div> */}
-        
       
           <button className="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 {/* <span className="navbar-toggler-icon"></span> */}
@@ -87,12 +69,23 @@ const Navbar = () => {
 
             <li className="nav-item">
               <NavLink
-                to="/portfolio"
+                to="/case-studies"
                 className={({ isActive }) =>
                   isActive ? "nav-link active" : "nav-link"
                 }
               >
-                Portfolio
+                Case Studies
+              </NavLink>
+            </li>
+
+            <li className="nav-item">
+              <NavLink
+                to="/plans"
+                className={({ isActive }) =>
+                  isActive ? "nav-link active" : "nav-link"
+                }
+              >
+                Plans
               </NavLink>
             </li>
 
@@ -122,37 +115,16 @@ const Navbar = () => {
         </div>
           <div className='other-option d-none d-lg-block'>
 
-            {/* <Link className="fa-solid fa-cart-shopping" to='cart'>
-              <span>0</span>
-            </Link> */}
 
               <Link to='/contact'>
-              <button className="btn-purple1 btn-hover" type="">Support</button>
+              <button className="btn-purple1 btn-hover" type="">Free Consultation</button>
               </Link>
 
-              {/* {!isAuthenticated() ? (
-                        <Link  to='/login'>
-                            <button className="btn-purple2" type="">Login</button>
-                        </Link>
-                    ) : null} */}
-
-            
+        
           
           </div>
           
-          {/* <div className='d-none d-lg-block'>
-          {isAuthenticated() && (
-                    <div className="dropdown user_dropdown">
-                        <button className="btn btn-secondary dropdown-toggle rounded-circle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i className='fa-regular fa-user'></i>
-                        </button>
-                        <ul className="dropdown-menu">
-                            <li><Link target='_blank' className="dropdown-item" to={`${WEBSITE_URL}/dashboard`}>Dashboard</Link></li>
-                            <li><Link className="dropdown-item" onClick={logout}>Logout</Link></li>
-                        </ul>
-                    </div>
-                )}
-          </div> */}
+        
          
 
 
