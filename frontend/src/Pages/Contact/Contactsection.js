@@ -366,10 +366,10 @@ const Contactsection = () => {
                       <h6>Visit Here</h6>
                       <p className="mb-3 text-white">A-818, 8th Floor, Bestech Business Tower, Mohali, Punjab 160062</p>
 
-                     <Link to="/plans" class="flash-banner">
+                     <Link to="/packages" class="flash-banner">
                       <div class="flash-banner-bg"></div>
                       <div class="flash-text">
-                        <span class="sub-text">SEE OUR PLANS</span>
+                        <span class="sub-text">SEE OUR PACKAGES</span>
                       </div>
                       <div class="flash-lightning"></div>
                     </Link>

@@ -87,7 +87,7 @@ const Servicessection = () => {
                 <div className='container3'>
                     <div className='header'>
                         <div className='box'>
-                            <h1 className='mb-0'>Services</h1>
+                            <h1 className='mb-0'>Our Services</h1>
 
                             <div className="all-animation">
 
@@ -140,7 +140,7 @@ const Servicessection = () => {
 
                 <div className='services-section py-5'>
                     <div className='container'>
-                        <h2 className='text-center mb-5'>We provide the necessary services to you</h2>
+                        <h4 className='text-center mb-5'>We provide the necessary services to you</h4>
                         <div className='row justify-content-center'>
                             {loading && (
                                 <div className="spinner-grow text-primary" role="status">
@@ -152,7 +152,7 @@ const Servicessection = () => {
                             {!loading && services.map((service) => (
                                 <div className='col-lg-4 col-sm-6 mb-4' key={service._id}>
                                     <div className='box h-100'>
-                                        <img src={`/serviceimg/${service.image}`} className='img1' alt={service.title} />
+                                        <img src={`/serviceimg/${service.image}`} className='img1 mb-3' alt={service.title} />
                                         <h3><Link to={`/services/${service.slug}`}>{service.title}</Link></h3>
                                         {/* <p dangerouslySetInnerHTML={{ __html : service.description}}/> */}
                                         <p className='m-0'>{stripHtmlTags(service.description)}</p>

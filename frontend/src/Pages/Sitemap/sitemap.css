@@ -28,7 +28,8 @@
 }
 
 .sitemap-box ul li a {
-  display: block;
+  display: flex;
+  align-items: baseline;
   position: relative;
   padding: 8px 12px;
   border-radius: 10px;
@@ -37,6 +38,7 @@
   font-weight: 500;
   transition: all 0.3s ease;
 }
+.sitemap-box  i{font-size: 14px;}
 
 .sitemap-box ul li a:hover {
   background: linear-gradient(90deg, #0d96de, #0872ac);
@@ -44,14 +46,14 @@
   transform: translateX(5px);
 }
 
-.sitemap-box ul li a::before {
+/* .sitemap-box ul li a::before {
   content: "→";
   margin-right: 8px;
   color: #0d96de;
   transition: transform 0.3s ease;
-}
+} */
 
-.sitemap-box ul li a:hover::before {
+/* .sitemap-box ul li a:hover::before {
   transform: translateX(5px);
   color: #fff;
-}
+} */

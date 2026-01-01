@@ -75,7 +75,7 @@ body, html {
   background-position: 200% 50%;
 
   padding: 12px 33px;
-  margin-right: 10px;
+  /* margin-right: 10px; */
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
@@ -157,6 +157,50 @@ body, html {
 .blogs a:hover {
   color: #0d96de;
 }
+
+
+/* Mega dropdown */
+.mega-dropdown .dropdown-menu {
+  width: 750px;
+  left: 65%;
+  transform: translateX(-37%);
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+  top: 35px;
+}
+.mega-dropdown .dropdown-menu .dropdown-item{margin: 0 !important; color: #000000d7; padding: 7px 0 0 0;}
+.mega-dropdown .dropdown-menu .dropdown-item.active{background-color: unset !important; color:#0d96de ;}
+.mega-dropdown .dropdown-toggle {padding: 0 !important;}
+
+/* Mobile full width */
+@media (max-width: 991px) {
+  .mega-dropdown .dropdown-menu {
+    width: 100%;
+    transform: none;
+    left: 0;
+    height: 275px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+  }
+}
+
+.mega-title {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #0d96de; 
+}
+
+.mega-menu .dropdown-item {
+  font-size: 14px;
+}
+
+.mega-menu .dropdown-item:hover {
+  background: transparent;
+  color: #0f99e2;
+}
+
 
 
 
@@ -1378,7 +1422,7 @@ body, html {
   .navbar-toggler:not(:disabled):not(.disabled) {cursor: pointer;}
   .navbar-toggler {position: relative;padding: 9px 10px;margin-top: 8px;margin-bottom: 8px;background-color: transparent;background-image: none;border: 1px solid #ddd;border-radius: 4px;}
   .sr-only {position: absolute;width: 1px;height: 1px;padding: 0;margin: -1px;overflow: hidden;clip: rect(0, 0, 0, 0);border: 0;}
-  .navbar-toggler .icon-bar {display: block;width: 22px;height: 2px;border-radius: 1px;background-color: #888;}
+  .navbar-toggler .icon-bar {display: block;width: 18px;height: 2px;border-radius: 1px;background-color: #888;}
   .navbar-toggler .icon-bar+.icon-bar {margin-top: 4px;}
   .features-section .card{padding: 10px;}
   .features-section .icons, .features-section .icons2, .features-section .icons3{margin: auto!important; padding: 20px; display: flex; justify-content: center; align-items: center; width: 55px!important; height: 55px!important;}
@@ -1400,6 +1444,7 @@ body, html {
 
 
   @media only screen and (max-width:767px){
+    .mega-dropdown .dropdown-menu .dropdown-item { padding:0;}
     .container3 .box h1{
       font-weight: 600 !important;
       font-size: 30px !important;
@@ -1430,7 +1475,7 @@ body, html {
     .main-banner .full-bannerimg1{margin-top: 20px;}
     .all-cards .card-body{text-align: center;}
     
-    .section-bar h2, .section-bar2 h2, .features-section h2, .team-section h2, .works h2, .plans h2, .users .section h2, .section3 .box h2 , .blogs h2{text-align: center;font-size: 20px!important;}
+    .section-bar h2, .section-bar2 h2, .features-section h2, .team-section h2, .works h2, .plans h2, .users .section h2, .section3 .box h2 , .blogs h2{text-align: center;font-size: 24px!important;}
     .bar{margin: 20px auto;}
     .section-bar p, .section-bar2 p{text-align: center;}
     .section3 .box h5{font-size: 16px;}
@@ -1549,6 +1594,7 @@ body, html {
     }
     .whatsapp-icon {height: 47px !important; width:47px !important; bottom: 110px !important;}
     .whatsapp-icon a{font-size: 25px !important;}
+    .section-bar h2, .section-bar2 h2, .features-section h2, .team-section h2, .works h2, .plans h2, .users .section h2, .section3 .box h2 , .blogs h2{text-align: center;font-size: 21px!important;}
   }
 
   @media only screen and (max-width:425px){

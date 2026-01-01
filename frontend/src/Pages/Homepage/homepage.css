@@ -565,6 +565,7 @@
   font-weight: 600;
   font-size: 30px;
   margin-top: 35px;
+  margin-bottom: 0px;
 }
 
 .features-section p {
@@ -574,7 +575,7 @@
 
 .features-section .box p {
   margin: 0 auto;
-  max-width: 550px;
+  max-width: 700px;
 }
 
 /* FOR GIVING ICONS COLOR */
@@ -958,7 +959,7 @@
 
 .plans .box4 p {
   margin: 0 auto;
-  max-width: 550px;
+  max-width: 700px;
   padding: 20px;
   color: #6084a4;
   font-size: 14px;
@@ -1141,6 +1142,7 @@
   font-weight: 600;
   font-size: 30px;
   color: #0e314c;
+  margin-bottom: 0;
 }
 .users .section p {
   margin: 0 auto;
@@ -1379,6 +1381,7 @@ padding: 8px 8px;
   padding-top: 35px;
   
 }
+.blogs .single-blog:hover{background-color: #fff;}
 .blogs .content:hover {
   color: #0d96de;
   transition: 0.5s;
@@ -1747,7 +1750,7 @@ padding: 8px 8px;
   /* padding: 35px; */
   border-radius: 16px;
 }
-.case-image{padding: 25px; background-color: #000; color: #fff; border-radius: 12px;}
+.case-image{padding: 25px; background-color: #000; color: #fff; border-radius: 12px; gap:20px;}
 .case-image img{min-height: 240px;}
 .case-content{padding: 25px; background-color: #000; color: #fff; border-radius: 12px;}
 .case-content h4 {
@@ -1853,7 +1856,11 @@ padding: 8px 8px;
 
 
 
+.service_single .ready-to-talk .btn-purple1 {
+  display: inline-block; margin-left: 0 !important;
+}
 
+.service_single .ready-to-talk h2{margin-bottom: 30px !important;}
 
 
 
@@ -1979,6 +1986,11 @@ padding: 8px 8px;
     margin-bottom: 15px;
   }
 }
+@media (max-width:600px){
+  .accordion{padding: 30px 20px;}
+  .accordion-header button{font-size: 15px;}
+  .accordion-body{font-size: 14px;}
+}
 
 @media (max-width: 425px) {
    .section-bar img{width: 100% !important;}
@@ -2010,7 +2022,9 @@ padding: 8px 8px;
     margin-top: 28px;
   }
   .navbar-brand img{width: 100px !important;}
+  .footer-copyright p {font-size: 13px !important;}
 }
+
 @media (max-width:375px){
   .team-section .team-info{margin: 20px 10px;}
   .navbar-brand img{width: 80px !important;}

@@ -70,8 +70,28 @@ import PPCPlan from './Pages/Plans/PPCPlan';
 import DigitalMarketingPlan from './Pages/Plans/DigitalMarketingPlan';
 import LinkBuildingPlan from './Pages/Plans/LinkBuildingPlan';
 import Sitemap from './Pages/Sitemap/Sitemap';
-import LocalSEO from './Pages/Plans/LocalSEO';
+import LocalSEO from './Pages/Plans/LocalSeoPlan';
 import OurPlans from './Pages/Plans/OurPlans';
+import SEOSingle from './Pages/ServiceSinglePages/SEOSingle';
+import LocalSeoSingle from './Pages/ServiceSinglePages/LocalSeoSingle';
+import LocalSeoPlan from './Pages/Plans/LocalSeoPlan';
+import SMMSingle from './Pages/ServiceSinglePages/SMMSingle';
+import PPCSingle from './Pages/ServiceSinglePages/PPCSingle';
+import DigitalMarketingSingle from './Pages/ServiceSinglePages/DigitalMarketingSingle';
+import GTMSingle from './Pages/ServiceSinglePages/GTMSingle';
+import GA4Single from './Pages/ServiceSinglePages/GA4Single';
+import GMBSingle from './Pages/ServiceSinglePages/GMBSingle';
+import EmailMarketingSingle from './Pages/ServiceSinglePages/EmailMarketingSingle';
+import BrandingSingle from './Pages/ServiceSinglePages/BrandingSingle';
+import MarketingResearchSingle from './Pages/ServiceSinglePages/MarketingResearchSingle';
+import SocialMediaSingle from './Pages/ServiceSinglePages/SMOSingle';
+import SMOSingle from './Pages/ServiceSinglePages/SMOSingle';
+import OffPageSeoSingle from './Pages/ServiceSinglePages/OffPageSeoSingle';
+import TechnicalSeoSingle from './Pages/ServiceSinglePages/TechnicalSeoSingle';
+import SEOAuditSingle from './Pages/ServiceSinglePages/SEOAuditSingle';
+import KeywordResearchSingle from './Pages/ServiceSinglePages/KeywordResearchSingle';
+import ContentMarketingSingle from './Pages/ServiceSinglePages/ContentMarketingSingle';
+import LinkBuildingSingle from './Pages/ServiceSinglePages/LinkBuildingSingle';
 
 function App() {
 
@@ -88,23 +108,43 @@ function App() {
     <Route path="/" element={<Homepage />} />
     <Route path="/about" element={<Aboutpage />} />
     <Route path="/contact" element={<Contactpage />} />
-    <Route path="/blog" element={<Blogpage />} />
+    <Route path="/blogs" element={<Blogpage />} />
     <Route path="/blog/:slug" element={<SingleBlog />} />
     <Route path="/case-studies" element={<SEOportfolio />} />
     <Route path="/faqs" element={<Faq />} />
     <Route path="/terms-conditions" element={<TermsAndConditions />} />
     <Route path="/privacy-policy" element={<Policy />} />
     <Route path="/services" element={<Servicespage />} />
-    <Route path="/services/:slug" element={<ServiceSingle />} />
+    {/* <Route path="/services/:slug" element={<ServiceSingle />} /> */}
     <Route path="/login" element={<Login />} />
-    <Route path="/signup" element={<Signup />} />
-    <Route path="/forgotpassword" element={<Forgotpassword />} />
+    {/* <Route path="/signup" element={<Signup />} /> */}
+    {/* <Route path="/forgotpassword" element={<Forgotpassword />} /> */}
     {/* <Route path="/shop" element={<Shopsection />} /> */}
     {/* <Route path="/success" element={<StripeSuccess />} /> */}
     {/* <Route path="/cancel" element={<StripeFailed />} /> */}
     <Route path="/thank-you" element={<ThankYou />} />
+    <Route path="/packages" element={<OurPlans />} />
     <Route path="*" element={<PageNotFound />} />
-    <Route path="/plans" element={<OurPlans />} />
+
+
+    <Route path="/services/search-engine-optimization" element={<SEOSingle />} />
+    <Route path="/services/local-seo" element={<LocalSeoSingle />} />
+    <Route path="/services/social-media-marketing" element={<SMMSingle />} />
+    <Route path="/services/pay-per-click-ppc" element={<PPCSingle />} />
+    <Route path="/services/digital-marketing" element={<DigitalMarketingSingle />} />
+    <Route path="/services/google-tag-manager-gtm" element={<GTMSingle />} />
+    <Route path="/services/google-analytics-4-ga4" element={<GA4Single />} />
+    <Route path="/services/google-my-business-gmb" element={<GMBSingle />} />
+    <Route path="/services/email-marketing" element={<EmailMarketingSingle />} />
+    <Route path="/services/branding" element={<BrandingSingle />} />
+    <Route path="/services/marketing-research" element={<MarketingResearchSingle />} />
+    <Route path="/services/social-media-optimization" element={<SMOSingle />} />
+    <Route path="/services/off-page-seo" element={<OffPageSeoSingle />} />
+    <Route path="/services/technical-seo" element={<TechnicalSeoSingle />} />
+    <Route path="/services/seo-audit" element={<SEOAuditSingle />} />
+    <Route path="/services/keyword-research" element={<KeywordResearchSingle />} />
+    <Route path="/services/content-marketing" element={<ContentMarketingSingle />} />
+    <Route path="/services/link-building" element={<LinkBuildingSingle />} />
     
     
     {/* Protected Dashboard Pages */}
@@ -151,11 +191,11 @@ function App() {
     <Route path="/add-faq" element={<ProtectedRoute element={AddFaq} />} />
     <Route path="/edit-faq/:id" element={<ProtectedRoute element={EditFaq} />} />
 
-    <Route path="/search-engine-optimization" element={<SEOPlan />} />
+    {/* <Route path="/search-engine-optimization" element={<SEOPlan />} />
     <Route path="/pay-per-click" element={<PPCPlan />} />
     <Route path="/digital-marketing" element={<DigitalMarketingPlan />} />
     <Route path="/link-building" element={<LinkBuildingPlan />} />
-    <Route path="/local-seo" element={<LocalSEO />} />
+    <Route path="/local-seo" element={<LocalSeoPlan />} /> */}
      
      <Route path="/sitemap" element={<Sitemap />} />
 

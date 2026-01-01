@@ -88,8 +88,8 @@ const Footer = () => {
                                         <li><Link to='/about'>About Us</Link></li>
                                         <li><Link to='/case-studies'>Case Studies</Link></li>
                                         <li><Link to='/contact' >Contact Us</Link></li>
-                                        <li><Link to='/blog'>Latest News</Link></li>
-                                        <li><Link to='/plans'>Plans</Link></li>
+                                        <li><Link to='/blogs'>Latest News</Link></li>
+                                        <li><Link to='/packages'>Packages</Link></li>
                                          <li><Link to='/faqs' >FAQs</Link></li>
                                         <li><Link to='/sitemap' >Sitemap</Link></li>
 
@@ -104,9 +104,9 @@ const Footer = () => {
                                     <h4>Services</h4>
                                     <ul className='p-0'>
                                        
-                                        <li><Link to='/search-engine-optimization' >SEO </Link></li>
-                                        <li><Link to='/local-seo' >Local SEO </Link></li>
-                                        <li><Link to='/digital-marketing' >Digital Marketing </Link></li>
+                                        <li><Link to='/services/search-engine-optimization' >SEO </Link></li>
+                                        <li><Link to='/services/local-seo' >Local SEO </Link></li>
+                                        <li><Link to='/services/digital-marketing' >Digital Marketing </Link></li>
                                         <li><Link to='/pay-per-click' >PPC </Link></li>
                                         <li><Link to='/services/google-analytics-4-ga4' >GA4 </Link></li>
                                         <li><Link to='/services/google-tag-manager-gtm' >GTM </Link></li>
@@ -135,11 +135,17 @@ const Footer = () => {
                     <div className='footer-copyright border-top'>
                         <div className='container'>
                             <div className='content py-3'>
-                                <div className="d-flex justify-content-between flex-wrap ">
+                                <div className="row ">
+                                    <div className="col-md-6 text-center  text-md-start">
                                   <p className="m-0"> © Copyright {new Date().getFullYear()} Whitehatseo | All Rights Reserved. </p>
-                                    <div className="d-flex gap-3">
-                                         <li><Link to='/privacy-policy' >Privacy Policy</Link></li>
-                                        <li><Link to='/terms-conditions' >Terms & Conditions</Link></li>
+
+                                    </div>
+                                    <div className="col-md-6 ">
+                                        <div className="d-flex justify-content-center justify-content-md-end gap-3">
+                                            <li><Link to='/privacy-policy' >Privacy Policy</Link></li>
+                                            <li><Link to='/terms-conditions' >Terms & Conditions</Link></li>
+                                        </div>
+
                                     </div>
                                 </div>
 

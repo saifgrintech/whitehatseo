@@ -124,6 +124,21 @@ const Faq = () => {
   // Filter FAQs by selected tab's category
   const filteredFaqs = faqs.filter((faq) => mapCategoryToTab(faq.category) === selectedTab);
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": filteredFaqs.slice(0, 20).map((faq) => ({
+      "@type": "Question",
+      "name": faq.heading,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.description.replace(/<[^>]+>/g, "")
+      }
+    }))
+  };
+
+
+
   return (
     <>
       <Helmet>
@@ -133,6 +148,14 @@ const Faq = () => {
       <meta property="og:title" content="FAQs - WhiteHatSEO" />
       <meta property="og:description" content="Explore our FAQ section to find answers to common questions about SEO and digital marketing." />
       <link rel="canonical" href="https://whitehatseo.in/faqs" />
+
+        {/* FAQ Schema */}
+        {filteredFaqs.length > 0 && (
+          <script type="application/ld+json">
+            {JSON.stringify(faqSchema)}
+          </script>
+        )}
+
     </Helmet>
 
       <div className='faq_page'>

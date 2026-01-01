@@ -52,10 +52,10 @@ const Login = () => {
           <div className='single-form mt-4'>
             <div className='form-details'>
               <img src="images/white_logo.png" style={{width:"100px"}} alt="logo" />
-              <p>
+              {/* <p>
                 Don't have an account yet?
                 <a href='/signup' className='m-2'>Sign Up</a>
-              </p>
+              </p> */}
             </div>
 
             {alert.show && (
@@ -71,6 +71,7 @@ const Login = () => {
                 <input
                   type='email'
                   className='form-control'
+                  placeholder='Enter your email'
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
@@ -82,6 +83,7 @@ const Login = () => {
                 <input
                   type='password'
                   className='form-control'
+                  placeholder='Enter your password'
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   required
@@ -97,14 +99,14 @@ const Login = () => {
               <button type='submit' className='btn btn-primary mt-3'>LOGIN</button>
             </form>
 
-            <div className='foot'>
+            {/* <div className='foot'>
               <p>Or connect with</p>
               <ul className='social-items2'>
                 <a href='https://www.gmail.com/'><i className="fa-regular fa-envelope me-3"></i></a>
                 <a href='https://www.facebook.com/'><i className="fa-brands fa-facebook-f me-3"></i></a>
                 <a href='https://www.twitter.com/'><i className="fa-brands fa-twitter me-3"></i></a>
               </ul>
-            </div>
+            </div> */}
           </div>
         </div>
        

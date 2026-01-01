@@ -47,28 +47,28 @@ const Plans = () => {
       title: "SEO",
       price: "150-300",
       icon: "fa-solid fa-magnifying-glass",
-      slug: "search-engine-optimization",
+      slug: "services/search-engine-optimization",
     },
     {
       id: 2,
       title: "PPC",
       price: "100-300",
       icon: "fa-solid fa-hand-pointer",
-      slug: "pay-per-click",
+      slug: "services/pay-per-click-ppc",
     },
     {
       id: 3,
       title: "Digital Marketing",
       price: "150-300",
       icon: "fa-solid fa-bullhorn",
-      slug: "digital-marketing",
+      slug: "services/digital-marketing",
     },
     {
       id: 4,
       title: "Local SEO",
       price: "120-250",
       icon: "fa-solid fa-location-dot",
-      slug: "local-seo",
+      slug: "services/local-seo",
     },
   ];
 

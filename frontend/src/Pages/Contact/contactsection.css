@@ -258,7 +258,7 @@
 .flash-banner-bg {
   background: red;
   transform: skew(-20deg);
-  padding: 15px 60px;
+  padding: 20px 80px;
   display: inline-block;
   color: white;
   font-weight: bold;
@@ -303,4 +303,9 @@
 @keyframes blink-light {
   0%, 50%, 100% { opacity: 1; }
   25%, 75% { opacity: 0.3; }
+}
+
+
+@media (max-width:425px){
+  .contact-form-card, .contact-info-card { padding: 30px 25px; }
 }
