@@ -134,14 +134,14 @@ const Aboutsection = () => {
                   <div className="inner">
                     <h3>Our Vision</h3>
                     {/* <p>{about.vision}</p> */}
-                    <p>Our vision is to foster collaboration, success, and meaningful branding for businesses of all kinds. The core purpose of the company is providing clients and the business with tangible results; your success is of upmost importance.</p>
+                    <p>Our vision is to foster collaboration, success, and meaningful branding for businesses of all kinds. The core purpose of the company is providing clients and the business with tangible results your success is of upmost importance.</p>
                   </div>
                 </div>
 
                 <div className="col-lg-4">
                   <div className="inner">
                     <h3>Our Value</h3>
-                    <p>WhitehatSeo team utilizes cutting-edge strategies to increase website visibility, organic traffic and rank higher on search engines for our clients' benefit. This increases brand prestige, conversion rates and returns while staying ahead in technology advances. Our clients trust in us to exceed their expectations - make the switch today to learn how.</p>
+                    <p>WhitehatSeo team utilizes cutting-edge strategies to increase website visibility, organic traffic and rank higher on search engines for our clients benefit. This increases brand prestige, conversion rates and returns while staying ahead in technology advances. Our clients trust in us to exceed their expectations - make the switch today to learn how.</p>
                     {/* <p>{about.values}</p> */}
                   </div>
                 </div>
@@ -157,7 +157,7 @@ const Aboutsection = () => {
         <div className="team-section">
           <div className="container">
             <div className="col-lg-6 mx-auto">
-              <div className="box2 d-flex flex-column align-items-center justify-contnt-center py-5">
+              <div className="box2 d-flex flex-column align-items-center justify-contnt-center pb-0">
               <h2>Our Awesome Team</h2>
               <div className="bar"></div>
               <p>
@@ -167,7 +167,7 @@ const Aboutsection = () => {
             </div>
 
 
-           <div className="row justify-content-center mt-5">
+           <div className="row justify-content-center ">
             <div className="col-sm-6 col-lg-4 col-xl-3 mb-4 mb-sm-0">
               <div className="card border-0">
               <div className="team-member">

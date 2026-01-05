@@ -99,9 +99,9 @@ const Plans = () => {
           </p>
         </div>
 
-        <div className="row justify-content-center mt-4">
+        <div className="row justify-content-center mt-sm-4">
         
-              <div className="row g-4 justify-content-center">
+              <div className="row g-4 justify-content-center mt-0">
                 {plansData.map((plan) => (
                   <div className="col-xl-3 col-md-6 col-lg-4 col-sm-6" key={plan.id}>
                     <div className="card text-center h-100 border-0 shadow-sm rounded-4 plan-card">

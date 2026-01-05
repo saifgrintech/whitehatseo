@@ -134,6 +134,7 @@ function App() {
     <Route path="/services/digital-marketing" element={<DigitalMarketingSingle />} />
     <Route path="/services/google-tag-manager-gtm" element={<GTMSingle />} />
     <Route path="/services/google-analytics-4-ga4" element={<GA4Single />} />
+    
     <Route path="/services/google-my-business-gmb" element={<GMBSingle />} />
     <Route path="/services/email-marketing" element={<EmailMarketingSingle />} />
     <Route path="/services/branding" element={<BrandingSingle />} />

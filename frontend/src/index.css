@@ -1168,7 +1168,7 @@ body, html {
 }
 .faq_tabs button{ background-color: #f8f9fb; margin: 0 10px;padding: 15px 20px; border-radius: 0 !important; color: #000;}
 .faq_tabs .nav-link:focus, .faq_tabs .nav-link:hover {color: #0d96de ;}
-.faq_tabs button .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active { background-color: #0d96de !important; color: #fff;}
+.faq_tabs button .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active { background-color: #0d96de !important; color: #fff !important;}
 
 .faq_tabs .color{color: #0d96de !important;}
 .accordion {    
@@ -1608,7 +1608,29 @@ body, html {
      .gradient-button{ padding: 10px 20px; border-radius: 6px; font-size: 14px;}
      .white-button{ padding: 10px 20px; border-radius: 6px; font-size: 14px;}
      .black-button{ padding: 10px 20px; border-radius: 6px; font-size: 14px;}
-
+    .main-banner{padding: 100px 0 50px!important; height: auto!important;}
+    .section-bar2 {padding-top: 50px !important;}
+    .section3 { padding: 58px 0px !important; }
+    .container3 .header .box {
+        padding-top: 120px !important;
+        padding-bottom: 35px !important;
+    }
+    .container3 .box {
+        padding-top: 120px !important;
+        padding-bottom: 35px !important;
+    }
+      .container3 .box h1 {font-size: 25px !important;}
+      .service_single .container3 .header .box{
+        padding-top: 100px !important;
+        padding-bottom: 35px !important;
+    }
+    .all-animation8{display: none !important;}
+    .faq-section .faq-section{ padding: 0 !important;}
+    .faq-section h2.text-center{ margin-bottom: 25px !important;}
+        .faq_tabs { padding: 0px 0; }
+        .faq_content { margin-top: 40px;}
+        .faq_content h2.text-center{ font-size:22px;}
+        .aboutpage .section3 {  margin-top: 0px !important;  }
   }
   
 
