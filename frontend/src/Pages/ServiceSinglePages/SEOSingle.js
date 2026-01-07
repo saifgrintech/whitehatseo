@@ -68,7 +68,7 @@ const SEOSingle = () => {
     return (
         <>
             <Helmet>
-                <title>SEO Services - WhiteHatSEO</title>
+                <title>SEO Services - WhiteHatSeo</title>
                 <meta
                     name="description"
                     content="Professional SEO services to improve rankings, traffic, and conversions."
@@ -98,7 +98,7 @@ const SEOSingle = () => {
                                         </h1>
 
                                         <p className="m-0">
-                                            At <strong>WhiteHatSEO</strong>, we specialize in
+                                            At <strong>WhiteHatSeo</strong>, we specialize in
                                             delivering powerful, ethical, and results-driven SEO
                                             solutions tailored to your business goals. Our team
                                             combines advanced keyword research, technical SEO, and
@@ -292,7 +292,7 @@ const SEOSingle = () => {
                             <h2>SEO Features </h2>
                             <div className="bar"></div>
                             <p>
-                                WHITEHATSEO agency can provide several strategic advantages for
+                                WhiteHatSeo agency can provide several strategic advantages for
                                 businesses looking to improve their online presence and drive
                                 more traffic to their websites.
                             </p>

@@ -70,7 +70,7 @@ const KeywordResearchSingle = () => {
     return (
         <>
             <Helmet>
-                <title>Keyword Research Services - WhiteHatSEO</title>
+                <title>Keyword Research Services - WhiteHatSeo</title>
                 <meta name="description" content="" />
                 <link
                     rel="canonical"
@@ -97,7 +97,7 @@ const KeywordResearchSingle = () => {
                                         </h1>
 
                                         <p className="m-0">
-                                            At <strong>WhiteHatSEO</strong>, our Keyword Research services focus on
+                                            At <strong>WhiteHatSeo</strong>, our Keyword Research services focus on
                                             identifying high-intent, high-converting search terms that align with your
                                             business goals. We analyze user intent, search volume, competition, and
                                             trends to uncover keywords that attract qualified traffic and drive
@@ -216,7 +216,7 @@ const KeywordResearchSingle = () => {
                             <h2>Keyword Research Features </h2>
                             <div className="bar"></div>
                             <p>
-                                WHITEHATSEO agency can provide several strategic advantages for
+                                WhiteHatSeo agency can provide several strategic advantages for
                                 businesses looking to improve their online presence and drive
                                 more traffic to their websites.
                             </p>

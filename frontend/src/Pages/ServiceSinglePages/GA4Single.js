@@ -69,7 +69,7 @@ const GA4Single = () => {
     return (
         <>
             <Helmet>
-                <title>GA4 Services - WhiteHatSEO</title>
+                <title>GA4 Services - WhiteHatSeo</title>
                 <meta name="description" content="" />
                 <link
                     rel="canonical"
@@ -96,7 +96,7 @@ const GA4Single = () => {
                                         </h1>
 
                                         <p className="m-0">
-                                            At <strong>WhiteHatSEO</strong>, our Google Analytics 4 (GA4) services help
+                                            At <strong>WhiteHatSeo</strong>, our Google Analytics 4 (GA4) services help
                                             you understand exactly how users interact with your website and marketing
                                             campaigns. We set up, configure, and optimize GA4 to track events,
                                             conversions, and user journeys across devices and platforms. By transforming
@@ -217,7 +217,7 @@ const GA4Single = () => {
                             <h2>GA4 Features </h2>
                             <div className="bar"></div>
                             <p>
-                                WHITEHATSEO agency can provide several strategic advantages for
+                                WhiteHatSeo agency can provide several strategic advantages for
                                 businesses looking to improve their online presence and drive
                                 more traffic to their websites.
                             </p>

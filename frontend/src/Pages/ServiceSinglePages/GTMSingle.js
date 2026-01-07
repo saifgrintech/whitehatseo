@@ -69,7 +69,7 @@ const GTMSingle = () => {
     return (
         <>
             <Helmet>
-                <title>GTM Services - WhiteHatSEO</title>
+                <title>GTM Services - WhiteHatSeo</title>
                 <meta name="description" content="" />
                 <link
                     rel="canonical"
@@ -96,7 +96,7 @@ const GTMSingle = () => {
                                         </h1>
 
                                         <p className="m-0">
-                                            At <strong>WhiteHatSEO</strong>, our Google Tag Manager (GTM) services help
+                                            At <strong>WhiteHatSeo</strong>, our Google Tag Manager (GTM) services help
                                             you take full control of your website tracking without relying on constant
                                             developer support. We implement and manage GTM to track user behavior,
                                             conversions, and events accurately across your website and marketing
@@ -217,7 +217,7 @@ const GTMSingle = () => {
                             <h2>GTM Features </h2>
                             <div className="bar"></div>
                             <p>
-                                WHITEHATSEO agency can provide several strategic advantages for
+                                WhiteHatSeo agency can provide several strategic advantages for
                                 businesses looking to improve their online presence and drive
                                 more traffic to their websites.
                             </p>

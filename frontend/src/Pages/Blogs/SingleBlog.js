@@ -90,10 +90,10 @@ const SingleBlog = () => {
   return (
     <>
       <Helmet>
-        <title>{`${data.heading} | WhiteHatSEO`}</title>
+        <title>{`${data.heading} | WhiteHatSeo`}</title>
         <meta name="description" content={`Explore ${data.heading} to learn about the latest insights and strategies in digital marketing. Stay updated with expert tips to enhance your online presence.`} />
         <meta name="keywords" content={`${data.heading}, SEO Blog, Digital Marketing Tips`} />
-        <meta property="og:title" content={`${data.heading} | WhiteHatSEO`} />
+        <meta property="og:title" content={`${data.heading} | WhiteHatSeo`} />
         <meta name="description" content={`Explore ${data.heading} to learn about the latest insights and strategies in digital marketing. Stay updated with expert tips to enhance your online presence.`} />
         <link rel="canonical" href={`https://whitehatseo.in/blog/${slug}`} />
       </Helmet>
@@ -187,7 +187,7 @@ const SingleBlog = () => {
                   </>
                 )}
             </div>
-            <div className="col-xl-4 col-lg-5 px-lg-5">
+            <div className="col-xl-4 col-lg-5 ps-lg-5">
               {/* <div className="gallery_view mb-5">
                 <h4>Gallery</h4>
                 <div className="d-flex flex-wrap">

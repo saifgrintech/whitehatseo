@@ -21,7 +21,7 @@ const SEOportfolio = () => {
                 <div className="col-lg-10 col-xxl-6 mx-auto">
                   <h1 className="hero-title px-3 mb-4"> Our SEO Case Studies </h1>
             <p className="mb-0">
-              At WhiteHatSEO, we deliver measurable SEO results — higher
+              At WhiteHatSeo, we deliver measurable SEO results — higher
               rankings, better traffic, and improved organic ROI for real
               businesses.
             </p>
@@ -104,12 +104,8 @@ const SEOportfolio = () => {
         <div className="col-lg-10 col-xxl-6 mx-auto">
         <section className="portfolio-section">
           <div className="portfolio-header">
-            {/* <h2>Our SEO Case Studies</h2>
-            <p>
-              At WhiteHatSEO, we deliver measurable SEO results — higher
-              rankings, better traffic, and improved organic ROI for real
-              businesses.
-            </p> */}
+            <h2>Our SEO Case Studies</h2>
+           
           </div>
 
          <div className="">

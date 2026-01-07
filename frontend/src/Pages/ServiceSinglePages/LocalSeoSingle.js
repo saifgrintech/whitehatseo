@@ -72,7 +72,7 @@ const LocalSeoSingle = () => {
   return (
     <>
         <Helmet>
-        <title>Local SEO Services - WhiteHatSEO</title>
+        <title>Local SEO Services - WhiteHatSeo</title>
         <meta name="description" content="Local SEO services to improve Google Maps rankings and local visibility." />
         <link
           rel="canonical"
@@ -99,7 +99,7 @@ const LocalSeoSingle = () => {
                 </h1>
 
                 <p className="m-0">
-                  At <strong>WhiteHatSEO</strong>, our Local SEO services are designed to help your business dominate local search results and connect with customers who are ready to buy. We optimize your Google Business Profile, local citations, and location-based keywords to ensure your brand appears in Google Maps, “near me” searches, and top local listings. By strengthening your local online presence, we help you attract high-intent local traffic, increase footfall, and generate consistent leads from your target area—all using proven, Google-approved strategies.
+                  At <strong>WhiteHatSeo</strong>, our Local SEO services are designed to help your business dominate local search results and connect with customers who are ready to buy. We optimize your Google Business Profile, local citations, and location-based keywords to ensure your brand appears in Google Maps, “near me” searches, and top local listings. By strengthening your local online presence, we help you attract high-intent local traffic, increase footfall, and generate consistent leads from your target area—all using proven, Google-approved strategies.
                 </p>
 
                 <ul className="mt-3 p-0">
@@ -267,7 +267,7 @@ const LocalSeoSingle = () => {
             <h2>Local SEO Features </h2>
             <div className='bar'></div>
             <p>
-              WHITEHATSEO agency can provide several strategic advantages for businesses looking to improve their online presence and drive more traffic to their websites.
+              WhiteHatSeo agency can provide several strategic advantages for businesses looking to improve their online presence and drive more traffic to their websites.
             </p>
           </div>
 

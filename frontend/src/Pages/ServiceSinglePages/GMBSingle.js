@@ -69,7 +69,7 @@ const GMBSingle = () => {
     return (
         <>
             <Helmet>
-                <title>GMB Services - WhiteHatSEO</title>
+                <title>GMB Services - WhiteHatSeo</title>
                 <meta name="description" content="" />
                 <link
                     rel="canonical"
@@ -96,7 +96,7 @@ const GMBSingle = () => {
                                         </h1>
 
                                         <p className="m-0">
-                                            At <strong>WhiteHatSEO</strong>, our Google My Business (GMB) services help
+                                            At <strong>WhiteHatSeo</strong>, our Google My Business (GMB) services help
                                             your business stand out in local search results, Google Maps, and “near me”
                                             searches. We optimize and manage your Google Business Profile to improve
                                             rankings, increase calls, and drive real customer actions. From profile
@@ -217,7 +217,7 @@ const GMBSingle = () => {
                             <h2>GMB Features </h2>
                             <div className="bar"></div>
                             <p>
-                                WHITEHATSEO agency can provide several strategic advantages for
+                                WhiteHatSeo agency can provide several strategic advantages for
                                 businesses looking to improve their online presence and drive
                                 more traffic to their websites.
                             </p>

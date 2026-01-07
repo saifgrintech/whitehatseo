@@ -70,7 +70,7 @@ const SMOSingle = () => {
     return (
         <>
             <Helmet>
-                <title>Social Media Optimization Services - WhiteHatSEO</title>
+                <title>Social Media Optimization Services - WhiteHatSeo</title>
                 <meta name="description" content="" />
                 <link
                     rel="canonical"
@@ -97,7 +97,7 @@ const SMOSingle = () => {
                                         </h1>
 
                                         <p className="m-0">
-                                            At <strong>WhiteHatSEO</strong>, our Social Media Optimization (SMO) services
+                                            At <strong>WhiteHatSeo</strong>, our Social Media Optimization (SMO) services
                                             help businesses maximize their reach and engagement across social platforms.
                                             We optimize your social profiles, content, and posting strategies to ensure
                                             your brand reaches the right audience, increases followers, and drives
@@ -218,7 +218,7 @@ const SMOSingle = () => {
                             <h2>SMO Features </h2>
                             <div className="bar"></div>
                             <p>
-                                WHITEHATSEO agency can provide several strategic advantages for
+                                WhiteHatSeo agency can provide several strategic advantages for
                                 businesses looking to improve their online presence and drive
                                 more traffic to their websites.
                             </p>

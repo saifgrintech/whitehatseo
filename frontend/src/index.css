@@ -179,7 +179,7 @@ body, html {
     width: 100%;
     transform: none;
     left: 0;
-    height: 275px;
+    height: 255px;
     overflow-y: scroll;
     scrollbar-width: thin;
   }
@@ -1473,7 +1473,7 @@ body, html {
     .btn-hover{justify-content: center;display: flex;flex-direction: column;align-items: center;}
     .btn-purple1.btn-hover{display: inline-flex;}
     .main-banner .full-bannerimg1{margin-top: 20px;}
-    .all-cards .card-body{text-align: center;}
+    /* .all-cards .card-body{text-align: center;} */
     
     .section-bar h2, .section-bar2 h2, .features-section h2, .team-section h2, .works h2, .plans h2, .users .section h2, .section3 .box h2 , .blogs h2{text-align: center;font-size: 24px!important;}
     .bar{margin: 20px auto;}
@@ -1488,7 +1488,7 @@ body, html {
     .blogs{padding: 20px!important;}
     .blogs .content h3{font-size: 17px!important;}
     .blogs p, .blogs .content p{font-size: 14px;}
-    .all-cards .card{height: auto!important;}
+    /* .all-cards .card{height: auto!important;} */
     .features-section .card-title {font-size: 17px!important;}
     .team-section .box2 p{font-size: 14px!important;}
     .works .box p{text-align: center;}
@@ -1522,6 +1522,7 @@ body, html {
   }
 
   @media only screen and (min-width:768px) and (max-width:991px){
+    .mega-dropdown .dropdown-menu .dropdown-item { padding:0;}
     .other-option {box-sizing: border-box;position: absolute;right: 120px;top: 24px;}
     .other-option .fa-solid{margin-right: 0!important;}
     .navbar .btn-purple1, .navbar .btn-purple2{padding: 8px 10px!important; font-size: 12px!important; border:0!important;}
@@ -1536,7 +1537,10 @@ body, html {
     .main-banner .full-bannerimg1{display: block!important;}
     .main-banner .full-banner1 {width: auto!important;max-width: 100%;height: auto;}
     .all-cards{margin-top: -60px!important;}
-    .all-cards .card{height: auto!important;}
+    /* .all-cards .card{
+      height: auto!important;
+    } */
+     /* .all-cards{gap: 20px;} */
     .section-bar h2, .section-bar2 h2, .features-section h2, .team-section h2, .works h2, .plans h2, .users .section h2, .section3 .box h2 , .blogs h2{font-size: 25px!important;}
     .section-img img{display: none;}
     .section-bar .section-fullimg1{display: block!important; text-align: center;}
@@ -1634,3 +1638,12 @@ body, html {
   }
   
 
+
+
+  .react-tel-input .country-list .search-emoji {
+    font-size: 15px;
+    display: none !important;
+}
+.react-tel-input .country-list{width: 350px !important; max-height: 250px !important;}
+.react-tel-input .country-list .search{text-align: left !important;}
+.react-tel-input .country-list .country{text-align: left !important;}

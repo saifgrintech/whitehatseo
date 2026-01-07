@@ -40,7 +40,7 @@ const Footer = () => {
                                         href="https://www.facebook.com/people/WhitehatSeo/100094138745677/"
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        aria-label="WhiteHatSEO Facebook"
+                                        aria-label="WhiteHatSeo Facebook"
                                         >
                                         <i className="fa-brands fa-facebook me-2"></i>
                                         </a>
@@ -49,7 +49,7 @@ const Footer = () => {
                                         href="https://twitter.com/WhitehatSeo_"
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        aria-label="WhiteHatSEO Twitter"
+                                        aria-label="WhiteHatSeo Twitter"
                                         >
                                         <i className="fa-brands fa-twitter me-2"></i>
                                         </a>
@@ -58,7 +58,7 @@ const Footer = () => {
                                         href="https://www.instagram.com/whitehatseo_/"
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        aria-label="WhiteHatSEO Instagram"
+                                        aria-label="WhiteHatSeo Instagram"
                                         >
                                         <i className="fa-brands fa-instagram me-2"></i>
                                         </a>
@@ -67,7 +67,7 @@ const Footer = () => {
                                         href="https://www.linkedin.com/company/www.whitehatseo.in/"
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        aria-label="WhiteHatSEO LinkedIn"
+                                        aria-label="WhiteHatSeo LinkedIn"
                                         >
                                         <i className="fa-brands fa-linkedin me-2"></i>
                                         </a>
@@ -137,7 +137,7 @@ const Footer = () => {
                             <div className='content py-3'>
                                 <div className="row ">
                                     <div className="col-md-6 text-center  text-md-start">
-                                  <p className="m-0"> © Copyright {new Date().getFullYear()} Whitehatseo | All Rights Reserved. </p>
+                                  <p className="m-0"> © Copyright {new Date().getFullYear()} WhiteHatSeo | All Rights Reserved. </p>
 
                                     </div>
                                     <div className="col-md-6 ">

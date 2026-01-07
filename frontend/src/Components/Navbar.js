@@ -93,8 +93,8 @@ const Navbar = () => {
                 <div className="dropdown-menu mega-menu p-4">
                   <div className="row">
                     {/* COLUMN 1 */}
-                    <div className="col-12 mb-4 mb-md-0 col-md-4">
-                      <h6 className="mega-title">SEO Services</h6>
+                    <div className="col-12 mb-0 mb-md-0 col-md-4">
+                      {/* <h6 className="mega-title">SEO Services</h6> */}
                       <NavLink
                         className="dropdown-item"
                         to="/services/search-engine-optimization"
@@ -134,8 +134,8 @@ const Navbar = () => {
                     </div>
 
                     {/* COLUMN 2 */}
-                    <div className="col-12 mb-4 mb-md-0 col-md-4">
-                      <h6 className="mega-title">Marketing & Ads</h6>
+                    <div className="col-12 mb-0 mb-md-0 col-md-4">
+                      {/* <h6 className="mega-title">Marketing & Ads</h6> */}
                       <NavLink
                         className="dropdown-item"
                         to="/services/pay-per-click-ppc"
@@ -176,7 +176,7 @@ const Navbar = () => {
 
                     {/* COLUMN 3 */}
                     <div className="col-12  mb-md-0 col-md-4">
-                      <h6 className="mega-title">Analytics & Branding</h6>
+                      {/* <h6 className="mega-title">Analytics & Branding</h6> */}
                       <NavLink
                         className="dropdown-item"
                         to="/services/google-tag-manager-gtm"

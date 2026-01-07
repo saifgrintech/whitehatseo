@@ -128,10 +128,10 @@ const ServiceSingle = () => {
   return (
     <>
       <Helmet>
-        <title>{`SEO Service - ${data.heading} | WhiteHatSEO`}</title>
-        <meta name="description" content={`Learn more about ${data.heading} and how WhiteHatSEO can help improve your online presence with expert SEO services.`} />
+        <title>{`SEO Service - ${data.heading} | WhiteHatSeo`}</title>
+        <meta name="description" content={`Learn more about ${data.heading} and how WhiteHatSeo can help improve your online presence with expert SEO services.`} />
         <meta name="keywords" content={`${data.heading}, SEO, Digital Marketing, Online Marketing`} />
-        <meta property="og:title" content={`SEO Service - ${data.heading} | WhiteHatSEO`} />
+        <meta property="og:title" content={`SEO Service - ${data.heading} | WhiteHatSeo`} />
         <meta property="og:description" content={`Discover how our ${data.heading} service can boost your website's ranking and traffic.`} />
         <link rel="canonical" href={`https://whitehatseo.in/services/${slug || ''}`} />
       </Helmet>
@@ -412,7 +412,7 @@ const ServiceSingle = () => {
                   <h2>Our Featured Services </h2>
                   <div className='bar'></div>
                   <p>
-                    WHITEHATSEO agency can provide several strategic advantages for businesses looking to improve their online presence and drive more traffic to their websites.
+                    WhiteHatSeo agency can provide several strategic advantages for businesses looking to improve their online presence and drive more traffic to their websites.
                   </p>
                 </div>
               </div>

@@ -69,7 +69,7 @@ const BrandingSingle = () => {
     return (
         <>
             <Helmet>
-                <title>Branding Services - WhiteHatSEO</title>
+                <title>Branding Services - WhiteHatSeo</title>
                 <meta name="description" content="" />
                 <link
                     rel="canonical"
@@ -96,7 +96,7 @@ const BrandingSingle = () => {
                                         </h1>
 
                                         <p className="m-0">
-                                            At <strong>WhiteHatSEO</strong>, our Branding services help businesses create
+                                            At <strong>WhiteHatSeo</strong>, our Branding services help businesses create
                                             a strong, memorable identity that connects with their audience and stands
                                             out in a competitive digital landscape. We focus on defining your brand
                                             voice, visual identity, and messaging to ensure consistency across all
@@ -217,7 +217,7 @@ const BrandingSingle = () => {
                             <h2>Branding Features </h2>
                             <div className="bar"></div>
                             <p>
-                                WHITEHATSEO agency can provide several strategic advantages for
+                                WhiteHatSeo agency can provide several strategic advantages for
                                 businesses looking to improve their online presence and drive
                                 more traffic to their websites.
                             </p>

@@ -70,7 +70,7 @@ const ContentMarketingSingle = () => {
   return (
     <>
       <Helmet>
-        <title>Content Marketing Services - WhiteHatSEO</title>
+        <title>Content Marketing Services - WhiteHatSeo</title>
         <meta name="description" content="" />
         <link
           rel="canonical"
@@ -97,7 +97,7 @@ const ContentMarketingSingle = () => {
                     </h1>
 
                     <p className="m-0">
-                      At <strong>WhiteHatSEO</strong>, our Content Marketing services help
+                      At <strong>WhiteHatSeo</strong>, our Content Marketing services help
                       businesses build authority, trust, and long-term organic growth through
                       high-quality, value-driven content. We create and optimize content that
                       aligns with user intent and search engine guidelines—driving traffic,
@@ -217,7 +217,7 @@ const ContentMarketingSingle = () => {
               <h2>Content Marketing Features </h2>
               <div className="bar"></div>
               <p>
-                WHITEHATSEO agency can provide several strategic advantages for
+                WhiteHatSeo agency can provide several strategic advantages for
                 businesses looking to improve their online presence and drive
                 more traffic to their websites.
               </p>

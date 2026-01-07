@@ -70,7 +70,7 @@ const SEOAuditSingle = () => {
     return (
         <>
             <Helmet>
-                <title>SEO Audit Services - WhiteHatSEO</title>
+                <title>SEO Audit Services - WhiteHatSeo</title>
                 <meta name="description" content="" />
                 <link
                     rel="canonical"
@@ -97,7 +97,7 @@ const SEOAuditSingle = () => {
                                         </h1>
 
                                         <p className="m-0">
-                                            At <strong>WhiteHatSEO</strong>, our SEO Audit services provide a complete
+                                            At <strong>WhiteHatSeo</strong>, our SEO Audit services provide a complete
                                             health check of your website to uncover issues that limit your search
                                             engine visibility and growth. We analyze technical SEO, on-page factors,
                                             off-page signals, content quality, and user experience to identify missed
@@ -219,7 +219,7 @@ const SEOAuditSingle = () => {
                             <h2>SEO Audit Features </h2>
                             <div className="bar"></div>
                             <p>
-                                WHITEHATSEO agency can provide several strategic advantages for
+                                WhiteHatSeo agency can provide several strategic advantages for
                                 businesses looking to improve their online presence and drive
                                 more traffic to their websites.
                             </p>

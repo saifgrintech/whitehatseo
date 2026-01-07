@@ -7,10 +7,10 @@ const Homesection = () => {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6 col-md-12">
-              <h2>What Makes WhiteHatSEO Unique?</h2>
+              <h2>What Makes WhiteHatSeo Unique?</h2>
               <div className="bar"></div>
               <p>
-                WHITEHATSEO is a top-notch digital marketing agency that helps
+                WhiteHatSeo is a top-notch digital marketing agency that helps
                 small and large companies with their different social media
                 marketing goals by using result-driven techniques for websites
                 and their product-based services.
@@ -179,10 +179,10 @@ const Homesection = () => {
             </div>
 
             <div className="col-lg-6 col-md-12">
-              <h2>Why Choose WHITEHATSEO</h2>
+              <h2>Why Choose WhiteHatSeo</h2>
               <div className="bar"></div>
               <p>
-                WHITEHATSEO can provide numerous benefits for your business,
+                WhiteHatSeo can provide numerous benefits for your business,
                 especially if you want to improve your online visibility and
                 drive targeted traffic to your website.
               </p>

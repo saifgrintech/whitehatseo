@@ -144,7 +144,7 @@ const Faq = () => {
         <div className='faq_content'>
           <div className='container'>
             <h2 className="text-center">What Makes Us Different from Other SEO Companies?</h2>
-            <p className="text-center ">Whitehatseo helps increase a website’s search ranking on a search engine results page (SERP) without staying outside of Google’s guidelines. Here is a passage that talks about various topics like business, travel, fashion, technology, and more. It is a bit difficult to understand and seems to be a mix of different ideas and words. We will try to improve its readability and present it in HTML format.</p>
+            <p className="text-center ">WhiteHatSeo helps increase a website’s search ranking on a search engine results page (SERP) without staying outside of Google’s guidelines. Here is a passage that talks about various topics like business, travel, fashion, technology, and more. It is a bit difficult to understand and seems to be a mix of different ideas and words. We will try to improve its readability and present it in HTML format.</p>
 
             <ul className="faq_tabs nav nav-tabs mb-0 mb-md-5  border-0 d-flex justify-content-center" id="myTab" role="tablist">
               <li className="nav-item mb-4 mb-md-0" role="presentation">
@@ -283,7 +283,7 @@ const Faq = () => {
                         <p>The level of competition in your industry: If you are in a highly competitive industry, you will need to invest more in SEO in order to rank well in search engines.</p>
                         <p>The services that you require: The specific services that you require will also affect the cost of SEO. For example, if you need help with keyword research, link building, or content optimization, you will need to pay more than if you only need help with technical SEO.</p>
                         <p>If you are on a budget, there are a number of things that you can do to improve your website's SEO.</p>
-                        <p>Whitehatseo will help you in minimum budget. However, if you want to see significant results. A good SEO service will have the experience and expertise to help you improve your website's ranking in search engines and attract more traffic.</p>
+                        <p>WhiteHatSeo will help you in minimum budget. However, if you want to see significant results. A good SEO service will have the experience and expertise to help you improve your website's ranking in search engines and attract more traffic.</p>
                       </div>
                     </div>
                   </div>

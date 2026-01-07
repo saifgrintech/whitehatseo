@@ -50,10 +50,10 @@ const Homepage = () => {
     return (
         <>
             <Helmet>
-                <title>WhiteHatSEO - Best SEO and Digital Marketing Agency</title>
-                <meta name="description" content="WhiteHatSEO is the best digital marketing agency which is offering digital marketing services such as SEO, PPC services in globally & locally." />
+                <title>WhiteHatSeo - Best SEO and Digital Marketing Agency</title>
+                <meta name="description" content="WhiteHatSeo is the best digital marketing agency which is offering digital marketing services such as SEO, PPC services in globally & locally." />
                 <meta name="keywords" content="SEO, PPC, Digital Marketing, Online Marketing" />
-                <meta property="og:title" content="WhiteHatSEO - Best SEO and Digital Marketing Agency" />
+                <meta property="og:title" content="WhiteHatSeo - Best SEO and Digital Marketing Agency" />
                 <meta property="og:description" content="Welcome to the homepage of my website." />
                 <link rel="canonical" href="https://whitehatseo.in" />
             </Helmet>
@@ -72,7 +72,7 @@ const Homepage = () => {
                     <div className='col-lg-6 col-md-8 mx-auto d-flex flex-column align-items-center justify-content-center '>
                         <h2 >The News From Our Blog</h2>
                         <div className='bar'></div>
-                        <p className='text-center'>Explore Whitehatseo's latest blog posts for insights, strategies, and expert tips to enhance your SEO and digital marketing efforts.</p>
+                        <p className='text-center'>Explore WhiteHatSeo's latest blog posts for insights, strategies, and expert tips to enhance your SEO and digital marketing efforts.</p>
                     </div>
 
                     <div className='container'>

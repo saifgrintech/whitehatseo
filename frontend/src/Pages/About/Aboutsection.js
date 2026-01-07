@@ -141,7 +141,7 @@ const Aboutsection = () => {
                 <div className="col-lg-4">
                   <div className="inner">
                     <h3>Our Value</h3>
-                    <p>WhitehatSeo team utilizes cutting-edge strategies to increase website visibility, organic traffic and rank higher on search engines for our clients benefit. This increases brand prestige, conversion rates and returns while staying ahead in technology advances. Our clients trust in us to exceed their expectations - make the switch today to learn how.</p>
+                    <p>WhiteHatSeo team utilizes cutting-edge strategies to increase website visibility, organic traffic and rank higher on search engines for our clients benefit. This increases brand prestige, conversion rates and returns while staying ahead in technology advances. Our clients trust in us to exceed their expectations - make the switch today to learn how.</p>
                     {/* <p>{about.values}</p> */}
                   </div>
                 </div>
@@ -161,7 +161,7 @@ const Aboutsection = () => {
               <h2>Our Awesome Team</h2>
               <div className="bar"></div>
               <p>
-              Take a peek at Whitehatseo's dedicated team, then contact us to see how our strategy may assist with your SEO campaign.
+              Take a peek at WhiteHatSeo's dedicated team, then contact us to see how our strategy may assist with your SEO campaign.
               </p>
             </div>
             </div>

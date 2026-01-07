@@ -20,7 +20,7 @@ const Features = () => {
             <h2>Our Features </h2>
             <div className='bar'></div>
             <p>
-              WHITEHATSEO agency can provide several strategic advantages for businesses looking to improve their online presence and drive more traffic to their websites.
+              WhiteHatSeo agency can provide several strategic advantages for businesses looking to improve their online presence and drive more traffic to their websites.
             </p>
           </div>
 
@@ -153,7 +153,7 @@ const Features = () => {
         <div className="box2  d-flex flex-column align-items-center justify-content-center">
           <h2>Meet Our Dedicated Team</h2>
           <div className='bar'></div>
-          <p> Take a peek at Whitehatseo's dedicated team, then contact us to see how our strategy may assist with your SEO campaign. </p>
+          <p> Take a peek at WhiteHatSeo's dedicated team, then contact us to see how our strategy may assist with your SEO campaign. </p>
         </div>
         <div className="container">
           <div className="row justify-content-center mt-5">
@@ -196,7 +196,7 @@ const Features = () => {
           <h2>Our Recent Works</h2>
           <div className='bar'></div>
           <p className="text-center">
-          Take a look at Whitehatseo's recent projects and see how our innovative solutions can elevate your next campaign. 
+          Take a look at WhiteHatSeo's recent projects and see how our innovative solutions can elevate your next campaign. 
 
 
           </p>

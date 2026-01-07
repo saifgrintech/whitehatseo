@@ -69,7 +69,7 @@ const EmailMarketingSingle = () => {
     return (
         <>
             <Helmet>
-                <title>Email Marketing Services - WhiteHatSEO</title>
+                <title>Email Marketing Services - WhiteHatSeo</title>
                 <meta name="description" content="" />
                 <link
                     rel="canonical"
@@ -96,7 +96,7 @@ const EmailMarketingSingle = () => {
                                         </h1>
 
                                         <p className="m-0">
-                                            At <strong>WhiteHatSEO</strong>, our Email Marketing services help businesses
+                                            At <strong>WhiteHatSeo</strong>, our Email Marketing services help businesses
                                             build strong customer relationships and drive consistent sales through
                                             personalized, data-driven communication. We create strategic email campaigns
                                             that engage subscribers at every stage of the buyer’s journey—from lead
@@ -219,7 +219,7 @@ const EmailMarketingSingle = () => {
                             <h2>Email Marketing Features </h2>
                             <div className="bar"></div>
                             <p>
-                                WHITEHATSEO agency can provide several strategic advantages for
+                                WhiteHatSeo agency can provide several strategic advantages for
                                 businesses looking to improve their online presence and drive
                                 more traffic to their websites.
                             </p>

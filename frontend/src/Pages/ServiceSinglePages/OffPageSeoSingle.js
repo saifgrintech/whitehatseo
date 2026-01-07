@@ -70,7 +70,7 @@ const OffPageSeoSingle = () => {
     return (
         <>
             <Helmet>
-                <title>Off Page SEO Services - WhiteHatSEO</title>
+                <title>Off Page SEO Services - WhiteHatSeo</title>
                 <meta name="description" content="" />
                 <link
                     rel="canonical"
@@ -97,7 +97,7 @@ const OffPageSeoSingle = () => {
                                         </h1>
 
                                         <p className="m-0">
-                                            At <strong>WhiteHatSEO</strong>, our Off-Page SEO services focus on building
+                                            At <strong>WhiteHatSeo</strong>, our Off-Page SEO services focus on building
                                             your website’s authority, trust, and credibility across the web. We use
                                             ethical, Google-compliant strategies to strengthen your brand presence
                                             beyond your website through high-quality backlinks, brand mentions, and
@@ -218,7 +218,7 @@ const OffPageSeoSingle = () => {
                             <h2>Off Page SEO Features </h2>
                             <div className="bar"></div>
                             <p>
-                                WHITEHATSEO agency can provide several strategic advantages for
+                                WhiteHatSeo agency can provide several strategic advantages for
                                 businesses looking to improve their online presence and drive
                                 more traffic to their websites.
                             </p>

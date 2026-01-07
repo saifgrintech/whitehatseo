@@ -142,10 +142,10 @@ const Faq = () => {
   return (
     <>
       <Helmet>
-      <title>FAQs - WhiteHatSEO</title>
+      <title>FAQs - WhiteHatSeo</title>
       <meta name="description" content="Find answers to the most frequently asked questions about our SEO and digital marketing services." />
-      <meta name="keywords" content="SEO FAQs, Digital Marketing FAQs, WhiteHatSEO Help" />
-      <meta property="og:title" content="FAQs - WhiteHatSEO" />
+      <meta name="keywords" content="SEO FAQs, Digital Marketing FAQs, WhiteHatSeo Help" />
+      <meta property="og:title" content="FAQs - WhiteHatSeo" />
       <meta property="og:description" content="Explore our FAQ section to find answers to common questions about SEO and digital marketing." />
       <link rel="canonical" href="https://whitehatseo.in/faqs" />
 
@@ -239,7 +239,7 @@ const Faq = () => {
         <div className='faq_content'>
           <div className='container'>
             <h2 className="text-center">What Makes Us Different from Other SEO Companies?</h2>
-            <p className="text-center">Whitehatseo helps increase a website’s search ranking on a search engine results page (SERP)...</p>
+            <p className="text-center">WhiteHatSeo helps increase a website’s search ranking on a search engine results page (SERP)...</p>
 
             <div className="row mt-5">
               <div className="col-lg-9 order-2 order-lg-1">

@@ -71,7 +71,7 @@ const PPCSingle = () => {
   return (
       <>
             <Helmet>
-                <title>PPC Services - WhiteHatSEO</title>
+                <title>PPC Services - WhiteHatSeo</title>
                 <meta name="description" content="" />
                 <link
                     rel="canonical"
@@ -98,7 +98,7 @@ const PPCSingle = () => {
                                         </h1>
 
                                         <p className="m-0">
-                                            At <strong>WhiteHatSEO</strong>, our PPC services are built to generate
+                                            At <strong>WhiteHatSeo</strong>, our PPC services are built to generate
                                             immediate visibility, qualified leads, and measurable ROI. We create and
                                             manage high-performing pay-per-click campaigns across Google Ads, Bing Ads,
                                             and social advertising platforms to ensure your brand appears in front of
@@ -286,7 +286,7 @@ const PPCSingle = () => {
                             <h2>PPC Features </h2>
                             <div className="bar"></div>
                             <p>
-                                WHITEHATSEO agency can provide several strategic advantages for
+                                WhiteHatSeo agency can provide several strategic advantages for
                                 businesses looking to improve their online presence and drive
                                 more traffic to their websites.
                             </p>

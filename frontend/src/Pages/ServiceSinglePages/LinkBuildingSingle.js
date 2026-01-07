@@ -70,7 +70,7 @@ const LinkBuildingSingle = () => {
   return (
     <>
       <Helmet>
-        <title>Link Building Services - WhiteHatSEO</title>
+        <title>Link Building Services - WhiteHatSeo</title>
         <meta name="description" content="" />
         <link
           rel="canonical"
@@ -97,7 +97,7 @@ const LinkBuildingSingle = () => {
                     </h1>
 
                     <p className="m-0">
-                      At <strong>WhiteHatSEO</strong>, our Link Building services focus on earning
+                      At <strong>WhiteHatSeo</strong>, our Link Building services focus on earning
                       high-quality, relevant backlinks that improve your website’s authority and
                       search engine rankings. We use 100% white-hat, Google-compliant outreach and
                       content-driven strategies to secure links from trusted, authoritative
@@ -216,7 +216,7 @@ const LinkBuildingSingle = () => {
               <h2>Link Building Features </h2>
               <div className="bar"></div>
               <p>
-                WHITEHATSEO agency can provide several strategic advantages for
+                WhiteHatSeo agency can provide several strategic advantages for
                 businesses looking to improve their online presence and drive
                 more traffic to their websites.
               </p>

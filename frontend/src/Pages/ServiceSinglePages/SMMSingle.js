@@ -69,7 +69,7 @@ const SMMSingle = () => {
     return (
         <>
             <Helmet>
-                <title>SMM Services - WhiteHatSEO</title>
+                <title>SMM Services - WhiteHatSeo</title>
                 <meta name="description" content="" />
                 <link
                     rel="canonical"
@@ -96,7 +96,7 @@ const SMMSingle = () => {
                                         </h1>
 
                                         <p className="m-0">
-                                            At <strong>WhiteHatSEO</strong>, our Social Media Marketing (SMM) services
+                                            At <strong>WhiteHatSeo</strong>, our Social Media Marketing (SMM) services
                                             help businesses connect with their audience, strengthen brand awareness,
                                             and turn followers into loyal customers. We create data-driven social media
                                             strategies across platforms like Facebook, Instagram, LinkedIn, and X
@@ -218,7 +218,7 @@ const SMMSingle = () => {
                             <h2>SMM Features </h2>
                             <div className="bar"></div>
                             <p>
-                                WHITEHATSEO agency can provide several strategic advantages for
+                                WhiteHatSeo agency can provide several strategic advantages for
                                 businesses looking to improve their online presence and drive
                                 more traffic to their websites.
                             </p>

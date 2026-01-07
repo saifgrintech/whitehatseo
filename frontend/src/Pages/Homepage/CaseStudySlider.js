@@ -86,7 +86,7 @@ const CaseStudySlider = () => {
 
             </div>
           <p className="text-center">
-            At <strong>WhiteHatSEO</strong>, we deliver measurable growth through
+            At <strong>WhiteHatSeo</strong>, we deliver measurable growth through
             ethical SEO strategies, data-driven execution, and long-term
             performance.
           </p>

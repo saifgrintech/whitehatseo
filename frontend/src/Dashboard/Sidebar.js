@@ -27,7 +27,7 @@ const Sidebar = () => {
       <div className={`left_sidebar p-3 ${isSidebarOpen ? 'open' : ''}`}>
         <div className="d-flex justify-content-between">
           <Link to='/dashboard' style={{ textDecoration: "none", color: "white" }}>
-            <h4 className='mb-3'>WhitehatSEO</h4>
+            <h4 className='mb-3'>WhiteHatSeo</h4>
           </Link>
         </div>
 

@@ -70,7 +70,7 @@ const TechnicalSeoSingle = () => {
     return (
         <>
             <Helmet>
-                <title>Technical SEO Services - WhiteHatSEO</title>
+                <title>Technical SEO Services - WhiteHatSeo</title>
                 <meta name="description" content="" />
                 <link
                     rel="canonical"
@@ -97,7 +97,7 @@ const TechnicalSeoSingle = () => {
                                         </h1>
 
                                         <p className="m-0">
-                                            At <strong>WhiteHatSEO</strong>, our Technical SEO services focus on optimizing
+                                            At <strong>WhiteHatSeo</strong>, our Technical SEO services focus on optimizing
                                             your website’s foundation to ensure search engines can crawl, index, and
                                             rank your pages effectively. We identify and fix technical issues that hold
                                             your website back—such as slow page speed, crawl errors, poor site
@@ -220,7 +220,7 @@ const TechnicalSeoSingle = () => {
                             <h2>Technical SEO Features </h2>
                             <div className="bar"></div>
                             <p>
-                                WHITEHATSEO agency can provide several strategic advantages for
+                                WhiteHatSeo agency can provide several strategic advantages for
                                 businesses looking to improve their online presence and drive
                                 more traffic to their websites.
                             </p>

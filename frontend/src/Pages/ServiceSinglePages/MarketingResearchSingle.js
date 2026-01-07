@@ -70,7 +70,7 @@ const MarketingResearchSingle = () => {
     return (
         <>
             <Helmet>
-                <title>Marketing Research Services - WhiteHatSEO</title>
+                <title>Marketing Research Services - WhiteHatSeo</title>
                 <meta name="description" content="" />
                 <link
                     rel="canonical"
@@ -97,7 +97,7 @@ const MarketingResearchSingle = () => {
                                         </h1>
 
                                         <p className="m-0">
-                                            At <strong>WhiteHatSEO</strong>, our Marketing Research services help businesses
+                                            At <strong>WhiteHatSeo</strong>, our Marketing Research services help businesses
                                             understand their market, competitors, and target audience to make
                                             data-driven decisions. We gather and analyze actionable insights on consumer
                                             behavior, industry trends, and competitor strategies to identify growth
@@ -217,7 +217,7 @@ const MarketingResearchSingle = () => {
                             <h2>Marketing Research Features </h2>
                             <div className="bar"></div>
                             <p>
-                                WHITEHATSEO agency can provide several strategic advantages for
+                                WhiteHatSeo agency can provide several strategic advantages for
                                 businesses looking to improve their online presence and drive
                                 more traffic to their websites.
                             </p>

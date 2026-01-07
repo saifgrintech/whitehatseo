@@ -63,7 +63,7 @@ const Policy = () => {
 
       <div className="container mt-5 pb-5 policy_points">
         <p className="">
-          [WHITEHATSEO] ("we," "our," or "us") is dedicated to safeguarding your privacy. This Privacy Policy explains how we collect, use, disclose, and protect your information when you visit our website [www.whitehatseo.in], including any other media form, media channel, mobile website, or mobile application related or connected to it (collectively, the "Site"). Please read this privacy policy carefully. If you disagree with the terms of this privacy policy, please do not access the site.
+          [WhiteHatSeo] ("we," "our," or "us") is dedicated to safeguarding your privacy. This Privacy Policy explains how we collect, use, disclose, and protect your information when you visit our website [www.whitehatseo.in], including any other media form, media channel, mobile website, or mobile application related or connected to it (collectively, the "Site"). Please read this privacy policy carefully. If you disagree with the terms of this privacy policy, please do not access the site.
         </p>
 
         <div className='text-center'>
@@ -129,7 +129,7 @@ const Policy = () => {
           <h3 className='text-blue'>Contact Us </h3>
           <p>If you have questions or comments about this Privacy Policy, please contact us at:</p>
           <p>
-            [WHITEHATSEO] <br />
+            [WhiteHatSeo] <br />
             [<Link>info@whitehatseo.in</Link>]  <br />
             [<Link>+91-7018168269</Link>]  <br />
             [A-818, 8th Floor, Bestech Business Tower, Mohali, Punjab 160062]

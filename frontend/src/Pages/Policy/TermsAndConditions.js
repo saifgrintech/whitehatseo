@@ -61,8 +61,8 @@ const TermsAndConditions = () => {
              </div>
 
              <div className="container py-5 terms_points">
-                <p><b>Welcome to [WHITEHATSEO].</b> These terms and conditions outline the rules and regulations for the use of [WHITEHATSEO] Website, located at [Mohali ].</p>
-                <p>By accessing this website, we assume you accept these terms and conditions. Do not continue to use [WHITEHATSEO] if you do not agree to all of the terms and conditions stated on this page.</p>
+                <p><b>Welcome to [WhiteHatSeo].</b> These terms and conditions outline the rules and regulations for the use of [WhiteHatSeo] Website, located at [Mohali ].</p>
+                <p>By accessing this website, we assume you accept these terms and conditions. Do not continue to use [WhiteHatSeo] if you do not agree to all of the terms and conditions stated on this page.</p>
 
                 <div className="mt-4">
                     <h3 className="text-blue">1. Introduction</h3>
@@ -71,27 +71,27 @@ const TermsAndConditions = () => {
 
                 <div className="mt-4">
                     <h3 className="text-blue">2. Cookies</h3>
-                    <p>We employ the use of cookies. By accessing [WHITEHATSEO], you agreed to use cookies in agreement with [WHITEHATSEO]'s Privacy Policy.</p>
+                    <p>We employ the use of cookies. By accessing [WhiteHatSeo], you agreed to use cookies in agreement with [WhiteHatSeo]'s Privacy Policy.</p>
                 </div>
 
                 <div className="mt-4">
                     <h3 className="text-blue">3. License</h3>
-                    <p>Unless otherwise stated, [WHITEHATSEO] and/or its licensors own the intellectual property rights for all material on [WHITEHATSEO]. All intellectual property rights are reserved. You may access this from [WHITEHATSEO] for your own personal use subjected to restrictions set in these terms and conditions.
+                    <p>Unless otherwise stated, [WhiteHatSeo] and/or its licensors own the intellectual property rights for all material on [WhiteHatSeo]. All intellectual property rights are reserved. You may access this from [WhiteHatSeo] for your own personal use subjected to restrictions set in these terms and conditions.
                     </p>
                     <h5>You must not:</h5>
                     <ul className="">
-                        <li>Republish material from [WHITEHATSEO]</li>
-                        <li>Sell, rent, or sub-license material from [WHITEHATSEO]</li>
-                        <li>Reproduce, duplicate, or copy material from [WHITEHATSEO]</li>
-                        <li>Redistribute content from [WHITEHATSEO]</li>
+                        <li>Republish material from [WhiteHatSeo]</li>
+                        <li>Sell, rent, or sub-license material from [WhiteHatSeo]</li>
+                        <li>Reproduce, duplicate, or copy material from [WhiteHatSeo]</li>
+                        <li>Redistribute content from [WhiteHatSeo]</li>
                         <li>This Agreement shall begin on the date hereof.</li>
                     </ul>
                 </div>
 
                 <div className="mt-4">
                     <h3 className="text-blue">4. User Comments</h3>
-                    <p>Parts of this website offer an opportunity for users to post and exchange opinions and information in certain areas of the website. [WHITEHATSEO] does not filter, edit, publish, or review Comments prior to their presence on the website. Comments do not reflect the views and opinions of [WHITEHATSEO], its agents, and/or affiliates. Comments reflect the views and opinions of the person who posts their views and opinions. To the extent permitted by applicable laws, [WHITEHATSEO] shall not be liable for the Comments or for any liability, damages, or expenses caused and/or suffered as a result of any use of and/or posting of and/or appearance of the Comments on this website.</p>
-                    <p>[WHITEHATSEO] reserves the right to monitor all Comments and to remove any Comments which can be considered inappropriate, offensive, or cause breach of these Terms and Conditions.</p>
+                    <p>Parts of this website offer an opportunity for users to post and exchange opinions and information in certain areas of the website. [WhiteHatSeo] does not filter, edit, publish, or review Comments prior to their presence on the website. Comments do not reflect the views and opinions of [WhiteHatSeo], its agents, and/or affiliates. Comments reflect the views and opinions of the person who posts their views and opinions. To the extent permitted by applicable laws, [WhiteHatSeo] shall not be liable for the Comments or for any liability, damages, or expenses caused and/or suffered as a result of any use of and/or posting of and/or appearance of the Comments on this website.</p>
+                    <p>[WhiteHatSeo] reserves the right to monitor all Comments and to remove any Comments which can be considered inappropriate, offensive, or cause breach of these Terms and Conditions.</p>
                     
                     <h5>You warrant and represent that:</h5>
                     <ul>
@@ -99,7 +99,7 @@ const TermsAndConditions = () => {
                         <li>The Comments do not invade any intellectual property right, including without limitation copyright, patent, or trademark of any third party;</li>
                         <li>The Comments do not contain any defamatory, libelous, offensive, indecent, or otherwise unlawful material which is an invasion of privacy;</li>
                         <li>The Comments will not be used to solicit or promote business or custom or present commercial activities or unlawful activity.</li>
-                        <li>You hereby grant [WHITEHATSEO] a non-exclusive license to use, reproduce, edit, and authorize others to use, reproduce, and edit any of your Comments in any and all forms, formats, or media.</li>
+                        <li>You hereby grant [WhiteHatSeo] a non-exclusive license to use, reproduce, edit, and authorize others to use, reproduce, and edit any of your Comments in any and all forms, formats, or media.</li>
                     </ul>
                 </div>
 

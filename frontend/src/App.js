@@ -93,6 +93,9 @@ import KeywordResearchSingle from './Pages/ServiceSinglePages/KeywordResearchSin
 import ContentMarketingSingle from './Pages/ServiceSinglePages/ContentMarketingSingle';
 import LinkBuildingSingle from './Pages/ServiceSinglePages/LinkBuildingSingle';
 
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 function App() {
 
   // const { logout } = useAuth();
@@ -202,6 +205,15 @@ function App() {
 
   </Routes>
   <ScrollToTop />
+   <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop
+        closeOnClick
+        pauseOnHover
+        theme="dark"
+      />
   </>
   );
 }

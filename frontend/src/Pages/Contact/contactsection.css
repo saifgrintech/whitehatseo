@@ -173,7 +173,7 @@
 }
 
 .contact-form-card label {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 600;
   margin-bottom: 6px;
   color: #fff;
@@ -308,4 +308,9 @@
 
 @media (max-width:425px){
   .contact-form-card, .contact-info-card { padding: 30px 25px; }
+}
+
+.react-tel-input .country-list .country-name {
+    margin-right: 6px;
+    color: #000 !important;
 }

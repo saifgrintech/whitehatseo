@@ -49,9 +49,9 @@ const Allblogs = () => {
     
 
     return (
-        <div className='blogs'>
+        <div className='blogs my-4'>
             <div className='container'>
-                <div className='row justify-content-center '>
+                <div className='row g-4 justify-content-center '>
                     {loading && (
                     <div className="spinner-grow text-primary" role="status">
                     <span className="visually-hidden">Loading...</span>
@@ -59,16 +59,17 @@ const Allblogs = () => {
                     )}
                     {error && <p className="text-danger text-center">{error}</p>}
                     {!loading && !error && currentBlogs.map((blog) => (
-                        <div className='col-lg-4 col-md-6 mb-5' key={blog._id}>
+                        <div className='col-lg-4 col-md-6 ' key={blog._id}>
                             <div className='single-blog h-100'>
                                 <img src={`/blogimg/${blog.image}`} className='img1' alt='blog' />
                                 <div className='content position-relative'>
                                     <div className='dates'>
                                         <i className="fa-solid fa-calendar-days"></i>
-                                        {new Date(blog.createdAt).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: '2-digit' })}
+                                        {/* {new Date(blog.updatedAt).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: '2-digit' })} */}
+                                        05-01-26
                                     </div>
                                    <Link to={`/blog/${blog.slug}`}> <h3  className='text-truncate' >{blog.heading}</h3></Link>
-                                    <p>By Admin</p>
+                                    {/* <p>By Admin</p> */}
                                     <p dangerouslySetInnerHTML={{ __html: stripHtmlTags( blog.description) }} />
                                     <Link to={`/blog/${blog.slug}`}>Read more <i className='fa-solid fa-arrow-right'></i></Link>
                                 </div>

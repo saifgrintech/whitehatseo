@@ -70,7 +70,7 @@ const DigitalMarketingSingle = () => {
   return (
       <>
             <Helmet>
-                <title>Digital Marketing Services - WhiteHatSEO</title>
+                <title>Digital Marketing Services - WhiteHatSeo</title>
                 <meta name="description" content="" />
                 <link
                     rel="canonical"
@@ -97,7 +97,7 @@ const DigitalMarketingSingle = () => {
                                     </h1>
 
                                     <p className="m-0">
-                                        At <strong>WhiteHatSEO</strong>, our Digital Marketing services are designed
+                                        At <strong>WhiteHatSeo</strong>, our Digital Marketing services are designed
                                         to create a powerful online presence and drive consistent business growth.
                                         We combine SEO, PPC advertising, social media marketing, and content
                                         strategies to attract the right audience, generate qualified leads, and
@@ -286,7 +286,7 @@ const DigitalMarketingSingle = () => {
                             <h2>Digital Marketing Features </h2>
                             <div className="bar"></div>
                             <p>
-                                WHITEHATSEO agency can provide several strategic advantages for
+                                WhiteHatSeo agency can provide several strategic advantages for
                                 businesses looking to improve their online presence and drive
                                 more traffic to their websites.
                             </p>

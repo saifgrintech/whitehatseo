@@ -261,6 +261,10 @@ footer.fixed-bottom{
     top: 0 !important;
 }
 
+.blog_content h2{font-size: 28px; color: #0d96de;}
+.blog_content h3{font-size: 22px;}
+.blog_content li{list-style: disc;}
+
 @media (max-width: 768px) {
     .main_content .navbar form{display: none;}
    
@@ -290,5 +294,13 @@ footer.fixed-bottom{
         padding-left: 0rem;
     }
 }
+
+
+@media (max-width:500px){
+    .blog_content h2{font-size: 20px; color: #0d96de;}
+.blog_content h3{font-size: 18px;}
+.blog_content p{font-size: 15px;}
+}
+
 
 
