@@ -7,10 +7,20 @@ import Readytotalk from "../../Components/Readytotalk.js";
 import PortfolioSlider from "./PortfolioSlider.js";
 
 import portfolioData from './portflioData.js'
+import { Helmet } from "react-helmet-async";
 
 const SEOportfolio = () => {
   return (
     <>
+
+     <Helmet >
+         <title>SEO Case Studies & Success Stories | Whitehat SEO</title>
+          <meta name="description" content="Explore real SEO case studies showcasing traffic growth, keyword rankings, and ROI achieved through Whitehat SEO’s proven white hat strategies." />
+          <meta property="og:title" content="SEO Case Studies & Success Stories | Whitehat SEO" />
+          <meta property="og:description" content="Explore real SEO case studies showcasing traffic growth, keyword rankings, and ROI achieved through Whitehat SEO’s proven white hat strategies." />
+        <link rel="canonical" href="https://whitehatseo.in/case-studies" />
+      </Helmet>
+
       <div className="porfolio_page">
         <Navbar />
 

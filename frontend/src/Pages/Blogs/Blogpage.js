@@ -8,12 +8,11 @@ const Blogpage = () => {
   return (
     <>
       <Helmet>
-      <title>Blog - WhiteHatSeo</title>
-      <meta name="description" content="Stay updated with the latest SEO and digital marketing trends and tips from WhiteHatSeo." />
-      <meta name="keywords" content="SEO Blog, Digital Marketing Tips, Online Marketing Blog" />
-      <meta property="og:title" content="Blog - WhiteHatSeo" />
-      <meta property="og:description" content="Explore our blog for the latest updates and insights on SEO and digital marketing." />
-      <link rel="canonical" href="https://whitehatseo.in/blog" />
+        <title>SEO & Digital Marketing Blog |  Whitehat SEO</title>
+        <meta name="description" content="Stay updated with the latest SEO, digital marketing, and Google algorithm insights. Expert tips, guides, and strategies by WhiteHatSEO." />
+        <meta property="og:title" content="SEO & Digital Marketing Blog |  Whitehat SEO" />
+        <meta property="og:description" content="Stay updated with the latest SEO, digital marketing, and Google algorithm insights. Expert tips, guides, and strategies by WhiteHatSEO." />
+        <link rel="canonical" href="https://whitehatseo.in/blogs" />
       </Helmet>
 
       <div> 

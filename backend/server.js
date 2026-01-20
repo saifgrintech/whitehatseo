@@ -17,6 +17,14 @@ const corsOptions = {
 app.use(cors(corsOptions));
 app.use(express.json({ extended: false }));
 
+/* Remove tracking params */
+app.use((req, res, next) => {
+  if (req.query._g) {
+    return res.redirect(301, req.path);
+  }
+  next();
+});
+
 
 
 const newsRouter = require("./routes/news");

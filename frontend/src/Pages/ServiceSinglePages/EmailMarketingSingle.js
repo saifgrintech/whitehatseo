@@ -69,8 +69,10 @@ const EmailMarketingSingle = () => {
     return (
         <>
             <Helmet>
-                <title>Email Marketing Services - WhiteHatSeo</title>
-                <meta name="description" content="" />
+                <title>Email Marketing Services | Campaigns That Convert</title>
+                <meta name="description" content="Drive repeat business and customer loyalty with effective email marketing. We create targeted campaigns that boost opens, clicks, and conversions." />
+                <meta property="og:title" content="Email Marketing Services | Campaigns That Convert" />
+                <meta property="og:description" content="Drive repeat business and customer loyalty with effective email marketing. We create targeted campaigns that boost opens, clicks, and conversions." />
                 <link
                     rel="canonical"
                     href="https://whitehatseo.in/services/email-marketing"

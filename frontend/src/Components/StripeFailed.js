@@ -5,7 +5,7 @@ const StripeFailed = () => {
   return (
    <>
           <div className="stripe_card stripe_failed">
-            <img src="images/white_logo.png" style={{width:"150px"}} alt="" />
+            <img src="images/white_logo.png" style={{width:"150px"}} alt="logo" />
             <div className="card border-0 shadow mt-5">
                 <div className="card-body text-center d-flex flex-column p-3 py-lg-5 px-lg-4">
                     <i className="fa-solid fa-circle-xmark text-red"></i>

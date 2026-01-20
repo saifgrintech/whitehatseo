@@ -69,8 +69,10 @@ const SMMSingle = () => {
     return (
         <>
             <Helmet>
-                <title>SMM Services - WhiteHatSeo</title>
-                <meta name="description" content="" />
+                <title>Social Media Marketing Services | Whitehat SEO</title>
+                <meta name="description" content="Connect with your audience and grow your brand on social platforms. Our social media marketing services increase reach, engagement, and leads." />
+                <meta property="og:title" content="Social Media Marketing Services | Whitehat SEO" />
+                <meta property="og:description" content="Connect with your audience and grow your brand on social platforms. Our social media marketing services increase reach, engagement, and leads." />
                 <link
                     rel="canonical"
                     href="https://whitehatseo.in/services/social-media-marketing"

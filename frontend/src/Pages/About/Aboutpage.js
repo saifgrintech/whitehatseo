@@ -9,11 +9,11 @@ const Aboutpage = () => {
     return (
       <>
           <Helmet>
-          <title>About Us - WhiteHatSeo</title>
-          <meta name="description" content="Learn more about WhiteHatSeo, our mission, and how we provide the best SEO and digital marketing services globally and locally." />
+          <title>About WhitehatSEO | Ethical & Results-Focused SEO Agency</title>
+          <meta name="description" content="Learn about Whitehat SEO, a trusted SEO agency delivering ethical, transparent, and Google-compliant SEO strategies for long-term growth." />
           <meta name="keywords" content="About WhiteHatSeo, SEO Company, Digital Marketing Agency" />
-          <meta property="og:title" content="About Us - WhiteHatSeo" />
-          <meta property="og:description" content="Get to know more about WhiteHatSeo and our expertise in SEO and digital marketing." />
+          <meta property="og:title" content="About WhitehatSEO | Ethical & Results-Focused SEO Agency" />
+          <meta property="og:description" content="Learn about Whitehat SEO, a trusted SEO agency delivering ethical, transparent, and Google-compliant SEO strategies for long-term growth." />
           <link rel="canonical" href="https://whitehatseo.in/about" />
         </Helmet>
 

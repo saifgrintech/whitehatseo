@@ -219,7 +219,7 @@ const Banner = () => {
                   </div>
               </div>
           </form> */}
-          <img src="/homeimages/banner3.png" className='w-100 hero_banner_img' alt="" />
+          <img src="/homeimages/banner3.png" className='w-100 hero_banner_img' alt="banner-image" />
           {/* <img src="/homeimages/banner2.png" className='w-100' alt="" /> */}
         </div>
       </div>

@@ -70,12 +70,11 @@ const TechnicalSeoSingle = () => {
     return (
         <>
             <Helmet>
-                <title>Technical SEO Services - WhiteHatSeo</title>
-                <meta name="description" content="" />
-                <link
-                    rel="canonical"
-                    href="https://whitehatseo.in/services/technical-seo"
-                />
+                <title>Technical SEO Services | Whitehat SEO</title>
+                <meta name="description" content="Improve website speed, & crawlability, with our technical SEO services. We fix errors, enhance structure, & support long-term organic growth." />
+                <meta property="og:title" content="Technical SEO Services | Whitehat SEO" />
+                <meta property="og:description" content="Improve website speed, & crawlability, with our technical SEO services. We fix errors, enhance structure, & support long-term organic growth." />
+                 <link rel="canonical" href="https://whitehatseo.in/services/technical-seo" />
 
                 <script type="application/ld+json">
                     {JSON.stringify(breadcrumbSchema)}

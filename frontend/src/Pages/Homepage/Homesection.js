@@ -102,7 +102,7 @@ const Homesection = () => {
 
             <div className="col-lg-5 offset-xl-1 text-center position-relative">
               
-              <img className="" src="/homeimages/seo-graph.png" alt="" />
+              <img className="" src="/homeimages/seo-graph.png" alt="seo-graph" />
 
               <div className="rotating-img">
                 <img
@@ -133,11 +133,11 @@ const Homesection = () => {
                   className="img2"
                   alt="targetgame"
                 ></img>
-                <img
+                {/* <img
                   src="homeimages/bigmonitor.sectionbar2.png"
                   className="img3"
                   alt="bigmonitor"
-                ></img>
+                ></img> */}
                 <img
                   src="homeimages/bigpot.sectionbar2.png"
                   className="img4"

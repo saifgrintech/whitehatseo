@@ -69,8 +69,10 @@ const GA4Single = () => {
     return (
         <>
             <Helmet>
-                <title>GA4 Services - WhiteHatSeo</title>
-                <meta name="description" content="" />
+               <title>Google Analytics 4 (GA4) Services | Setup & Reporting</title>
+                <meta name="description" content="Get GA4 configured for your website or app with custom reports, conversion tracking, and actionable insights to improve performance and decision-making." />
+                <meta property="og:title" content="Google Analytics 4 (GA4) Services | Setup & Reporting" />
+                <meta property="og:description" content="Get GA4 configured for your website or app with custom reports, conversion tracking, and actionable insights to improve performance and decision-making." />
                 <link
                     rel="canonical"
                     href="https://whitehatseo.in/services/google-analytics-4-ga4"

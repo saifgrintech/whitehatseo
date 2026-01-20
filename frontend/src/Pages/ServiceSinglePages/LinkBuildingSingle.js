@@ -69,9 +69,11 @@ const LinkBuildingSingle = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Link Building Services - WhiteHatSeo</title>
-        <meta name="description" content="" />
+       <Helmet>
+         <title>White Hat Link Building Services | Whitehat SEO</title>
+          <meta name="description" content="Boost rankings with ethical, high-authority link building services. Whitehat SEO delivers safe, scalable backlinks that improve traffic & domain authority." />
+          <meta property="og:title" content="White Hat Link Building Services | Whitehat SEO" />
+          <meta property="og:description" content="Boost rankings with ethical, high-authority link building services. Whitehat SEO delivers safe, scalable backlinks that improve traffic & domain authority." />
         <link
           rel="canonical"
           href="https://whitehatseo.in/services/link-building"

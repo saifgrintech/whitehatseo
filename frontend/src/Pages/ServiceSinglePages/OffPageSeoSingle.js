@@ -70,12 +70,11 @@ const OffPageSeoSingle = () => {
     return (
         <>
             <Helmet>
-                <title>Off Page SEO Services - WhiteHatSeo</title>
-                <meta name="description" content="" />
-                <link
-                    rel="canonical"
-                    href="https://whitehatseo.in/services/off-page-seo"
-                />
+                 <title>Off-Page SEO Services | Link Building Experts | Whitehat SEO</title>
+                <meta name="description" content="Our off-page SEO services focus on ethical link building, brand authority, and safe white hat strategies for long-term ranking success." />
+                <meta property="og:title" content="Off-Page SEO Services | Link Building Experts | Whitehat SEO" />
+                <meta property="og:description" content="Our off-page SEO services focus on ethical link building, brand authority, and safe white hat strategies for long-term ranking success." />
+                <link rel="canonical" href="https://whitehatseo.in/services/off-page-seo" />
 
                 <script type="application/ld+json">
                     {JSON.stringify(breadcrumbSchema)}

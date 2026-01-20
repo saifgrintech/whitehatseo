@@ -70,12 +70,11 @@ const KeywordResearchSingle = () => {
     return (
         <>
             <Helmet>
-                <title>Keyword Research Services - WhiteHatSeo</title>
-                <meta name="description" content="" />
-                <link
-                    rel="canonical"
-                    href="https://whitehatseo.in/services/keyword-research"
-                />
+                <title>Keyword Research Services | Whitehat SEO</title>
+                <meta name="description" content="Discover high-intent keywords that match user search behavior. Our keyword research services help you target the right audience and improve search rankings." />
+                <meta property="og:title" content="Keyword Research Services | Whitehat SEO" />
+                <meta property="og:description" content="Discover high-intent keywords that match user search behavior. Our keyword research services help you target the right audience and improve search rankings." />
+                <link rel="canonical" href="https://whitehatseo.in/services/keyword-research" />
 
                 <script type="application/ld+json">
                     {JSON.stringify(breadcrumbSchema)}

@@ -70,8 +70,10 @@ const ContentMarketingSingle = () => {
   return (
     <>
       <Helmet>
-        <title>Content Marketing Services - WhiteHatSeo</title>
-        <meta name="description" content="" />
+         <title>Content Marketing Services | Whitehat SEO</title>
+          <meta name="description" content="Attract and engage your audience with data-driven content marketing. We develop strategies, create compelling content, and drive results across channels." />
+          <meta property="og:title" content="Content Marketing Services | Whitehat SEO" />
+          <meta property="og:description" content="Attract and engage your audience with data-driven content marketing. We develop strategies, create compelling content, and drive results across channels." />
         <link
           rel="canonical"
           href="https://whitehatseo.in/services/content-marketing"

@@ -175,9 +175,11 @@ function App() {
     <Route path="/team-list" element={<ProtectedRoute element={AllTeam} />} />
     <Route path="/add-team" element={<ProtectedRoute element={AddTeam} />} />
     <Route path="/edit-team/:id" element={<ProtectedRoute element={EditTeam} />} />
-    <Route path="/products-list" element={<ProtectedRoute element={AllProducts} />} />
+    
+    {/* <Route path="/products-list" element={<ProtectedRoute element={AllProducts} />} />
     <Route path="/add-product" element={<ProtectedRoute element={AddProduct} />} />
-    <Route path="/edit-product/:id" element={<ProtectedRoute element={EditProduct} />} />
+    <Route path="/edit-product/:id" element={<ProtectedRoute element={EditProduct} />} /> */}
+
     {/* <Route path="/contact-list" element={<ProtectedRoute element={ContactUs} />} /> */}
     <Route path="/testimonial-list" element={<ProtectedRoute element={AllTestimonial} />} />
     <Route path="/add-test" element={<ProtectedRoute element={AddTest} />} />
@@ -185,9 +187,9 @@ function App() {
     <Route path="/all-users" element={<ProtectedRoute element={AllUsers} />} />
     <Route path="/user-profile" element={<ProtectedRoute element={Profile} />} />
     
-    <Route path="/plan-list" element={<ProtectedRoute element={AllPlans} />} />
+    {/* <Route path="/plan-list" element={<ProtectedRoute element={AllPlans} />} />
     <Route path="/add-plan" element={<ProtectedRoute element={AddPlan} />} />
-    <Route path="/edit-plan/:id" element={<ProtectedRoute element={EditPlan} />} />
+    <Route path="/edit-plan/:id" element={<ProtectedRoute element={EditPlan} />} /> */}
 
 
     <Route path="/contact-list" element={<ProtectedRoute element={AllContacts} />} />

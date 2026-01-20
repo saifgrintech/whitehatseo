@@ -70,8 +70,10 @@ const MarketingResearchSingle = () => {
     return (
         <>
             <Helmet>
-                <title>Marketing Research Services - WhiteHatSeo</title>
-                <meta name="description" content="" />
+                <title>Marketing Research Services | Whitehat SEO</title>
+                <meta name="description" content="Understand market trends, competitors, and customer behavior with our marketing research. Make informed decisions and craft strategic growth plans." />
+                <meta property="og:title" content="Marketing Research Services | Whitehat SEO" />
+                <meta property="og:description" content="Understand market trends, competitors, and customer behavior with our marketing research. Make informed decisions and craft strategic growth plans." />
                 <link
                     rel="canonical"
                     href="https://whitehatseo.in/services/marketing-research"

@@ -69,8 +69,10 @@ const GTMSingle = () => {
     return (
         <>
             <Helmet>
-                <title>GTM Services - WhiteHatSeo</title>
-                <meta name="description" content="" />
+               <title>Google Tag Manager (GTM) Services | Whitehat SEO</title>
+                <meta name="description" content="Implement and manage Google Tag Manager for accurate tracking, event setup, and seamless analytics. Enhance data insights without coding updates." />
+                <meta property="og:title" content="Google Tag Manager (GTM) Services | Whitehat SEO" />
+                <meta property="og:description" content="Implement and manage Google Tag Manager for accurate tracking, event setup, and seamless analytics. Enhance data insights without coding updates." />
                 <link
                     rel="canonical"
                     href="https://whitehatseo.in/services/google-tag-manager-gtm"

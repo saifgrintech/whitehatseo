@@ -69,8 +69,11 @@ const BrandingSingle = () => {
     return (
         <>
             <Helmet>
-                <title>Branding Services - WhiteHatSeo</title>
-                <meta name="description" content="" />
+                <title>Branding Services | Identity, Design & Strategy</title>
+                <meta name="description" content="Build a standout brand with our branding services. From brand identity to messaging and creative design, we help you connect with the right audience." />
+                <meta property="og:title" content="Branding Services | Identity, Design & Strategy" />
+                <meta property="og:description" content="Build a standout brand with our branding services. From brand identity to messaging and creative design, we help you connect with the right audience." />
+                
                 <link
                     rel="canonical"
                     href="https://whitehatseo.in/services/branding"

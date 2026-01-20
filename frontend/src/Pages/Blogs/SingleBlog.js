@@ -11,9 +11,47 @@ import { Helmet } from "react-helmet-async";
 const BASE_URL = process.env.REACT_APP_URL;
 const WEBSITE_URL = process.env.REACT_APP_FRONTEND;
 
+
+const blogSeoData = {
+  "digital-marketing-trends-in-2026-the-whitehatseo-guide": {
+    title: "Digital Marketing Trends in 2026 | Whitehat SEO Guide",
+    description:"Discover the top digital marketing trends for 2026, including AI SEO, search evolution, and growth strategies businesses must adopt to stay ahead.",
+    canonical: "https://whitehatseo.in/blog/digital-marketing-trends-in-2026-the-whitehatseo-guide",
+  },
+  "mastering-ga4-in-2026-proactive-insights-and-privacy-first-analytics": {
+    title: "Mastering in GA4 in 2026 | Whitehat SEO",
+    description:"Learn how to master Google Analytics 4 in 2026 with proactive insights, privacy-first analytics strategies & data-driven decision making to grow your business.",
+    canonical: "https://whitehatseo.in/blog/mastering-ga4-in-2026-proactive-insights-and-privacy-first-analytics",
+  },
+  "the-evolution-of-landing-pages-in-2026-a-whitehatseo-guide": {
+    title: "The Evolution of Landing Pages in 2026 | Whitehat SEO",
+    description:"Landing pages are evolving in 2026 with modern design trends, improved UX, personalization strategies, and optimization techniques that increase conversions.",
+    canonical: "https://whitehatseo.in/blog/the-evolution-of-landing-pages-in-2026-a-whitehatseo-guide",
+  },
+  "solving-hreflang-issues-in-shopify-and-wordpress-the-2026-technical-seo-guide": {
+    title: "Solving Hreflang Issues | 2026 SEO Guide | Whitehat SEO",
+    description:"Improve multilingual SEO, avoid indexing errors, and strengthen global search visibility. Fix hreflang issues in Shopify and WordPress.",
+    canonical: "https://whitehatseo.in/blog/solving-hreflang-issues-in-shopify-and-wordpress-the-2026-technical-seo-guide",
+  },
+  "is-seo-ranking-possible-in-4-weeks-the-2026-reality-check": {
+    title: "Is SEO Ranking Possible in 4 Weeks? | WhitehatSEO",
+    description:"It depends on the strategy you follow you can discover the SEO reality in 2026, realistic timelines, proven strategie & what results you can actually expect.",
+    canonical: "https://whitehatseo.in/blog/is-seo-ranking-possible-in-4-weeks-the-2026-reality-check",
+  },
+  "how-to-improve-traffic-with-google-business-profile-in-2026": {
+    title: "Improve Traffic with Google Business Profile | WhitehatSEO",
+    description:"Increase website traffic in 2026 using Google Business Profile optimization, local SEO techniques &  practical tips to boost visibility and engagement.",
+    canonical: "https://whitehatseo.in/blog/how-to-improve-traffic-with-google-business-profile-in-2026",
+  },
+};
+
+
+
+
+
 const SingleBlog = () => {
   const { slug } = useParams(); // Get slug from the URL
-  const [data, setData] = useState('');
+  const [data, setData] = useState({});
   const [images, setImages] = useState([]);
   const [blogContent, setBlogContent] = useState("");
   const [loading, setLoading] = useState(true);
@@ -87,16 +125,37 @@ const SingleBlog = () => {
     adjustImageStyles();
   }, [blogContent]);
 
+
+  const seo = blogSeoData[slug] || {
+    title: `${data?.heading || "Blog"} | Whitehat SEO`,
+    description:
+      "Read expert blogs on SEO, digital marketing, and website growth by Whitehat SEO.",
+    canonical: `https://whitehatseo.in/blog/${slug}`,
+  };
+
+   /*  SEO DEBUG LOGS */
+
+  // useEffect(() => {
+  //   console.log("Current Slug:", slug);
+  //   console.log("SEO for this blog:", seo);
+  //   console.log("All Blog SEO JSON:", blogSeoData);
+  // }, [slug, seo]);
+
+
   return (
     <>
-      <Helmet>
-        <title>{`${data.heading} | WhiteHatSeo`}</title>
-        <meta name="description" content={`Explore ${data.heading} to learn about the latest insights and strategies in digital marketing. Stay updated with expert tips to enhance your online presence.`} />
-        <meta name="keywords" content={`${data.heading}, SEO Blog, Digital Marketing Tips`} />
-        <meta property="og:title" content={`${data.heading} | WhiteHatSeo`} />
-        <meta name="description" content={`Explore ${data.heading} to learn about the latest insights and strategies in digital marketing. Stay updated with expert tips to enhance your online presence.`} />
-        <link rel="canonical" href={`https://whitehatseo.in/blog/${slug}`} />
+     <Helmet>
+        <title>{seo.title}</title>
+        <meta name="description" content={seo.description} />
+        <link rel="canonical" href={seo.canonical} />
+
+        <meta property="og:title" content={seo.title} />
+        <meta property="og:description" content={seo.description} />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content={seo.canonical} />
+        <meta property="og:site_name" content="Whitehat SEO" />
       </Helmet>
+
 
       <Navbar />
 
@@ -224,7 +283,8 @@ const SingleBlog = () => {
                       key={index}
                       className="news-item d-flex align-items-center  mb-4">
 
-                      <img className="me-2 border rounded-2" src={`/blogimg/${newsItem.image}`} style={{ height: "60px", width: "60px", objectFit: "contain" }} alt="" />
+                      <img className="me-2 border rounded-2" src={`/blogimg/${newsItem.image}`} style={{ height: "60px", width: "60px", objectFit: "contain" }}
+                       alt={newsItem.heading} />
                       <h6>{newsItem.heading}</h6>
 
                     </Link>

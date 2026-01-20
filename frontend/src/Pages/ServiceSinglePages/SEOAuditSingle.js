@@ -70,12 +70,12 @@ const SEOAuditSingle = () => {
     return (
         <>
             <Helmet>
-                <title>SEO Audit Services - WhiteHatSeo</title>
-                <meta name="description" content="" />
-                <link
-                    rel="canonical"
-                    href="https://whitehatseo.in/services/seo-audit"
-                />
+                <title>SEO Audit Services | Website SEO Analysis & Reporting</title>
+                <meta name="description" content="Get a detailed SEO audit to identify ranking issues, technical gaps & optimization opportunities. Our SEO audit helps improve visibility & search performance." />
+                <meta property="og:title" content="SEO Audit Services | Website SEO Analysis & Reporting" />
+                <meta property="og:description" content="Get a detailed SEO audit to identify ranking issues, technical gaps & optimization opportunities. Our SEO audit helps improve visibility & search performance." />
+                 <link rel="canonical" href="https://whitehatseo.in/services/seo-audit" />
+                
 
                 <script type="application/ld+json">
                     {JSON.stringify(breadcrumbSchema)}

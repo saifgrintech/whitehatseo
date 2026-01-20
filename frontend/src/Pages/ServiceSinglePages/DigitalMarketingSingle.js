@@ -70,8 +70,10 @@ const DigitalMarketingSingle = () => {
   return (
       <>
             <Helmet>
-                <title>Digital Marketing Services - WhiteHatSeo</title>
-                <meta name="description" content="" />
+                <title>Digital Marketing Services | SEO, PPC | Whitehat SEO</title>
+                <meta name="description" content="Grow your online presence with our digital marketing services. We combine SEO, PPC, and strategic marketing to increase traffic, leads, and brand awareness." />
+                <meta property="og:title" content="Digital Marketing Services | SEO, PPC | Whitehat SEO" />
+                <meta property="og:description" content="Grow your online presence with our digital marketing services. We combine SEO, PPC, and strategic marketing to increase traffic, leads, and brand awareness." />
                 <link
                     rel="canonical"
                     href="https://whitehatseo.in/services/digital-marketing"

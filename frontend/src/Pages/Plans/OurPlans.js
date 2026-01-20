@@ -6,12 +6,22 @@ import Testimonials from "../Testimonials/Testimonials";
 
 import './plans.css'
 import CaseStudySlider from "../Homepage/CaseStudySlider";
+import { Helmet } from "react-helmet-async";
 const WEBSITE_URL = process.env.REACT_APP_FRONTEND;
 
 
 const OurPlans = () => {
   return (
     <>
+      <Helmet >
+          <title>Affordable SEO Packages for Businesses | Whitehat SEO</title>
+          <meta name="description" content="Choose from flexible SEO packages designed for startups, SMEs, and enterprises. Transparent pricing, ethical SEO, and measurable results." />
+          <meta property="og:title" content="Affordable SEO Packages for Businesses | Whitehat SEO" />
+          <meta property="og:description" content="Choose from flexible SEO packages designed for startups, SMEs, and enterprises. Transparent pricing, ethical SEO, and measurable results." />
+        <link rel="canonical" href="https://whitehatseo.in/packages" />
+      </Helmet>
+
+
       <Navbar />
 
       {/* HERO SECTION */}

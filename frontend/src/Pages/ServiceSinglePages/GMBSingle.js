@@ -69,8 +69,10 @@ const GMBSingle = () => {
     return (
         <>
             <Helmet>
-                <title>GMB Services - WhiteHatSeo</title>
-                <meta name="description" content="" />
+                <title>Google My Business (GMB) Services | Local SEO & Listings</title>
+                <meta name="description" content="Optimize your Google My Business profile to boost local visibility, customer engagement, and map rankings. Increase calls, leads, and store visits." />
+                <meta property="og:title" content="Google My Business (GMB) Services | Local SEO & Listings" />
+                <meta property="og:description" content="Optimize your Google My Business profile to boost local visibility, customer engagement, and map rankings. Increase calls, leads, and store visits." />
                 <link
                     rel="canonical"
                     href="https://whitehatseo.in/services/google-my-business-gmb"

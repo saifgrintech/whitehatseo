@@ -71,8 +71,10 @@ const PPCSingle = () => {
   return (
       <>
             <Helmet>
-                <title>PPC Services - WhiteHatSeo</title>
-                <meta name="description" content="" />
+                 <title>Pay Per Click (PPC) Services | Google Ads Management</title>
+                <meta name="description" content="Measurable results with our PPC services. We manage Google Ads campaigns to improve conversions, control costs, and increase ROI. Only WHitehat SEO services." />
+                <meta property="og:title" content="Pay Per Click (PPC) Services | Google Ads Management" />
+                <meta property="og:description" content="Measurable results with our PPC services. We manage Google Ads campaigns to improve conversions, control costs, and increase ROI. Only WHitehat SEO services." />
                 <link
                     rel="canonical"
                     href="https://whitehatseo.in/services/pay-per-click-ppc"

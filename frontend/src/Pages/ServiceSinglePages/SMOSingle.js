@@ -70,8 +70,10 @@ const SMOSingle = () => {
     return (
         <>
             <Helmet>
-                <title>Social Media Optimization Services - WhiteHatSeo</title>
-                <meta name="description" content="" />
+                <title>Social Media Optimization Services | Whitehat SEO</title>
+                <meta name="description" content="Enhance your social profiles and boost visibility with social media optimization. We optimize posts and profiles to improve engagement and audience growth." />
+                <meta property="og:title" content="Social Media Optimization Services | Whitehat SEO" />
+                <meta property="og:description" content="Enhance your social profiles and boost visibility with social media optimization. We optimize posts and profiles to improve engagement and audience growth." />
                 <link
                     rel="canonical"
                     href="https://whitehatseo.in/services/social-media-optimization"

@@ -68,20 +68,17 @@ const SEOSingle = () => {
     return (
         <>
             <Helmet>
-                <title>SEO Services - WhiteHatSeo</title>
-                <meta
-                    name="description"
-                    content="Professional SEO services to improve rankings, traffic, and conversions."
-                />
-                <link
-                    rel="canonical"
-                    href="https://whitehatseo.in/services/search-engine-optimization"
-                />
+                <title>Search Engine Optimization Services | Whitehat SEO Agency</title>
+                <meta name="description" content="Our search engine optimization services use proven whitehat SEO techniques to improve rankings, traffic, and sustainable online visibility." />
+                <meta property="og:title" content="Search Engine Optimization Services | Whitehat SEO Agency" />
+                <meta property="og:description" content="Our search engine optimization services use proven whitehat SEO techniques to improve rankings, traffic, and sustainable online visibility." />
+                <link rel="canonical" href="https://whitehatseo.in/services/search-engine-optimization" />
 
                 <script type="application/ld+json">
                     {JSON.stringify(breadcrumbSchema)}
                 </script>
             </Helmet>
+           
 
             <div className="service_single">
                 <Navbar />

@@ -72,16 +72,16 @@ const LocalSeoSingle = () => {
   return (
     <>
         <Helmet>
-        <title>Local SEO Services - WhiteHatSeo</title>
-        <meta name="description" content="Local SEO services to improve Google Maps rankings and local visibility." />
-        <link
-          rel="canonical"
-          href="https://whitehatseo.in/services/local-seo"
-        />
+         <title>Local SEO Services | Whitehat Local SEO Agency</title>
+         <meta name="description" content="Boost your local visibility with whitehat local SEO services designed to improve Google rankings, maps presence, and local traffic." />
+         <meta property="og:title" content="Local SEO Services | Whitehat Local SEO Agency" />
+         <meta property="og:description" content="Boost your local visibility with whitehat local SEO services designed to improve Google rankings, maps presence, and local traffic." />
+         <link rel="canonical"  href="https://whitehatseo.in/services/local-seo" />
 
         <script type="application/ld+json">
           {JSON.stringify(breadcrumbSchema)}
         </script>
+        
       </Helmet>
 
     <div className='service_single'>
