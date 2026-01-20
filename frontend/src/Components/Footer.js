@@ -107,7 +107,7 @@ const Footer = () => {
                                         <li><Link to='/services/search-engine-optimization' >SEO </Link></li>
                                         <li><Link to='/services/local-seo' >Local SEO </Link></li>
                                         <li><Link to='/services/digital-marketing' >Digital Marketing </Link></li>
-                                        <li><Link to='/pay-per-click' >PPC </Link></li>
+                                        <li><Link to='/services/pay-per-click-ppc' >PPC </Link></li>
                                         <li><Link to='/services/google-analytics-4-ga4' >GA4 </Link></li>
                                         <li><Link to='/services/google-tag-manager-gtm' >GTM </Link></li>
                                         <li><Link to='/services/google-my-business-gmb' >GMB </Link></li>
