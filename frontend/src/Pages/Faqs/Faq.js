@@ -142,12 +142,12 @@ const Faq = () => {
   return (
     <>
       <Helmet>
-      <title>FAQs - WhiteHatSeo</title>
-      <meta name="description" content="Find answers to the most frequently asked questions about our SEO and digital marketing services." />
-      <meta name="keywords" content="SEO FAQs, Digital Marketing FAQs, WhiteHatSeo Help" />
-      <meta property="og:title" content="FAQs - WhiteHatSeo" />
-      <meta property="og:description" content="Explore our FAQ section to find answers to common questions about SEO and digital marketing." />
-      <link rel="canonical" href="https://whitehatseo.in/faqs" />
+        <title>FAQs –  Whitehat SEO Questions & Answers</title>
+        <meta name="description" content="Get answers to frequently asked questions about SEO, digital marketing, services, workflows, pricing, and how  Whitehat SEO helps businesses grow online." />
+        <meta name="keywords" content="Contact WhiteHatSeo, SEO Support, Digital Marketing Help" />
+        <meta property="og:title" content="FAQs –  Whitehat SEO Questions & Answers" />
+        <meta property="og:description" content="Get answers to frequently asked questions about SEO, digital marketing, services, workflows, pricing, and how  Whitehat SEO helps businesses grow online." />
+       <link rel="canonical" href="https://whitehatseo.in/faqs" />
 
         {/* FAQ Schema */}
         {filteredFaqs.length > 0 && (

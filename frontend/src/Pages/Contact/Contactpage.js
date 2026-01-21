@@ -10,11 +10,10 @@ const Contactpage = () => {
   return (
     <>
         <Helmet>
-        <title>Contact Us - WhiteHatSeo</title>
-        <meta name="description" content="Get in touch with WhiteHatSeo for the best SEO and digital marketing solutions. We're here to help you grow your business." />
-        <meta name="keywords" content="Contact WhiteHatSeo, SEO Support, Digital Marketing Help" />
-        <meta property="og:title" content="Contact Us - WhiteHatSeo" />
-        <meta property="og:description" content="Reach out to WhiteHatSeo for professional SEO and digital marketing services." />
+        <title>Contact Whitehat SEO – Get in Touch with Our SEO Experts</title>
+        <meta name="description" content="Reach out to  Whitehat SEO for SEO services, digital marketing support, consultations, and expert guidance to grow your online presence." />
+        <meta property="og:title" content="Contact Whitehat SEO – Get in Touch with Our SEO Experts" />
+        <meta property="og:description" content="Reach out to  Whitehat SEO for SEO services, digital marketing support, consultations, and expert guidance to grow your online presence." />
         <link rel="canonical" href="https://whitehatseo.in/contact" />
       </Helmet>
 

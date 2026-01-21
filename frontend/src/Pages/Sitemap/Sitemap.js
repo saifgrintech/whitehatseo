@@ -3,10 +3,21 @@ import { Link } from "react-router-dom";
 import Navbar from "../../Components/Navbar";
 import Footer from "../../Components/Footer";
 import "./sitemap.css";
+import { Helmet } from "react-helmet-async";
 
 const Sitemap = () => {
   return (
     <>
+       <Helmet>
+          <title>A complete Sitemap | Whitehat SEO</title>
+          <meta name="description" content="Explore the complete sitemap of WhiteHatSEO to easily find all services, blog posts, and key pages for SEO, digital marketing, analytics, and more." />
+          <meta name="keywords" content="Contact WhiteHatSeo, SEO Support, Digital Marketing Help" />
+          <meta property="og:title" content="A complete Sitemap | Whitehat SEO" />
+          <meta property="og:description" content="Explore the complete sitemap of WhiteHatSEO to easily find all services, blog posts, and key pages for SEO, digital marketing, analytics, and more." />
+          <link rel="canonical" href="https://whitehatseo.in/sitemap" />
+
+      </Helmet>
+
       <Navbar />
 
       <div className="container3">

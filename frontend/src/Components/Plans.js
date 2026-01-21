@@ -116,10 +116,10 @@ const Plans = () => {
 
                         {/* Price */}
                         <p className="text-muted mb-2">Starting From</p>
-                        <h2 className="fw-bold mb-3">
+                        <h4 className="fw-bold mb-3">
                           ${plan.price}
                           <span className="fs-6 text-muted">/Month</span>
-                        </h2>
+                        </h4>
 
                         {/* Buttons */}
                         <Link

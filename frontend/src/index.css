@@ -1475,7 +1475,7 @@ body, html {
     .main-banner .full-bannerimg1{margin-top: 20px;}
     /* .all-cards .card-body{text-align: center;} */
     
-    .section-bar h2, .section-bar2 h2, .features-section h2, .team-section h2, .works h2, .plans h2, .users .section h2, .section3 .box h2 , .blogs h2{text-align: center;font-size: 24px!important;}
+    .section-bar h2, .section-bar2 h2, .features-section h2, .team-section h2, .works h2, .plans h2, .plans h4, .users .section h2, .section3 .box h2 , .blogs h2{text-align: center;font-size: 24px!important;}
     .bar{margin: 20px auto;}
     .section-bar p, .section-bar2 p{text-align: center;}
     .section3 .box h5{font-size: 16px;}
@@ -1541,7 +1541,7 @@ body, html {
       height: auto!important;
     } */
      /* .all-cards{gap: 20px;} */
-    .section-bar h2, .section-bar2 h2, .features-section h2, .team-section h2, .works h2, .plans h2, .users .section h2, .section3 .box h2 , .blogs h2{font-size: 25px!important;}
+    .section-bar h2, .section-bar2 h2, .features-section h2, .team-section h2, .works h2, .plans h2, .plans h4, .users .section h2, .section3 .box h2 , .blogs h2{font-size: 25px!important;}
     .section-img img{display: none;}
     .section-bar .section-fullimg1{display: block!important; text-align: center;}
     .section-bar .section-fullimg1 img{width: auto!important;max-width: 100%;height: auto;}
@@ -1598,7 +1598,7 @@ body, html {
     }
     .whatsapp-icon {height: 47px !important; width:47px !important; bottom: 110px !important;}
     .whatsapp-icon a{font-size: 25px !important;}
-    .section-bar h2, .section-bar2 h2, .features-section h2, .team-section h2, .works h2, .plans h2, .users .section h2, .section3 .box h2 , .blogs h2{text-align: center;font-size: 21px!important;}
+    .section-bar h2, .section-bar2 h2, .features-section h2, .team-section h2, .works h2, .plans h2, .plans h4, .users .section h2, .section3 .box h2 , .blogs h2{text-align: center;font-size: 21px!important;}
   }
 
   @media only screen and (max-width:425px){

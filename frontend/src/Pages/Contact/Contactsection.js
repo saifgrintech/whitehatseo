@@ -78,6 +78,14 @@ const Contactsection = () => {
         captcha: captchaValue,
       });
 
+      // GTM / DataLayer event — ONLY on success
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: "form_submission",
+        form_type: "contact_us",
+        form_position: "main_content",
+      });
+
       toast.success("Message sent successfully!");
       navigate("/thank-you");
 

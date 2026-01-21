@@ -83,7 +83,7 @@ const Footer = () => {
                         <div className='col-lg-3 col-sm-6 mb-4'>
                             <div className='d-flex justify-content-lg-center'>
                                 <div className='footer-section text-align-center'>
-                                    <h4>Quick Links</h4>
+                                    <h6>Quick Links</h6>
                                     <ul className='p-0'>
                                         <li><Link to='/about'>About Us</Link></li>
                                         <li><Link to='/case-studies'>Case Studies</Link></li>
@@ -101,7 +101,7 @@ const Footer = () => {
                         <div className='col-lg-3 col-sm-6 mb-4'>
                             <div className='d-flex justify-content-lg-center'>
                                 <div className='footer-section'>
-                                    <h4>Services</h4>
+                                    <h6>Services</h6>
                                     <ul className='p-0'>
                                        
                                         <li><Link to='/services/search-engine-optimization' >SEO </Link></li>
@@ -119,7 +119,7 @@ const Footer = () => {
                         <div className='col-lg-3 col-sm-6 mb-4'>
                             <div className='d-flex justify-content-lg-center'>
                                 <div className='footer-section'>
-                                    <h4>Address</h4>
+                                    <h6>Address</h6>
                                     <ul className='p-0'>
                                         <li>A-818, 8th Floor, Bestech Business Tower, Mohali, Punjab 160062</li>
                                         <li>Email : <a href="mailto:info@whitehatseo.in" target="_blank" rel="noopener noreferrer" > info@whitehatseo.in </a></li>

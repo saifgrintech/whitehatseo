@@ -20,7 +20,7 @@ const ThankYou = () => {
   return (
     <>
     <Navbar />
-    <div style={styles.wrapper} >
+    <div style={styles.wrapper} id="thankyouCard" >
       <div style={styles.box} >
       <img src={`${WEBSITE_URL}/images/tick.webp`} style={{ width: "130px" }} alt='logo'></img>
         <h1 style={styles.heading}>Thank You!</h1>

@@ -965,7 +965,7 @@
   padding-bottom: 59px;
 }
 
-.plans h2 {
+.plans h2 , .plans h4{
   font-weight: 600;
   font-size: 28px;
   color: #0e314c;
@@ -1238,7 +1238,7 @@
   color: #0d96de;
 }
 
-.footer .footer-section h4 {
+.footer .footer-section h6 {
   font-size: 18px;
   margin-bottom: 20px;
   color: #0d96de;
@@ -1964,7 +1964,7 @@ padding: 8px 8px;
   .faq_tabs li i {
     display: none !important;
   }
-  .footer .footer-section h4 {
+  .footer .footer-section h6 {
     margin-bottom: 20px;
   }
    .section-bar img{width: 70% !important;}
@@ -2019,7 +2019,7 @@ padding: 8px 8px;
 }
 
 @media (max-width: 767px) {
-  .footer .footer-section h4 {
+  .footer .footer-section h6 {
     margin-bottom: 15px;
   }
 

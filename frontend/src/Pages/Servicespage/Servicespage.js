@@ -28,17 +28,15 @@ const Servicespage = () => {
   return (
     <>
       <Helmet>
-        <title>Our Services - WhiteHatSeo</title>
-        <meta name="description" content="Explore the range of digital marketing services offered by WhiteHatSeo, including SEO, PPC, and social media marketing." />
-        <meta name="keywords" content="SEO Services, PPC Services, Social Media Marketing, Digital Marketing" />
-        <meta property="og:title" content="Our Services - WhiteHatSeo" />
-        <meta property="og:description" content="Discover our top-notch digital marketing services designed to boost your online presence." />
+        <title>Our Services List | Whitehat SEO</title>
+        <meta name="description" content="Explore whitehat seo's services including SEO, PPC, social media marketing, content marketing, and analytics to grow traffic and conversions." />
+        <meta property="og:title" content="Our Services List | Whitehat SEO" />
+        <meta property="og:description" content="Explore whitehat seo's services including SEO, PPC, social media marketing, content marketing, and analytics to grow traffic and conversions." />
         <link rel="canonical" href="https://whitehatseo.in/services" />
 
          <script type="application/ld+json">
           {JSON.stringify(breadcrumbSchema)}
-        </script>
-        
+        </script> 
       </Helmet>
 
      <div>
