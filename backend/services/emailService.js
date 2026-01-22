@@ -11,13 +11,14 @@ require('dotenv').config(); // Load environment variables
 //   }
 // });
 
+
 const transporter = nodemailer.createTransport({
-  host: "smtpout.secureserver.net", // GoDaddy SMTP
+  host: "sg2plzcpnl479120.prod.sin2.secureserver.net",
   port: 465,
   secure: true, // SSL
   auth: {
-    user: process.env.EMAIL_USER, // info@whitehatseo.in
-    pass: process.env.EMAIL_PASS, // cPanel email password
+    user: process.env.EMAIL_USER, 
+    pass: process.env.EMAIL_PASS,
   },
 });
 
