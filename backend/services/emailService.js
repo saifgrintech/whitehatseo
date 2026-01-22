@@ -2,36 +2,13 @@ const nodemailer = require('nodemailer');
 require('dotenv').config(); // Load environment variables
 
 // Configure the transporter
-
-// const transporter = nodemailer.createTransport({
-//   service: 'Gmail', // Use your preferred service (e.g., Gmail, Outlook)
-//   auth: {
-//     user: process.env.EMAIL_USER, // Email from .env file
-//     pass: process.env.EMAIL_PASS  // Password from .env file
-//   }
-// });
-
-
 const transporter = nodemailer.createTransport({
-  host: "sg2plzcpnl479120.prod.sin2.secureserver.net",
-  port: 465,
-  secure: true, // SSL
+  service: 'Gmail', // Use your preferred service (e.g., Gmail, Outlook)
   auth: {
-    user: process.env.EMAIL_USER, 
-    pass: process.env.EMAIL_PASS,
-  },
-});
-
-transporter.verify((err, success) => {
-  if (err) {
-    console.error("SMTP CONNECTION ERROR:", err);
-  } else {
-    console.log("✅ SMTP READY: GoDaddy email connected");
+    user: process.env.EMAIL_USER, // Email from .env file
+    pass: process.env.EMAIL_PASS  // Password from .env file
   }
 });
-
-
-
 
 // Function to send notification  email
 const sendEmail = (formData) => {
@@ -40,7 +17,8 @@ const sendEmail = (formData) => {
   const mailOptions = {
     from: process.env.EMAIL_USER,
     // to: 'ankush.grintech@gmail.com', // Your email for notifications
-    to: 'info@whitehatseo.in', 
+    // to: 'info@whitehatseo.in', 
+    to: 'rajesh.rbgroup@gmail.com', 
     subject: 'New Contact Form Submission on Whitehatseo',
     html: `
     <html>
