@@ -18,7 +18,7 @@ const BannerForm = () => {
   const navigate = useNavigate();
   const [formData, setFormData] = useState(initialFormData);
   const [rawPhone, setRawPhone] = useState("");
-  const [countryCode, setCountryCode] = useState("91");
+  const [countryCode, setCountryCode] = useState("1");
 
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -141,7 +141,7 @@ const BannerForm = () => {
             {/* Phone (React Phone Input 2) */}
             <div className="col-12 mb-3">
               <PhoneInput
-                country="in"
+                country="us"
                 enableSearch
                 value={rawPhone}
                 onChange={(value, country) => {

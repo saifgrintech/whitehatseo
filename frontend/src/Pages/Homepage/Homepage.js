@@ -50,11 +50,10 @@ const Homepage = () => {
     return (
         <>
             <Helmet>
-                <title>WhiteHatSeo - Best SEO and Digital Marketing Agency</title>
-                <meta name="description" content="WhiteHatSeo is the best digital marketing agency which is offering digital marketing services such as SEO, PPC services in globally & locally." />
-                <meta name="keywords" content="SEO, PPC, Digital Marketing, Online Marketing" />
-                <meta property="og:title" content="WhiteHatSeo - Best SEO and Digital Marketing Agency" />
-                <meta property="og:description" content="Welcome to the homepage of my website." />
+                <title>Whitehat SEO Agency | Local & Technical SEO Experts</title>
+                <meta name="description" content="We specialize in whitehat SEO techniques that follow Google guidelines and deliver sustainable rankings, quality traffic, and real business results." />
+                <meta property="og:title" content="Whitehat SEO Agency | Local & Technical SEO Experts" />
+                <meta property="og:description" content="We specialize in whitehat SEO techniques that follow Google guidelines and deliver sustainable rankings, quality traffic, and real business results." />
                 <link rel="canonical" href="https://whitehatseo.in" />
             </Helmet>
 

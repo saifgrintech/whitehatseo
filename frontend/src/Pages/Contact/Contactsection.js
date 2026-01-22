@@ -21,7 +21,7 @@ const Contactsection = () => {
 
   const [formData, setFormData] = useState(initialFormData);
   const [rawPhone, setRawPhone] = useState("");
-  const [countryCode, setCountryCode] = useState("91");
+  const [countryCode, setCountryCode] = useState("1");
   const [loading, setLoading] = useState(false);
   const [captchaValue, setCaptchaValue] = useState(null);
 
@@ -161,7 +161,7 @@ const Contactsection = () => {
                       <div className="col-md-6 mb-3">
                         <label>Phone number</label>
                         <PhoneInput
-                          country="in"
+                          country="us"
                           enableSearch
                           value={rawPhone}
                           onChange={(value, country) => {
