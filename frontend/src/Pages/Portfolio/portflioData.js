@@ -42,6 +42,20 @@ const portfolioData = [
       { keyword: "kids electric bike", initial: "Not in 100", current: 2 },
     ],
   },
+  {
+    id: 4,
+    client: "Boost Commercial Cleaning",
+    countryFlag: "/images/australia.png",
+    website: "https://boostcommercialcleaning.com.au/",
+    caseStudy: "#",
+    previewImage: "/images/projects/boostCommercial.png",
+    graphImage: "/images/projects/boost_commercial_graph.png",
+    // tableImage: "/images/projects/premiumBond_table.png",
+    keywords: [
+      { keyword: "electric atv", initial: "Not in 100", current: 1 },
+      { keyword: "kids electric bike", initial: "Not in 100", current: 2 },
+    ],
+  },
 ];
 
 export default portfolioData;

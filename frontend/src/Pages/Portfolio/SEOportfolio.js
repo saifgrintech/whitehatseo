@@ -30,11 +30,11 @@ const SEOportfolio = () => {
               <div className="hero-customer">
                 <div className="col-lg-10 col-xxl-6 mx-auto">
                   <h1 className="hero-title px-3 mb-4"> Our SEO Case Studies </h1>
-            <p className="mb-0">
-              At WhiteHatSeo, we deliver measurable SEO results — higher
-              rankings, better traffic, and improved organic ROI for real
-              businesses.
-            </p>
+                  <p className="mb-0">
+                    At WhiteHatSeo, we deliver measurable SEO results — higher
+                    rankings, better traffic, and improved organic ROI for real
+                    businesses.
+                  </p>
                   {/* <h1 className="hero-title  px-3">
                     How We <span>Deliver Results</span>, Hear From Our Clients
                   </h1> */}
@@ -133,7 +133,7 @@ const SEOportfolio = () => {
                 {/* Card Body */}
                 <div className="card-body">
                     {/* Images Section */}
-                    <div className="row g-4 mb-4">
+                    <div className="row g-4 ">
                     <div className="col-md-6 card_height">
                         <div className="border rounded p-2 bg-light h-100">
                         <img
@@ -156,15 +156,18 @@ const SEOportfolio = () => {
                     </div>
 
                     {/* Table Image */}
-                    <div className="row">
-                    <div className="col-12">
-                        <img
-                        src={item.tableImage}
-                        alt="Keyword Rankings"
-                        className="w-100 rounded"
-                        />
-                    </div>
-                    </div>
+                  {item.tableImage && (
+                    <div className="row mt-4">
+                      <div className="col-12">
+                          <img
+                          src={item.tableImage}
+                          alt="Keyword Rankings"
+                          className="w-100 rounded"
+                          />
+                      </div>
+                      </div>
+
+                  )}  
                 </div>
 
                 {/* Card Footer */}

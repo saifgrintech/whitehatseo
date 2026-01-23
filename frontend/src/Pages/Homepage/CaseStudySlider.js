@@ -72,6 +72,33 @@ const caseStudies = [
     image: "/images/projects/premiumBond.png",
     image_graph: "/images/projects/premiumBond_graph.png",
   },
+  {
+    id: 4,
+    industry: "Cleaning Services for Businesses",
+    project: "Boost Commercial Cleaning",
+    location: "Melbourne, Australia",
+    website: "https://boostcommercialcleaning.com.au/",
+    country: "Australia",
+    flag: "/images/australia.png",
+
+    challenge:
+    "The business struggled with low organic visibility in a highly competitive commercial cleaning market. Key service pages were not ranking for high-intent bond and commercial cleaning keywords, while inconsistent local SEO implementation limited reach across major Australian cities.",
+
+  resultStat: "92.7%",
+
+  resultText:
+    "Organic traffic increased by 92.7% through a focused local SEO strategy, city-specific service page optimization, and high-intent keyword targeting. The campaign delivered stronger rankings for competitive commercial and bond cleaning terms, higher enquiry-driven traffic and visibility.",
+
+  keywords: [
+    { name: "Boost Commercial Cleaning", rank: 1 },
+    { name: "K–12 school cleaning Melbourne", rank: 5 },
+    { name: "Commercial cleaning company Melbourne", rank: 5 },
+  ],
+
+  image: "/images/projects/boostCommercial.png",
+  image_graph: "/images/projects/boost_commercial_graph.png",
+}
+
 ];
 
 const CaseStudySlider = () => {
