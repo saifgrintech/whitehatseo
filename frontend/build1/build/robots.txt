@@ -1,0 +1,15 @@
+User-agent: *
+Disallow: /api/
+Disallow: /admin/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+
+# Block tracking parameter URLs
+Disallow: /*?_g=
+Disallow: /*&_g=
+
+# (Optional) block junk query URLs
+Disallow: /*?utm_
+Disallow: /*&utm_
+
+Sitemap: https://whitehatseo.in/sitemap.xml
