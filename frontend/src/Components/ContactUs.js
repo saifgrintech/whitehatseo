@@ -9,8 +9,7 @@ const BASE_URL = process.env.REACT_APP_URL;
 
 
 const ContactForm = () => {
-    const [firstName, setFirstName] = useState('');
-    const [lastName, setLastName] = useState('');
+    const [fullName, setFullName] = useState('');
     const [phone, setPhone] = useState('');
     const [email, setEmail] = useState('');
     const [subject, setSubject] = useState('');
@@ -22,14 +21,7 @@ const ContactForm = () => {
         e.preventDefault();
 
         try {
-            const formData = {
-                firstName,
-                lastName,
-                phone,
-                email,
-                subject,
-                message
-            };
+             const formData = { fullName, phone, email, subject, message };
 
             await axios.post(`${BASE_URL}/contact`, formData, {
                 headers: {
@@ -41,8 +33,7 @@ const ContactForm = () => {
             setErrorMessage(''); // Clear any previous error message
 
             // Reset form fields after successful submission
-            setFirstName('');
-            setLastName('');
+            setFullName('');
             setPhone('');
             setEmail('');
             setSubject('');
@@ -74,25 +65,14 @@ const ContactForm = () => {
                     <form onSubmit={handleSubmit}>
                         <h2 className='mb-4'>Contact Us</h2>
                        <div className="row">
-                       <div className="col-md-6 mb-3">
-                            <label htmlFor="firstName" className="form-label">First Name</label>
+                        <div className="col-12 mb-3">
+                            <label htmlFor="fullName" className="form-label">Full Name</label>
                             <input
                                 className='form-control'
                                 type="text"
-                                id="firstName"
-                                value={firstName}
-                                onChange={(e) => setFirstName(e.target.value)}
-                                required
-                            />
-                        </div>
-                        <div className="col-md-6 mb-3">
-                            <label htmlFor="lastName" className="form-label">Last Name</label>
-                            <input
-                                className='form-control'
-                                type="text"
-                                id="lastName"
-                                value={lastName}
-                                onChange={(e) => setLastName(e.target.value)}
+                                id="fullName"
+                                value={fullName}
+                                onChange={(e) => setFullName(e.target.value)}
                                 required
                             />
                         </div>

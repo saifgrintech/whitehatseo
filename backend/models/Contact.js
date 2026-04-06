@@ -3,8 +3,7 @@ const moment = require('moment-timezone');
 
 // Contact Schema
 const contactSchema = new mongoose.Schema({
-  firstName: { type: String, required: true },
-  lastName: { type: String },
+  fullName: { type: String, required: true },
   phone: { type: String, required: true },
   email: { type: String, required: true },
   subject: { type: String, required: true },

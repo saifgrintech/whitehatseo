@@ -12,7 +12,8 @@ const RECAPTCHA_SECRET_KEY = process.env.RECAPTCHA_SECRET_KEY;
 const createContact = async (req, res) => {
   try {
     // Destructure data from the request body
-    const { firstName, lastName, phone, email, subject, message, captcha } = req.body;
+    const { fullName, phone, email, subject, message, captcha } = req.body;
+     console.log("REQ BODY:", req.body); 
 
     // If captcha is provided, verify it with Google reCAPTCHA
     if (captcha) {
@@ -34,12 +35,9 @@ const createContact = async (req, res) => {
     }
 
     // Proceed with saving the contact regardless of reCAPTCHA
-    const newContact = new Contact({ firstName, lastName, phone, email, subject, message });
+    const newContact = new Contact({ fullName, phone, email, subject, message });
     await newContact.save();
 
-    // Construct the name dynamically
-    const fullName = lastName ? `${firstName} ${lastName}` : firstName;
-    
     // Send the email notification
     sendEmail({
       name: fullName,
@@ -82,11 +80,11 @@ const getContactById = async (req, res) => {
 // Update a contact by ID
 const updateContact = async (req, res) => {
   try {
-    const { firstName, lastName, phone, email, subject, message } = req.body;
+    const { fullName, phone, email, subject, message } = req.body;
 
     const updatedContact = await Contact.findByIdAndUpdate(
       req.params.id,
-      { firstName, lastName, phone, email, subject, message },
+      { fullName, phone, email, subject, message },
       { new: true }
     );
 

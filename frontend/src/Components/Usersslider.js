@@ -1,13 +1,13 @@
 import {React, useState, useEffect} from 'react';
 import axios from 'axios';
 
-import { Autoplay, Pagination, A11y } from 'swiper/modules';
+import { Autoplay, A11y } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/autoplay';
-import 'swiper/css/pagination';
+// import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
 
@@ -41,8 +41,8 @@ export default () => {
 
   return (
     <Swiper
-    className='pb-5'
-      modules={[Autoplay, Pagination, A11y]}
+    className=''
+      modules={[Autoplay, A11y]}
       spaceBetween={30}
       slidesPerView={1}
       // loop={true}
@@ -51,7 +51,7 @@ export default () => {
         disableOnInteraction: false, 
       }}
       navigation
-      pagination={{ clickable: true }}
+      // pagination={{ clickable: true }}
 
       breakpoints={{
         475: {

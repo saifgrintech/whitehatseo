@@ -61,10 +61,26 @@ const Testimonials = () => {
             </div>
 
             <div className="feedback mt-4">
-            <div className="row">
-                <div className="col-lg-7 col-md-10 mx-auto">
+            <div className="row align-items-center">
+                <div className="col-lg-7 ">
                 <Usersslider />
+
                 </div>
+
+               <div className="col-lg-5  d-flex justify-content-center align-items-center">
+            <div className="video-wrapper">
+                <iframe
+                width="315"
+                height="560"
+                src="https://www.youtube.com/embed/lUXaA-PxZtw"
+                title="YouTube Shorts"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                style={{ borderRadius: "12px" }}
+                ></iframe>
+            </div>
+            </div>
             </div>
             </div>
 

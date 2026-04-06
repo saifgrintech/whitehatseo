@@ -1647,3 +1647,14 @@ body, html {
 .react-tel-input .country-list{width: 350px !important; max-height: 250px !important;}
 .react-tel-input .country-list .search{text-align: left !important;}
 .react-tel-input .country-list .country{text-align: left !important;}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  /* max-width: 350px; */
+}
+
+.video-wrapper iframe {
+  width: 100%;
+  height: 265px; /* Shorts ratio */
+}

@@ -10,8 +10,7 @@ const BASE_URL = process.env.REACT_APP_URL;
 
 const Contactsection = () => {
   const initialFormData = {
-    firstName: "",
-    lastName: "",
+     fullName: "", 
     email: "",
     subject: "",
     message: "",
@@ -38,12 +37,8 @@ const Contactsection = () => {
     e.preventDefault();
 
     // Validations (toast)
-    if (!formData.firstName.trim()) {
-      toast.error("First name is required");
-      return;
-    }
-    if (!formData.lastName.trim()) {
-      toast.error("Last name is required");
+    if (!formData.fullName.trim()) {
+      toast.error("Full name is required");
       return;
     }
     if (!formData.email.trim()) {
@@ -62,10 +57,10 @@ const Contactsection = () => {
       toast.error("Message is required");
       return;
     }
-    if (!captchaValue) {
-      toast.error("Please complete the reCAPTCHA");
-      return;
-    }
+    // if (!captchaValue) {
+    //   toast.error("Please complete the reCAPTCHA");
+    //   return;
+    // }
 
     setLoading(true);
 
@@ -75,7 +70,7 @@ const Contactsection = () => {
       await axios.post(`${BASE_URL}/contact`, {
         ...formData,
         phone: formattedPhone,
-        captcha: captchaValue,
+        // captcha: captchaValue,
       });
 
       // GTM / DataLayer event — ONLY on success
@@ -118,27 +113,14 @@ const Contactsection = () => {
                   <form onSubmit={handleSubmit}>
                     <div className="row">
 
-                      <div className="col-md-6 mb-3">
-                        <label>First name</label>
+                      <div className="col-12 mb-3">
+                        <label>Full name</label>
                         <input
                           type="text"
-                          name="firstName"
+                          name="fullName"
                           className="form-control"
-                          value={formData.firstName}
-                          placeholder="Enter first name"
-                          onChange={handleChange}
-                          required
-                        />
-                      </div>
-
-                      <div className="col-md-6 mb-3">
-                        <label>Last name</label>
-                        <input
-                          type="text"
-                          name="lastName"
-                          className="form-control"
-                          placeholder="Enter last name"
-                          value={formData.lastName}
+                          value={formData.fullName}
+                          placeholder="Enter full name"
                           onChange={handleChange}
                           required
                         />
@@ -205,12 +187,12 @@ const Contactsection = () => {
                         />
                       </div>
 
-                      <div className="col-md-12 mb-3">
+                      {/* <div className="col-md-12 mb-3">
                         <ReCAPTCHA
                           sitekey="6LcWqYUqAAAAAGwQ1O-ZBoVlQOM5XPgpYJJ4TcE4"
                           onChange={handleCaptchaChange}
                         />
-                      </div>
+                      </div> */}
 
                       <div className="col-md-12">
                         <button
