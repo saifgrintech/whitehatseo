@@ -57,10 +57,10 @@ const Contactsection = () => {
       toast.error("Message is required");
       return;
     }
-    // if (!captchaValue) {
-    //   toast.error("Please complete the reCAPTCHA");
-    //   return;
-    // }
+    if (!captchaValue) {
+      toast.error("Please complete the reCAPTCHA");
+      return;
+    }
 
     setLoading(true);
 
@@ -70,7 +70,7 @@ const Contactsection = () => {
       await axios.post(`${BASE_URL}/contact`, {
         ...formData,
         phone: formattedPhone,
-        // captcha: captchaValue,
+        captcha: captchaValue,
       });
 
       // GTM / DataLayer event — ONLY on success
@@ -187,12 +187,12 @@ const Contactsection = () => {
                         />
                       </div>
 
-                      {/* <div className="col-md-12 mb-3">
+                      <div className="col-md-12 mb-3">
                         <ReCAPTCHA
                           sitekey="6LcWqYUqAAAAAGwQ1O-ZBoVlQOM5XPgpYJJ4TcE4"
                           onChange={handleCaptchaChange}
                         />
-                      </div> */}
+                      </div>
 
                       <div className="col-md-12">
                         <button
