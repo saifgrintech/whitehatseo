@@ -68,10 +68,10 @@ const SEOSingle = () => {
     return (
         <>
             <Helmet>
-                <title>Search Engine Optimization Services | Whitehat SEO Agency</title>
-                <meta name="description" content="Our search engine optimization services use proven whitehat SEO techniques to improve rankings, traffic, and sustainable online visibility." />
-                <meta property="og:title" content="Search Engine Optimization Services | Whitehat SEO Agency" />
-                <meta property="og:description" content="Our search engine optimization services use proven whitehat SEO techniques to improve rankings, traffic, and sustainable online visibility." />
+                <title>SSEO (Search Engine Optimisation) Services | WhitehatSEO</title>
+                <meta name="description" content="SEO services include strategies like keyword research, content optimization, technical SEO & link building to improve your website’s visibility on search engines." />
+                <meta property="og:title" content="SEO (Search Engine Optimisation) Services | WhitehatSEO" />
+                <meta property="og:description" content="SEO services include strategies like keyword research, content optimization, technical SEO & link building to improve your website’s visibility on search engines." />
                 <link rel="canonical" href="https://whitehatseo.in/services/search-engine-optimization" />
 
                 <script type="application/ld+json">
@@ -89,50 +89,27 @@ const SEOSingle = () => {
                             <div className="container">
                                 <div className="row align-items-center">
                                     <div className="col-lg-7 position-relative text-start">
-                                        <h1 className="hero-title mb-4 text-start">
-                                            Professional <span>SEO Services</span> That Drive Traffic,
-                                            Leads & Revenue
+                                        <h1 className="hero-title mb-2 text-start">
+                                            Professional <span>SEO Services</span> (Search Engine Optimization Services)
                                         </h1>
 
                                         <p className="m-0">
-                                            At <strong>WhiteHatSeo</strong>, we specialize in
-                                            delivering powerful, ethical, and results-driven SEO
-                                            solutions tailored to your business goals. Our team
-                                            combines advanced keyword research, technical SEO, and
-                                            content optimization strategies to ensure your website
-                                            ranks higher on Google, attracts qualified visitors, and
-                                            converts traffic into loyal customers. We prioritize
-                                            sustainable growth over shortcuts, focusing on strategies
-                                            that enhance your online presence, build authority, and
-                                            maximize ROI. Whether you're a startup, e-commerce store,
-                                            or enterprise, our customized SEO campaigns are designed
-                                            to increase visibility, improve search engine rankings,
-                                            and drive measurable results for your business.
-                                        </p>
+                                           Whitehat <b>SEO services</b> are designed to improve your website’s visibility, drive targeted traffic, and increase your conversion rate. As a trusted <Link to='/'>SEO agency</Link>, we offer complete <b>search engine optimization services</b> tailored to your business goals.
+                                           <br />
+                                           Whether you are a startup or an established brand, our strategies focus on enhancing your online presence, improving search engine rankings, and delivering measurable results.
 
-                                        <ul className="mt-3 p-0">
-                                            <li>
-                                                <i className="fa-solid fa-check me-2"></i>
-                                                Result-Oriented SEO Campaigns to boost your rankings
-                                            </li>
-                                            <li>
-                                                <i className="fa-solid fa-check me-2"></i>
-                                                Google-Compliant White Hat Techniques for long-term
-                                                success
-                                            </li>
-                                            <li>
-                                                <i className="fa-solid fa-check me-2"></i>Comprehensive
-                                                Keyword Research & On-Page Optimization
-                                            </li>
-                                            <li>
-                                                <i className="fa-solid fa-check me-2"></i>Dedicated SEO
-                                                Experts & Transparent Monthly Reports
-                                            </li>
-                                            <li>
-                                                <i className="fa-solid fa-check me-2"></i>Local & Global
-                                                SEO Strategies to reach the right audience
-                                            </li>
-                                        </ul>
+                                        </p>
+                                        <div className="case-header mt-3">
+                                            <h2>Grow Your Business with Whitehat SEO Services</h2>
+                                            <p className="m-0">
+                                            If your website is not ranking on the first page of search engines, you’re missing valuable traffic and potential customers. Our search engine optimization services are designed to boost your visibility and help you dominate your industry.
+                                            <br />
+                                            Search engine optimisation services involve optimizing your website to rank higher on search engine results pages (SERPs). This includes a combination of <Link to='/services/technical-seo'>technical SEO</Link>, content creation, keyword research, and link building to ensure your website meets search engine guidelines. <br />
+
+                                            <b>Our goal is simple:</b> help your business appear in front of the right audience at the right time.
+
+                                            </p>
+                                        </div>
 
                                         <div className="d-flex gap-3 mt-4">
                                             <Link to="/contact" className="gradient-button">
@@ -286,12 +263,11 @@ const SEOSingle = () => {
                 <div className="features-section">
                     <div className="container">
                         <div className="box d-flex flex-column align-items-center justify-content-center">
-                            <h2>SEO Features </h2>
+                            <h3>Our Complete SEO Services Include</h3>
                             <div className="bar"></div>
                             <p>
-                                WhiteHatSeo agency can provide several strategic advantages for
-                                businesses looking to improve their online presence and drive
-                                more traffic to their websites.
+                               Our complete <b>SEO services</b> are designed to cover every aspect of your online growth, from in-depth keyword research and technical SEO to content creation, <Link to='/services/link-building'>link building</Link>, and performance tracking. These <b>search engine optimization services</b> work together to improve your search engine rankings, enhance user experience, and drive more targeted traffic and conversions to your website.
+
                             </p>
                         </div>
 
@@ -331,9 +307,9 @@ const SEOSingle = () => {
                                                         </div>
 
                                                         <div className="input">
-                                                            <Link className="card-title">
+                                                            <h4 className="card-title">
                                                                 {feature.featureTitle}
-                                                            </Link>
+                                                            </h4>
                                                             <p className="card-text mt-2">
                                                                 {feature.featureDesc}
                                                             </p>

@@ -1,0 +1,74 @@
+# LLM.txt for whitehatseo.in
+
+> White Hat SEO is a digital marketing service focused on ethical, Google-compliant SEO strategies that drive long-term organic growth and sustainable search rankings.
+
+## Site Information
+site_name: White Hat SEO
+site_url: https://whitehatseo.in/
+industry: Digital Marketing, SEO
+location: India
+language: en
+
+## About
+White Hat SEO provides professional SEO services using only approved, ethical optimization techniques. The goal is to improve search visibility while maintaining long-term ranking stability.
+
+## Services
+services_url: https://whitehatseo.in/services
+- Search Engine Optimization (SEO)
+- Local SEO
+- Technical SEO
+- On-Page SEO Optimization
+- Off-Page SEO (Link Building)
+- SEO Audits
+- Keyword Research
+- Content Optimization
+- Google Business Profile Optimization
+- SEO Consulting
+- Digital Marketing
+- Pay-Per-Click (PPC)
+- Email Marketing
+- Google Analytics 4 (GA4)
+
+- Google Tag Manager (GTM)
+
+## Approach
+- Follows search engine guidelines strictly
+- Focuses on user-first content
+- Avoids black hat or manipulative tactics
+- Builds long-term organic growth
+
+## Target Audience
+- Small businesses
+- Startups
+- Local service providers
+- E-commerce websites
+- Real estate Businesses
+
+## Key Features
+- Manual SEO execution
+- Transparent reporting
+- Performance tracking
+- Clean website optimization
+
+## Content Topics
+- SEO best practices
+- White hat vs black hat SEO
+- Website optimization
+- Local SEO strategies
+- Google ranking factors
+
+## Contact
+website: https://whitehatseo.in/
+contact_page: https://whitehatseo.in/contact/
+
+## Crawl Guidelines
+- Static content only (no JavaScript required)
+- No dynamic rendering
+- Fully accessible in plain text
+
+## AI Usage Policy
+- Content can be indexed and summarized
+- Do not misrepresent services
+- Maintain factual accuracy
+
+last_updated: 2026-04

@@ -42,9 +42,8 @@ const Banner = () => {
       <div className='container'>
         <div className='row align-items-center'>
           <div className='col-lg-7'>
-            <h1 className='text-capitalize'>Transforming Digital Visions into Reality with WhiteHatSeo</h1>
-            <p>At WhiteHatSeo, we specialize in transforming your digital presence into a powerful engine for growth. As a leading SEO and digital marketing agency, we are dedicated to driving results through cutting-edge strategies and innovative solutions. Our team of experts leverages the latest tools and techniques to boost your online visibility, attract targeted traffic, and convert visitors into loyal customers.
-            </p>
+            <h1 className='text-capitalize'>WhitehatSEO – SEO Agency That Turns Traffic into Real Business</h1>
+            <p>At WhitehatSEO, our SEO agency helps businesses move beyond rankings to generate real leads and revenue. With data-driven strategies and ethical SEO practices, we bring the right traffic that actually converts. With a proven track record of growing organic traffic and generating high-quality leads. Our data-backed, white-hat strategies <Link to='/case-studies'>help businesses</Link> attract the right audience, improve visibility, and turn search traffic into real revenue. Our team of experts leverages the latest tools and techniques to boost your online visibility, attract targeted traffic, and convert visitors into loyal customers.</p>
             <div className="d-flex btn-hover">             
            <Link to='/contact'>
              <button className="gradient-button" >Book a free consultation</button>

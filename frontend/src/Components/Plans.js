@@ -92,10 +92,10 @@ const Plans = () => {
 
       <div className="container">
         <div className="box4 d-flex flex-column align-items-center justify-content-center">
-          <h2>Pricing Plans</h2>
+          <h3>Flexible SEO Pricing – Plans, Costs & Packages</h3>
           <div className='bar'></div>
           <p>
-            Whether you're a startup or an established enterprise, we offer pricing options designed to fit your needs and help you achieve your goals without breaking the bank.
+           At Whitehatseo, we offer flexible SEO pricing designed to suit businesses of all sizes—from startups to established brands. Our plans are built around your goals, industry competition, and growth targets, ensuring you only pay for what you need. With transparent costs, no hidden fees, and scalable packages, Whitehatseo delivers result-driven strategies that grow alongside your business and maximize your return on investment.
           </p>
         </div>
 

@@ -13,6 +13,7 @@ import { Helmet } from 'react-helmet-async';
 import ClientVideo from './ClientVideo';
 import CaseStudySlider from './CaseStudySlider';
 import Testimonials from '../Testimonials/Testimonials';
+import HomeFAQ from '../../Components/HomeFAQ';
 
 
 const BASE_URL = process.env.REACT_APP_URL;
@@ -100,6 +101,8 @@ const Homepage = () => {
                     </div>
 
                 </div>
+
+                <HomeFAQ />
 
                 {/* <ClientVideo /> */}
                 

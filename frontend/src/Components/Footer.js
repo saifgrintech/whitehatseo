@@ -12,16 +12,7 @@ const Footer = () => {
             <div className='footer pt-5 pb-0' style={{ backgroundColor: "#f7fafd" }}>
 
 
-                <div className='footer-animation'>
-
-                    <div className='footer-animation1'>
-                        <img src={`${WEBSITE_URL}/homeimages/footer-shape1.png`} className='footer-moon' alt='moon'></img>
-                    </div>
-
-                    <div className='footer-animation2'>
-                        <img src={`${WEBSITE_URL}/homeimages/footer-shape2.svg`} className='footer-cross' alt='cross'></img>
-                    </div>
-                </div>
+               
 
                 <div className='container '>
 

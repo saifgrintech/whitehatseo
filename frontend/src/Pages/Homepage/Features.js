@@ -17,10 +17,10 @@ const Features = () => {
       <div className="features-section">
         <div className="container">
           <div className="box d-flex flex-column align-items-center justify-content-center">
-            <h2>Our Features </h2>
+            <h2>What Makes Us a Top SEO Company</h2>
             <div className='bar'></div>
             <p>
-              WhiteHatSeo agency can provide several strategic advantages for businesses looking to improve their online presence and drive more traffic to their websites.
+              WhiteHatSEO agency can provide several strategic advantages for businesses looking to improve their online presence and drive more traffic to their websites.
             </p>
           </div>
 
@@ -29,15 +29,14 @@ const Features = () => {
               <div className="card position-relative">
                 <div className="d-flex align-items-center">
                   <div className="icons">
-                    <i className="fa-solid fa-gear icons-inner"></i>
+                    <i className="fa-solid fa-sack-dollar icons-inner"></i>
                   </div>
 
                   <div className="input">
-                    <Link className="card-title">
-                      Expert Team
-                    </Link>
+                    <Link className="card-title">Revenue-Driven SEO</Link>
                     <p className="card-text mt-2">
-                      Our team is made up of talented professionals with a diverse set of skills, each bringing unique expertise to our SEO efforts.
+                      We focus on generating qualified leads and real business growth—not
+                      just increasing website traffic.
                     </p>
                   </div>
                 </div>
@@ -48,15 +47,14 @@ const Features = () => {
               <div className="card position-relative">
                 <div className="d-flex align-items-center">
                   <div className="icons">
-                    <i className="fa-solid fa-envelope icons-inner"></i>
+                    <i className="fa-solid fa-robot icons-inner"></i>
                   </div>
 
                   <div className="input">
-                    <Link className="card-title">
-                      Transparency and Communication
-                    </Link>
+                    <Link className="card-title">AI-Optimized Strategy</Link>
                     <p className="card-text mt-2">
-                      We provide clear, accessible reports and updates on campaign progress, performance metrics, and strategy adjustments.
+                      Our approach is built for modern search, including AI-driven results
+                      and evolving SERP features.
                     </p>
                   </div>
                 </div>
@@ -67,15 +65,14 @@ const Features = () => {
               <div className="card position-relative">
                 <div className="d-flex align-items-center">
                   <div className="icons2">
-                    <i className="fa-solid fa-border-none icons-inner"></i>
+                    <i className="fa-solid fa-bullseye icons-inner"></i>
                   </div>
 
                   <div className="input">
-                    <Link className="card-title">
-                      Customer Support and Service
-                    </Link>
+                    <Link className="card-title">Intent-Based Optimization</Link>
                     <p className="card-text mt-2">
-                      Providing support through various channels such as email, phone, and live chat to accommodate different client preferences.
+                      We align content with user search intent across every stage of the
+                      customer journey.
                     </p>
                   </div>
                 </div>
@@ -86,15 +83,14 @@ const Features = () => {
               <div className="card position-relative">
                 <div className="d-flex align-items-center">
                   <div className="icons2">
-                    <i className="fa-solid fa-circle-info icons-inner"></i>
+                    <i className="fa-solid fa-award icons-inner"></i>
                   </div>
 
                   <div className="input">
-                    <Link className="card-title">
-                      Proactive Issue Management
-                    </Link>
+                    <Link className="card-title">Authority-Focused Content</Link>
                     <p className="card-text mt-2">
-                      Providing practical and effective solutions to any challenges or obstacles that arise, maintaining a focus on achieving client goals.
+                      We build topical authority through high-quality, relevant content—not
+                      just keyword stuffing.
                     </p>
                   </div>
                 </div>
@@ -105,15 +101,14 @@ const Features = () => {
               <div className="card position-relative">
                 <div className="d-flex align-items-center">
                   <div className="icons3">
-                    <i className="fa-solid fa-cube icons-inner"></i>
+                    <i className="fa-solid fa-chart-pie icons-inner"></i>
                   </div>
 
                   <div className="input">
-                    <Link className="card-title">
-                      Tailored Solutions
-                    </Link>
+                    <Link className="card-title">Integrated SEO Approach</Link>
                     <p className="card-text mt-2">
-                      Customizing support and recommendations based on individual client needs, goals, and industry requirements.
+                      We combine SEO, content marketing, and conversion rate optimization
+                      to maximize results.
                     </p>
                   </div>
                 </div>
@@ -124,22 +119,21 @@ const Features = () => {
               <div className="card position-relative">
                 <div className="d-flex align-items-center">
                   <div className="icons3">
-                    <i className="fa-regular fa-bell icons-inner"></i>
+                    <i className="fa-solid fa-chart-line icons-inner"></i>
                   </div>
 
                   <div className="input">
-                    <Link className="card-title">
-                      Customer Satisfaction
-
-                    </Link>
+                    <Link className="card-title">Data-Backed Decisions</Link>
                     <p className="card-text mt-2">
-                      We build long-term relationships with clients through excellent service, reliability, and a commitment to their success.
+                      Our strategies are guided by real-time analytics, ensuring
+                      continuous improvement and measurable ROI.
                     </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+
         </div>
       </div>
 
