@@ -5,6 +5,7 @@ import "./aboutsection.css";
 import Footer from "../../Components/Footer";
 import Readytotalk from "../../Components/Readytotalk";
 import Section3 from "../../Components/Section3";
+import Founders from "../../Components/Founders";
 
 import axios from "axios";
 
@@ -168,33 +169,9 @@ const Aboutsection = () => {
 
 
            <div className="row justify-content-center ">
-            <div className="col-sm-6 col-lg-4 col-xl-3 mb-4 mb-sm-0">
-              <div className="card border-0">
-              <div className="team-member">
-               <img src="/images/rohit.jpg" alt="rohit" className="img img-large"  />
-                <div className="team-info">
-                  <h5 className="member1-title m-0">Rohit Sharma</h5>
-                  <p className="member1-text m-0">Senior Project Manager</p>
-                  <p className="member1-text m-0 mt-1"><b>Expertise: </b>Branding/PPC</p>
-                </div>
-              </div>
-            </div>
-            </div>
-            <div className="col-sm-6 col-lg-4 col-xl-3 ">
-              <div className="card border-0">
-              <div className="team-member">
-               <img src="/images/arti.jpg" alt="arti" className="img img-large"  />
-                <div className="team-info">
-                  <h5 className="member1-title m-0">Arti Mehta</h5>
-                  <p className="member1-text m-0"> Project Manager</p>
-                   <p className="member1-text m-0 mt-1"><b>Expertise: </b>SEO/SMM/PPC</p>
-                </div>
-              </div>
-            </div>
-            </div>
-
-          <Teamslider />
-        </div>
+            <Founders />
+            <Teamslider />
+           </div>
           </div>
         </div>
 

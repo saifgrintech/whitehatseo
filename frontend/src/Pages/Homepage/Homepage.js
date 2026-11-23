@@ -14,6 +14,7 @@ import ClientVideo from './ClientVideo';
 import CaseStudySlider from './CaseStudySlider';
 import Testimonials from '../Testimonials/Testimonials';
 import HomeFAQ from '../../Components/HomeFAQ';
+import SeoCheckerSection from './SeoCheckerSection';
 
 
 const BASE_URL = process.env.REACT_APP_URL;
@@ -64,6 +65,9 @@ const Homepage = () => {
                 <Cards />
                 <Homesection />
                 <Features />
+
+                <SeoCheckerSection />
+
                 <CaseStudySlider />
                  <Testimonials />
 

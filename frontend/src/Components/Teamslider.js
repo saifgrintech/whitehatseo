@@ -75,7 +75,6 @@ const Teamslider = () => {
                <img
           src={`${WEBSITE_URL}/teamimg/${item.image}`}
           className={`img ${
-            item.title?.toLowerCase().includes('rohit') ||
             item.title?.toLowerCase().includes('arti')
               ? 'img-large'
               : ''

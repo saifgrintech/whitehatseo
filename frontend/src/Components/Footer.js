@@ -80,7 +80,7 @@ const Footer = () => {
                                         <li><Link to='/case-studies'>Case Studies</Link></li>
                                         <li><Link to='/contact' >Contact Us</Link></li>
                                         <li><Link to='/blogs'>Latest News</Link></li>
-                                        <li><Link to='/packages'>Packages</Link></li>
+                                        {/* <li><Link to='/packages'>Packages</Link></li> */}
                                          <li><Link to='/faqs' >FAQs</Link></li>
                                         <li><Link to='/sitemap' >Sitemap</Link></li>
 

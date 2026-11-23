@@ -240,7 +240,7 @@ const Navbar = () => {
                 </NavLink>
               </li>
 
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <NavLink
                   to="/packages"
                   className={({ isActive }) =>
@@ -249,7 +249,7 @@ const Navbar = () => {
                 >
                   Packages
                 </NavLink>
-              </li>
+              </li> */}
 
               <li className="nav-item">
                 <NavLink
