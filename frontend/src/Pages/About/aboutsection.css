@@ -1,6 +1,4 @@
-    
-    
-    /* CSS OF ABOUTPAGE */
+/* CSS OF ABOUTPAGE */
 /* .aboutpage .container3 .header{
     background-size: cover;
     background-repeat: no-repeat;
@@ -8,14 +6,13 @@
     position: relative;
     z-index: 1;
 } */
- 
-.container3 .box{  
+
+.container3 .box{
     background: transparent url(../../../public/homeimages/banner-bg.jpg) 100% 0 no-repeat;
     text-align: center;
     padding-top: 135px;
     padding-bottom: 50px;
     z-index: 1;
-   
 }
 
 .container3 .box h1{
@@ -30,13 +27,13 @@
 } */
 
 
-        /* SECTION CSS */
+/* SECTION CSS */
 
 .section4 p{
     color: #6084a4;
     line-height: 1.8;
     font-size: 14px;
-}      
+}
 /* .section4 .container{
     margin-top: 52px;
 } */
@@ -45,7 +42,7 @@
 }
 .section4 .section-content{
     margin-left: 41px;
-} 
+}
 
 .section4 .section-content h2{
     font-size: 30px;
@@ -75,4 +72,433 @@
 
 @media (max-width:425px){
     .aboutpage .team-section { padding-top: 40px !important;padding-bottom: 40px !important;}
+}
+
+
+
+
+
+/* ===== OUR STORY SECTION ===== */
+.aboutpage .our-story {
+    position: relative;
+    padding: 60px 0 90px;
+    background: linear-gradient(180deg, #f1f8fd 0%, #ffffff 420px);
+    overflow: hidden;
+}
+
+.aboutpage .our-story p {
+    color: #5b7a95;
+    font-size: 14px;
+    line-height: 1.85;
+    margin-bottom: 14px;
+}
+
+/* ---------- Heading ---------- */
+.aboutpage .our-story .story-heading { margin-bottom: 40px; }
+
+.aboutpage .our-story .story-label,
+.aboutpage .our-story .mini-label {
+    display: inline-block;
+    padding: 6px 16px;
+    border-radius: 50px;
+    background: rgba(47, 147, 220, 0.12);
+    color: #2f93dc;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+
+.aboutpage .our-story .story-heading h2 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #0e314c;
+    margin-bottom: 12px;
+}
+
+/* ---------- Hero card (top banner) ---------- */
+.aboutpage .our-story .story-hero {
+    position: relative;
+    padding: 60px 55px 45px;
+    border-radius: 24px;
+    background: linear-gradient(120deg, #0b3a61 0%, #1b6fb3 55%, #2f93dc 100%);
+    box-shadow: 0 24px 55px rgba(27, 95, 150, 0.35);
+    overflow: hidden;
+}
+
+.aboutpage .our-story .story-hero .circle {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.07);
+}
+.aboutpage .our-story .story-hero .c1 { width: 280px; height: 280px; top: -110px; left: -80px; }
+.aboutpage .our-story .story-hero .c2 { width: 220px; height: 220px; bottom: -90px; right: -60px; }
+
+.aboutpage .our-story .story-hero .hero-quote-mark {
+    position: absolute;
+    top: -6px;
+    left: 26px;
+    font-family: Georgia, serif;
+    font-size: 130px;
+    line-height: 1;
+    color: rgba(255, 255, 255, 0.14);
+}
+
+.aboutpage .our-story .story-hero .hero-lead {
+    color: #fff !important;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+.aboutpage .our-story .story-hero .hero-sub {
+    color: #d6eafa !important;
+    font-size: 14.5px;
+    margin: 0;
+}
+
+.aboutpage .our-story .hero-tagline {
+    padding-left: 35px;
+    border-left: 3px solid rgba(255, 255, 255, 0.45);
+}
+
+.aboutpage .our-story .hero-tagline h4 {
+    margin: 0 0 4px;
+    color: #fff !important;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.aboutpage .our-story .hero-tagline h4.accent { color: #a8d6f7 !important; }
+
+.aboutpage .our-story .hero-welcome-wrap {
+    position: relative;
+    margin-top: 38px;
+    text-align: center;
+}
+
+.aboutpage .our-story .hero-welcome {
+    display: inline-block;
+    padding: 9px 26px;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    color: #fff !important;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+/* ---------- Intro ---------- */
+.aboutpage .our-story .story-intro { margin-top: 70px; }
+
+.aboutpage .our-story .story-quote {
+    position: relative;
+    padding: 55px 36px 34px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #0b3a61 0%, #1b6fb3 60%, #2f93dc 100%);
+    box-shadow: 0 20px 45px rgba(27, 95, 150, 0.3);
+    overflow: hidden;
+}
+
+.aboutpage .our-story .story-quote::before {
+    content: "";
+    position: absolute;
+    right: -70px;
+    top: -70px;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.07);
+}
+
+.aboutpage .our-story .story-quote::after {
+    content: "";
+    position: absolute;
+    left: -50px;
+    bottom: -80px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.aboutpage .our-story .quote-mark {
+    position: absolute;
+    top: 6px;
+    left: 26px;
+    font-family: Georgia, serif;
+    font-size: 110px;
+    line-height: 1;
+    color: rgba(255, 255, 255, 0.25);
+}
+
+.aboutpage .our-story .story-quote .quote-text {
+    position: relative;
+    z-index: 1;
+    color: #fff !important;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.6;
+    margin: 0 0 30px;
+}
+
+.aboutpage .our-story .founders {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding-top: 22px;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.aboutpage .our-story .avatars { display: flex; }
+
+.aboutpage .our-story .avatars span {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    color: #1b5f96;
+    font-size: 14px;
+    font-weight: 600;
+    border: 3px solid #1b6fb3;
+}
+
+.aboutpage .our-story .avatars span + span {
+    margin-left: -12px;
+    background: #cfe6f8;
+}
+
+.aboutpage .our-story .founders-info strong {
+    display: block;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.aboutpage .our-story .founders-info small {
+    color: #cfe6f8;
+    font-size: 12.5px;
+}
+
+/* Story text with timeline line */
+.aboutpage .our-story .story-text {
+    position: relative;
+    padding-left: 38px;
+    margin-left: 15px;
+}
+
+.aboutpage .our-story .story-text::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 6px;
+    bottom: 6px;
+    width: 3px;
+    border-radius: 3px;
+    background: linear-gradient(180deg, #2f93dc, rgba(47, 147, 220, 0.1));
+}
+
+.aboutpage .our-story .story-text .lead-para {
+    font-size: 17px;
+    line-height: 1.8;
+    font-weight: 500;
+    color: #0e314c;
+}
+
+.aboutpage .our-story .story-text p:last-child { margin-bottom: 0; }
+
+/* ---------- Journey ---------- */
+.aboutpage .our-story .story-journey {
+    margin-top: 70px;
+    padding: 55px 40px 40px;
+    border-radius: 24px;
+    background: #eef6fc;
+}
+
+.aboutpage .our-story .journey-head { margin-bottom: 38px; }
+
+.aboutpage .our-story .journey-head h3 {
+    font-size: 26px;
+    font-weight: 600;
+    color: #0e314c;
+    margin: 0;
+}
+
+.aboutpage .our-story .journey-card {
+    position: relative;
+    height: 100%;
+    padding: 34px 28px 26px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(14, 49, 76, 0.07);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.aboutpage .our-story .journey-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 34px rgba(14, 49, 76, 0.14);
+}
+
+.aboutpage .our-story .j-icon,
+.aboutpage .our-story .sc-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: linear-gradient(135deg, #1b5f96, #2f93dc);
+    box-shadow: 0 8px 18px rgba(47, 147, 220, 0.35);
+}
+
+.aboutpage .our-story .j-icon svg,
+.aboutpage .our-story .sc-icon svg {
+    width: 26px;
+    height: 26px;
+}
+
+.aboutpage .our-story .j-step {
+    display: block;
+    margin: 18px 0 10px;
+    color: #2f93dc;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.aboutpage .our-story .journey-card p { margin: 0; }
+
+/* Pull quote */
+.aboutpage .our-story .journey-quote {
+    position: relative;
+    margin-top: 28px;
+    padding: 38px 40px;
+    text-align: center;
+    border-radius: 16px;
+    background: linear-gradient(120deg, #0e314c 0%, #1b5f96 100%);
+    overflow: hidden;
+}
+
+.aboutpage .our-story .jq-mark {
+    position: absolute;
+    top: -10px;
+    left: 24px;
+    font-family: Georgia, serif;
+    font-size: 120px;
+    line-height: 1;
+    color: rgba(255, 255, 255, 0.12);
+}
+
+.aboutpage .our-story .journey-quote h4 {
+    position: relative;
+    color: #fff !important;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.aboutpage .our-story .journey-quote p {
+    position: relative;
+    color: #cfe6f8 !important;
+    margin: 0;
+    font-size: 14.5px;
+}
+
+/* ---------- Believe + Vision ---------- */
+.aboutpage .our-story .story-cards { margin-top: 50px; }
+
+.aboutpage .our-story .story-card {
+    height: 100%;
+    padding: 38px 34px 32px;
+    background: #fff;
+    border: 1px solid #e3edf5;
+    border-radius: 18px;
+    box-shadow: 0 8px 26px rgba(14, 49, 76, 0.07);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.aboutpage .our-story .story-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 38px rgba(14, 49, 76, 0.13);
+}
+
+.aboutpage .our-story .story-card h3 {
+    margin: 20px 0 14px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #0e314c;
+}
+
+.aboutpage .our-story .tick-list {
+    list-style: none;
+    padding: 18px 0 0;
+    margin: 20px 0 0;
+    border-top: 1px dashed #cfe0ee;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 16px;
+}
+
+.aboutpage .our-story .tick-list li {
+    position: relative;
+    padding-left: 26px;
+    font-size: 13.5px;
+    font-weight: 500;
+    color: #0e314c;
+}
+
+.aboutpage .our-story .tick-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 1px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #eaf4fc;
+    color: #2f93dc;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: center;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 991px) {
+    .aboutpage .our-story { padding: 120px 0 60px; }
+    .aboutpage .our-story .story-heading h2 { font-size: 26px; }
+    .aboutpage .our-story .story-hero { padding: 48px 30px 35px; }
+    .aboutpage .our-story .hero-tagline { padding-left: 22px; }
+    .aboutpage .our-story .hero-tagline h4 { font-size: 24px; }
+    .aboutpage .our-story .story-intro { margin-top: 50px; }
+    .aboutpage .our-story .story-text { margin-left: 0; padding-left: 28px; }
+    .aboutpage .our-story .story-journey { padding: 40px 22px 28px; margin-top: 50px; }
+    .aboutpage .our-story .journey-head h3 { font-size: 22px; }
+}
+
+@media (max-width: 575px) {
+    .aboutpage .our-story { padding: 105px 0 50px; }
+    .aboutpage .our-story .story-heading h2 { font-size: 22px; }
+    .aboutpage .our-story .story-hero { padding: 42px 20px 30px; border-radius: 18px; }
+    .aboutpage .our-story .story-hero .hero-lead { font-size: 16.5px; }
+    .aboutpage .our-story .hero-tagline h4 { font-size: 21px; }
+    .aboutpage .our-story .story-quote { padding: 50px 24px 28px; }
+    .aboutpage .our-story .story-quote .quote-text { font-size: 18px; }
+    .aboutpage .our-story .story-text .lead-para { font-size: 15.5px; }
+    .aboutpage .our-story .story-journey { padding: 32px 14px 20px; border-radius: 18px; }
+    .aboutpage .our-story .journey-quote { padding: 32px 22px; }
+    .aboutpage .our-story .journey-quote h4 { font-size: 19px; }
+    .aboutpage .our-story .story-card { padding: 30px 22px 26px; }
+    .aboutpage .our-story .tick-list { grid-template-columns: 1fr; }
 }
